@@ -861,6 +861,22 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
+  #study
+  release_status:
+    Desc: "The status on whether the study is to be made available for release to production."
+    Term:
+      - Origin: caDSR
+        Code: ''
+        Value: Release Status
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - "Yes"
+        - "No"
+    Req: true
+    Strict: true
+    Private: false
   #pathology_file
   slim_url:
     Desc: File path to IDS SLIM viewer
