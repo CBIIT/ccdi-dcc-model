@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit 7c46167
+commit 92e8ac1
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	id	STRING
@@ -716,6 +716,546 @@ diagnosis	laterality	Not Reported
 diagnosis	laterality	Not Specified
 diagnosis	laterality	Right
 diagnosis	laterality	Unknown
+diagnosis	submitted_diagnosis	ATRT, NOS or NEC
+diagnosis	submitted_diagnosis	ATRT-MYC
+diagnosis	submitted_diagnosis	ATRT-SHH
+diagnosis	submitted_diagnosis	ATRT-TYR
+diagnosis	submitted_diagnosis	Abdominal fibromatosis
+diagnosis	submitted_diagnosis	Acinar cell carcinoma
+diagnosis	submitted_diagnosis	Acute Leukemias of Ambiguous Lineage
+diagnosis	submitted_diagnosis	Acute Lymphoblastic Leukemia, NOS
+diagnosis	submitted_diagnosis	Acute erythroid leukemia
+diagnosis	submitted_diagnosis	Acute leukemia, NOS
+diagnosis	submitted_diagnosis	Acute megakaryoblastic leukemia
+diagnosis	submitted_diagnosis	Acute monocytic leukemia
+diagnosis	submitted_diagnosis	Acute myeloid leukemia (megakaryoblastic) with t(1;22)(p13;q13); RBM15-MKL1
+diagnosis	submitted_diagnosis	Acute myeloid leukemia with abnormal marrow eosinophils
+diagnosis	submitted_diagnosis	Acute myeloid leukemia with biallelic mutation of CEBPA
+diagnosis	submitted_diagnosis	Acute myeloid leukemia with mutated NPM1
+diagnosis	submitted_diagnosis	Acute myeloid leukemia with myelodysplasia-related changes
+diagnosis	submitted_diagnosis	Acute myeloid leukemia without maturation
+diagnosis	submitted_diagnosis	Acute myeloid leukemia, 11q23 abnormalities
+diagnosis	submitted_diagnosis	Acute myeloid leukemia, NOS
+diagnosis	submitted_diagnosis	Acute myeloid leukemia, minimal differentiation
+diagnosis	submitted_diagnosis	Acute myeloid leukemia, t(8;21)(q22;q22)
+diagnosis	submitted_diagnosis	Acute myelomonocytic leukemia, NOS
+diagnosis	submitted_diagnosis	Acute promyelocytic leukemia, t(15;17)(q22;q11-12)
+diagnosis	submitted_diagnosis	Adamantinoma of long bones
+diagnosis	submitted_diagnosis	Adamantinomatous craniopharyngioma
+diagnosis	submitted_diagnosis	Adenocarcinoma in adenomatous polyposis coli
+diagnosis	submitted_diagnosis	Adenocarcinoma in situ in adenomatous polyp
+diagnosis	submitted_diagnosis	Adenocarcinoma with mixed subtypes
+diagnosis	submitted_diagnosis	Adenocarcinoma with neuroendocrine differentiation
+diagnosis	submitted_diagnosis	Adenocarcinoma, NOS
+diagnosis	submitted_diagnosis	Adenocarcinoma, metastatic, NOS
+diagnosis	submitted_diagnosis	Adenoid cystic carcinoma
+diagnosis	submitted_diagnosis	Adenoma, NOS
+diagnosis	submitted_diagnosis	Adenosarcoma
+diagnosis	submitted_diagnosis	Adrenal cortical adenoma, NOS
+diagnosis	submitted_diagnosis	Adrenal cortical carcinoma
+diagnosis	submitted_diagnosis	Aggressive fibromatosis
+diagnosis	submitted_diagnosis	Alveolar rhabdomyosarcoma
+diagnosis	submitted_diagnosis	Alveolar soft part sarcoma
+diagnosis	submitted_diagnosis	Anaplastic Ependymoma, Posterior Fossa
+diagnosis	submitted_diagnosis	Anaplastic Large Cell Lymphoma
+diagnosis	submitted_diagnosis	Anaplastic Meningioma
+diagnosis	submitted_diagnosis	Anaplastic large cell lymphoma (ALK+/ALK-)
+diagnosis	submitted_diagnosis	Anaplastic large cell lymphoma, ALK positive
+diagnosis	submitted_diagnosis	Anaplastic large cell lymphoma, T-cell and Null-cell type
+diagnosis	submitted_diagnosis	Angiocentric glioma
+diagnosis	submitted_diagnosis	Angiocentric immunoproliferative lesion
+diagnosis	submitted_diagnosis	Angiomatoid fibrous histiocytoma
+diagnosis	submitted_diagnosis	Angiomyofibroblastoma
+diagnosis	submitted_diagnosis	Angiomyosarcoma
+diagnosis	submitted_diagnosis	Astroblastoma
+diagnosis	submitted_diagnosis	Astroblastoma, MN1-altered
+diagnosis	submitted_diagnosis	Astrocytoma, IDH-mutant
+diagnosis	submitted_diagnosis	Astrocytoma, NOS
+diagnosis	submitted_diagnosis	Astrocytoma, anaplastic, NOS
+diagnosis	submitted_diagnosis	Astrocytoma, benign
+diagnosis	submitted_diagnosis	Atypical Meningioma
+diagnosis	submitted_diagnosis	Atypical choroid plexus papilloma
+diagnosis	submitted_diagnosis	Atypical teratoid/rhabdoid tumor
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma with hyperdiploidy
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma with hypodiploidy (Hypodiploid ALL)
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUNX1)
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma with t(9;22)(q34;q11.2); BCR-ABL1
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearranged
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma, BCR-ABL1-like
+diagnosis	submitted_diagnosis	B lymphoblastic leukemia/lymphoma, NOS
+diagnosis	submitted_diagnosis	B-Cell Acute Lymphoblastic Leukemia, NOS
+diagnosis	submitted_diagnosis	Basal cell adenocarcinoma
+diagnosis	submitted_diagnosis	Basal cell carcinoma, NOS
+diagnosis	submitted_diagnosis	Benign cystic nephroma
+diagnosis	submitted_diagnosis	Blue nevus, malignant
+diagnosis	submitted_diagnosis	Burkitt Lymphoma
+diagnosis	submitted_diagnosis	Burkitt lymphoma, NOS
+diagnosis	submitted_diagnosis	CIC-rearranged sarcoma
+diagnosis	submitted_diagnosis	CNS Germ Cell Tumors
+diagnosis	submitted_diagnosis	CNS Germ Cell Tumors, NOS or NEC
+diagnosis	submitted_diagnosis	CNS Germinoma
+diagnosis	submitted_diagnosis	CNS Non-Germinomatous Germ Cell Tumor
+diagnosis	submitted_diagnosis	CNS Sarcoma
+diagnosis	submitted_diagnosis	CNS Sarcoma, NOS or NEC
+diagnosis	submitted_diagnosis	CNS embryonal tumor
+diagnosis	submitted_diagnosis	CNS embryonal tumor with rhabdoid features
+diagnosis	submitted_diagnosis	CNS embryonal tumor, NOS
+diagnosis	submitted_diagnosis	CNS embryonal tumor, NOS or NEC
+diagnosis	submitted_diagnosis	CNS neuroblastoma, FOXR2-activated
+diagnosis	submitted_diagnosis	CNS tumor with BCOR internal tandem duplication
+diagnosis	submitted_diagnosis	Calcifying nested stromal-epithelial tumor
+diagnosis	submitted_diagnosis	Carcinoid tumor of uncertain malignant potential
+diagnosis	submitted_diagnosis	Carcinoma ex pleomorphic adenoma
+diagnosis	submitted_diagnosis	Carcinoma in situ, NOS
+diagnosis	submitted_diagnosis	Carcinoma, NOS
+diagnosis	submitted_diagnosis	Carcinoma, diffuse type
+diagnosis	submitted_diagnosis	Carcinoma, metastatic, NOS
+diagnosis	submitted_diagnosis	Carcinoma, undifferentiated, NOS
+diagnosis	submitted_diagnosis	Carcinomatosis
+diagnosis	submitted_diagnosis	Carotid body paraganglioma
+diagnosis	submitted_diagnosis	Cavernous hemangioma
+diagnosis	submitted_diagnosis	Central neurocytoma
+diagnosis	submitted_diagnosis	Central osteosarcoma, NOS
+diagnosis	submitted_diagnosis	Central primitive neuroectodermal tumor
+diagnosis	submitted_diagnosis	Cerebellar liponeurocytoma
+diagnosis	submitted_diagnosis	Cholangiocarcinoma
+diagnosis	submitted_diagnosis	Chondroblastic osteosarcoma
+diagnosis	submitted_diagnosis	Chondroid chordoma
+diagnosis	submitted_diagnosis	Chondromyxoid fibroma
+diagnosis	submitted_diagnosis	Chondrosarcoma
+diagnosis	submitted_diagnosis	Chondrosarcoma, NOS
+diagnosis	submitted_diagnosis	Chordoid glioma
+diagnosis	submitted_diagnosis	Chordoma
+diagnosis	submitted_diagnosis	Chordoma (including poorly differentiated chordoma)
+diagnosis	submitted_diagnosis	Chordoma, NOS
+diagnosis	submitted_diagnosis	Choriocarcinoma
+diagnosis	submitted_diagnosis	Choriocarcinoma combined with other germ cell elements
+diagnosis	submitted_diagnosis	Choriocarcinoma, NOS
+diagnosis	submitted_diagnosis	Choroid Plexus tumors
+diagnosis	submitted_diagnosis	Choroid plexus carcinoma
+diagnosis	submitted_diagnosis	Choroid plexus papilloma
+diagnosis	submitted_diagnosis	Choroid plexus papilloma, NOS
+diagnosis	submitted_diagnosis	Choroid plexus tumors, NOS or NEC
+diagnosis	submitted_diagnosis	Chronic eosinophilic leukemia
+diagnosis	submitted_diagnosis	Chronic myelogenous leukemia, BCR/ABL positive
+diagnosis	submitted_diagnosis	Chronic myeloid leukemia, NOS
+diagnosis	submitted_diagnosis	Clear cell adenocarcinoma, NOS
+diagnosis	submitted_diagnosis	Clear cell adenoma
+diagnosis	submitted_diagnosis	Clear cell meningioma
+diagnosis	submitted_diagnosis	Clear cell sarcoma of kidney
+diagnosis	submitted_diagnosis	Clear cell sarcoma, NOS
+diagnosis	submitted_diagnosis	Composite Hodgkin and non-Hodgkin lymphoma
+diagnosis	submitted_diagnosis	Congenital melanocytic nevus, NOS
+diagnosis	submitted_diagnosis	Craniopharyngioma
+diagnosis	submitted_diagnosis	Craniopharyngioma, NOS
+diagnosis	submitted_diagnosis	Craniopharyngioma, NOS or NEC
+diagnosis	submitted_diagnosis	Craniopharyngioma, adamantinomatous
+diagnosis	submitted_diagnosis	Cribriform carcinoma, NOS
+diagnosis	submitted_diagnosis	Cribriform neuroepithelial tumor
+diagnosis	submitted_diagnosis	Cutaneous T-cell lymphoma, NOS
+diagnosis	submitted_diagnosis	Dedifferentiated liposarcoma
+diagnosis	submitted_diagnosis	Dermatofibrosarcoma protuberans, NOS
+diagnosis	submitted_diagnosis	Dermatofibrosarcoma protuberans, fibrosarcomatous
+diagnosis	submitted_diagnosis	Dermoid cyst, NOS
+diagnosis	submitted_diagnosis	Desmoplastic fibroma
+diagnosis	submitted_diagnosis	Desmoplastic infantile astrocytoma
+diagnosis	submitted_diagnosis	Desmoplastic infantile ganglioglioma / desmoplastic infantile astrocytoma
+diagnosis	submitted_diagnosis	Desmoplastic melanoma, NOS
+diagnosis	submitted_diagnosis	Desmoplastic myxoid tumor of the pineal region, SMARCB1-mutant
+diagnosis	submitted_diagnosis	Desmoplastic nodular medulloblastoma
+diagnosis	submitted_diagnosis	Desmoplastic small round cell tumor
+diagnosis	submitted_diagnosis	Diffuse astrocytoma, MYB- or MYBL1-altered
+diagnosis	submitted_diagnosis	Diffuse glioneuronal tumor with oligodendroglioma-like features and nuclear clusters
+diagnosis	submitted_diagnosis	Diffuse hemispheric glioma, H3 G34-mutant
+diagnosis	submitted_diagnosis	Diffuse large B-cell lymphoma, NOS
+diagnosis	submitted_diagnosis	Diffuse leptomeningeal glioneuronal tumor
+diagnosis	submitted_diagnosis	Diffuse low-grade glioma, MAPK pathway-altered
+diagnosis	submitted_diagnosis	Diffuse midline glioma, H3 K27-altered
+diagnosis	submitted_diagnosis	Diffuse midline glioma, H3 K27M-mutant
+diagnosis	submitted_diagnosis	Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype
+diagnosis	submitted_diagnosis	Dysembryoplastic neuroepithelial tumor
+diagnosis	submitted_diagnosis	Dysgerminoma
+diagnosis	submitted_diagnosis	Dysplastic cerebellar gangliocytoma (Lhermitte-Duclos disease)
+diagnosis	submitted_diagnosis	Embryonal carcinoma
+diagnosis	submitted_diagnosis	Embryonal carcinoma, NOS
+diagnosis	submitted_diagnosis	Embryonal rhabdomyosarcoma, NOS
+diagnosis	submitted_diagnosis	Embryonal sarcoma
+diagnosis	submitted_diagnosis	Embryonal tumor with multilayered rosettes
+diagnosis	submitted_diagnosis	Embryonal tumor with multilayered rosettes with C19MC alteration
+diagnosis	submitted_diagnosis	Embryonal tumor with multilayered rosettes, C19MC altered
+diagnosis	submitted_diagnosis	Embryonal tumor with multilayered rosettes, NOS
+diagnosis	submitted_diagnosis	Endometrioid adenocarcinoma, NOS
+diagnosis	submitted_diagnosis	Ependymoma
+diagnosis	submitted_diagnosis	Ependymoma, NOS
+diagnosis	submitted_diagnosis	Ependymoma, NOS or NEC
+diagnosis	submitted_diagnosis	Ependymoma, anaplastic
+diagnosis	submitted_diagnosis	Epithelial tumor, benign
+diagnosis	submitted_diagnosis	Epithelial-myoepithelial carcinoma
+diagnosis	submitted_diagnosis	Epithelioid hemangioendothelioma, NOS
+diagnosis	submitted_diagnosis	Epithelioid mesothelioma, malignant
+diagnosis	submitted_diagnosis	Epithelioid sarcoma, NOS
+diagnosis	submitted_diagnosis	Erdheim-Chester disease
+diagnosis	submitted_diagnosis	Ewing sarcoma
+diagnosis	submitted_diagnosis	Extraventricular neurocytoma
+diagnosis	submitted_diagnosis	Fibrillary astrocytoma
+diagnosis	submitted_diagnosis	Fibroblastic osteosarcoma
+diagnosis	submitted_diagnosis	Fibroma, NOS
+diagnosis	submitted_diagnosis	Fibrosarcoma, NOS
+diagnosis	submitted_diagnosis	Follicular adenocarcinoma, well differentiated
+diagnosis	submitted_diagnosis	Follicular adenoma, NOS
+diagnosis	submitted_diagnosis	Follicular carcinoma, minimally invasive
+diagnosis	submitted_diagnosis	Follicular lymphoma, NOS
+diagnosis	submitted_diagnosis	Gangliocytoma
+diagnosis	submitted_diagnosis	Gangliocytoma, NOS
+diagnosis	submitted_diagnosis	Ganglioglioma
+diagnosis	submitted_diagnosis	Ganglioglioma, NOS
+diagnosis	submitted_diagnosis	Ganglioglioma, anaplastic
+diagnosis	submitted_diagnosis	Ganglioglioma, benign
+diagnosis	submitted_diagnosis	Ganglioneuroblastoma
+diagnosis	submitted_diagnosis	Ganglioneuroma
+diagnosis	submitted_diagnosis	Gastrointestinal stromal tumor
+diagnosis	submitted_diagnosis	Gastrointestinal stromal tumor, NOS
+diagnosis	submitted_diagnosis	Gastrointestinal stromal tumor, benign
+diagnosis	submitted_diagnosis	Genital rhabdomyoma
+diagnosis	submitted_diagnosis	Germ cell tumor, nonseminomatous
+diagnosis	submitted_diagnosis	Germinoma
+diagnosis	submitted_diagnosis	Giant cell glioblastoma
+diagnosis	submitted_diagnosis	Giant cell tumor of bone, NOS
+diagnosis	submitted_diagnosis	Giant cell tumor of bone, malignant
+diagnosis	submitted_diagnosis	Giant cell tumor of soft parts, NOS
+diagnosis	submitted_diagnosis	Glioblastoma
+diagnosis	submitted_diagnosis	Glioblastoma, IDH-wildtype
+diagnosis	submitted_diagnosis	Glioblastoma, NOS
+diagnosis	submitted_diagnosis	Glioma, malignant
+diagnosis	submitted_diagnosis	Gliomatosis cerebri
+diagnosis	submitted_diagnosis	Glioneuronal and neuronal tumors
+diagnosis	submitted_diagnosis	Glioneuronal and neuronal tumors, NOS or NEC
+diagnosis	submitted_diagnosis	Gliosarcoma
+diagnosis	submitted_diagnosis	Glomus tumor, malignant
+diagnosis	submitted_diagnosis	Granular cell tumor, NOS
+diagnosis	submitted_diagnosis	Granulosa cell tumor, adult type
+diagnosis	submitted_diagnosis	Granulosa cell tumor, juvenile
+diagnosis	submitted_diagnosis	Granulosa cell tumor, malignant
+diagnosis	submitted_diagnosis	HHV8 positive diffuse large B-cell lymphoma
+diagnosis	submitted_diagnosis	Healthy Control
+diagnosis	submitted_diagnosis	Hemangioblastoma
+diagnosis	submitted_diagnosis	Hemangioendothelioma, NOS
+diagnosis	submitted_diagnosis	Hemangioendothelioma, malignant
+diagnosis	submitted_diagnosis	Hemangioma, NOS
+diagnosis	submitted_diagnosis	Hemangiomas and vascular malformations
+diagnosis	submitted_diagnosis	Hemangiosarcoma
+diagnosis	submitted_diagnosis	Hepatoblastoma, NOS
+diagnosis	submitted_diagnosis	Hepatocellular carcinoma, NOS
+diagnosis	submitted_diagnosis	Hepatocellular carcinoma, fibrolamellar
+diagnosis	submitted_diagnosis	Hepatosplenic T-cell lymphoma
+diagnosis	submitted_diagnosis	High-Grade Glioma
+diagnosis	submitted_diagnosis	High-grade astrocytoma with piloid features
+diagnosis	submitted_diagnosis	High-grade glioma, NOS or NEC
+diagnosis	submitted_diagnosis	Histiocytic sarcoma
+diagnosis	submitted_diagnosis	Hodgkin lymphoma, NOS
+diagnosis	submitted_diagnosis	Hodgkin lymphoma, nodular sclerosis, NOS
+diagnosis	submitted_diagnosis	Hybrid nerve sheath tumor
+diagnosis	submitted_diagnosis	Hypernephroid tumor
+diagnosis	submitted_diagnosis	Immature teratoma
+diagnosis	submitted_diagnosis	Immunodeficiency-associated CNS lymphoma
+diagnosis	submitted_diagnosis	Infant-type hemispheric glioma
+diagnosis	submitted_diagnosis	Infantile fibrosarcoma
+diagnosis	submitted_diagnosis	Intracranial mesenchymal tumor, FET-CREB fusion-positive
+diagnosis	submitted_diagnosis	Intraductal papillary mucinous neoplasm with an associated invasive carcinoma
+diagnosis	submitted_diagnosis	Intravascular large B-cell lymphoma
+diagnosis	submitted_diagnosis	Juvenile myelomonocytic leukemia, NOS
+diagnosis	submitted_diagnosis	Juvenile xanthogranuloma
+diagnosis	submitted_diagnosis	Lactotroph adenoma
+diagnosis	submitted_diagnosis	Langerhans cell histiocytosis
+diagnosis	submitted_diagnosis	Langerhans cell histiocytosis, NOS
+diagnosis	submitted_diagnosis	Langerhans cell histiocytosis, disseminated
+diagnosis	submitted_diagnosis	Large cell medulloblastoma
+diagnosis	submitted_diagnosis	Leiomyoma, NOS
+diagnosis	submitted_diagnosis	Leiomyosarcoma, NOS
+diagnosis	submitted_diagnosis	Lentiginous melanocytic nevus
+diagnosis	submitted_diagnosis	Leukemia, NOS
+diagnosis	submitted_diagnosis	Leydig cell tumor, NOS
+diagnosis	submitted_diagnosis	Leydig cell tumor, benign
+diagnosis	submitted_diagnosis	Lipoblastomatosis
+diagnosis	submitted_diagnosis	Lipofibromatosis
+diagnosis	submitted_diagnosis	Liposarcoma, NOS
+diagnosis	submitted_diagnosis	Lobular carcinoma in situ, NOS
+diagnosis	submitted_diagnosis	Low cumulative sun damage melanoma
+diagnosis	submitted_diagnosis	Low-Grade Glioma
+diagnosis	submitted_diagnosis	Low-grade glioma, NOS or NEC
+diagnosis	submitted_diagnosis	Lymphangioma, NOS
+diagnosis	submitted_diagnosis	Lymphoepithelial carcinoma
+diagnosis	submitted_diagnosis	Lymphoid leukemia, NOS
+diagnosis	submitted_diagnosis	Lymphomatoid granulomatosis
+diagnosis	submitted_diagnosis	Lymphoproliferative disorder, NOS
+diagnosis	submitted_diagnosis	MALT lymphoma of the dura
+diagnosis	submitted_diagnosis	Malignant eccrine spiradenoma
+diagnosis	submitted_diagnosis	Malignant histiocytosis
+diagnosis	submitted_diagnosis	Malignant lymphoma, NOS
+diagnosis	submitted_diagnosis	Malignant lymphoma, non-Hodgkin, NOS
+diagnosis	submitted_diagnosis	Malignant melanoma arising in giant congenital nevus
+diagnosis	submitted_diagnosis	Malignant melanoma, NOS
+diagnosis	submitted_diagnosis	Malignant melanotic nerve sheath tumor
+diagnosis	submitted_diagnosis	Malignant peripheral nerve sheath tumor
+diagnosis	submitted_diagnosis	Malignant peripheral nerve sheath tumor with rhabdomyoblastic differentiation
+diagnosis	submitted_diagnosis	Malignant peripheral nerve sheath tumor, NOS
+diagnosis	submitted_diagnosis	Malignant tumor, small cell type
+diagnosis	submitted_diagnosis	Malignant tumor, spindle cell type
+diagnosis	submitted_diagnosis	Marginal zone B-cell lymphoma, NOS
+diagnosis	submitted_diagnosis	Mast cell leukemia
+diagnosis	submitted_diagnosis	Mature teratoma
+diagnosis	submitted_diagnosis	Mediastinal large B-cell lymphoma
+diagnosis	submitted_diagnosis	Medullary carcinoma, NOS
+diagnosis	submitted_diagnosis	Medullary thyroid carcinoma
+diagnosis	submitted_diagnosis	Medulloblastoma
+diagnosis	submitted_diagnosis	Medulloblastoma, Group 3
+diagnosis	submitted_diagnosis	Medulloblastoma, Group 4
+diagnosis	submitted_diagnosis	Medulloblastoma, NOS
+diagnosis	submitted_diagnosis	Medulloblastoma, NOS or NEC
+diagnosis	submitted_diagnosis	Medulloblastoma, SHH-activated and TP53-mutant
+diagnosis	submitted_diagnosis	Medulloblastoma, SHH-activated and TP53-wildtype
+diagnosis	submitted_diagnosis	Medulloblastoma, WNT-activated
+diagnosis	submitted_diagnosis	Medulloblastoma, WNT-activated, NOS
+diagnosis	submitted_diagnosis	Medulloblastoma, non-WNT/non-SHH
+diagnosis	submitted_diagnosis	Medulloepithelioma, NOS
+diagnosis	submitted_diagnosis	Melanoma in situ
+diagnosis	submitted_diagnosis	Melanotic neuroectodermal tumor
+diagnosis	submitted_diagnosis	Melanotic schwannoma
+diagnosis	submitted_diagnosis	Meningeal melanocytic neoplasms (includes melanoma)
+diagnosis	submitted_diagnosis	Meningeal melanocytoma
+diagnosis	submitted_diagnosis	Meningeal melanocytoma and meningeal melanoma
+diagnosis	submitted_diagnosis	Meningeal melanocytosis and meningeal melanomatosis
+diagnosis	submitted_diagnosis	Meningeal melanomatosis
+diagnosis	submitted_diagnosis	Meningioma
+diagnosis	submitted_diagnosis	Meningioma, NOS
+diagnosis	submitted_diagnosis	Meningioma, malignant
+diagnosis	submitted_diagnosis	Meningiomatosis, NOS
+diagnosis	submitted_diagnosis	Meningothelial meningioma
+diagnosis	submitted_diagnosis	Merkel cell carcinoma
+diagnosis	submitted_diagnosis	Mesenchymal chondrosarcoma
+diagnosis	submitted_diagnosis	Mesenchymoma, NOS
+diagnosis	submitted_diagnosis	Mesoblastic nephroma
+diagnosis	submitted_diagnosis	Mesothelioma, biphasic, malignant
+diagnosis	submitted_diagnosis	Metastases to the brain and spinal cord parenchyma
+diagnosis	submitted_diagnosis	Metastases to the meninges
+diagnosis	submitted_diagnosis	Metastatic signet ring cell carcinoma
+diagnosis	submitted_diagnosis	Mixed germ cell tumor
+diagnosis	submitted_diagnosis	Mixed phenotype acute leukemia with t(v;11q23); MLL rearranged
+diagnosis	submitted_diagnosis	Mixed phenotype acute leukemia, B/myeloid, NOS
+diagnosis	submitted_diagnosis	Mixed phenotype acute leukemia, T/myeloid, NOS
+diagnosis	submitted_diagnosis	Mixed type rhabdomyosarcoma
+diagnosis	submitted_diagnosis	Mucinous adenocarcinoma
+diagnosis	submitted_diagnosis	Mucinous adenoma
+diagnosis	submitted_diagnosis	Mucinous cystadenocarcinoma, NOS
+diagnosis	submitted_diagnosis	Mucinous cystic tumor of borderline malignancy
+diagnosis	submitted_diagnosis	Mucoepidermoid carcinoma
+diagnosis	submitted_diagnosis	Multinodular and vacuolating neuronal tumor
+diagnosis	submitted_diagnosis	Mycosis fungoides
+diagnosis	submitted_diagnosis	Myelodysplastic syndrome with excess blasts
+diagnosis	submitted_diagnosis	Myelodysplastic syndrome with multilineage dysplasia
+diagnosis	submitted_diagnosis	Myelodysplastic syndrome with single lineage dysplasia
+diagnosis	submitted_diagnosis	Myelodysplastic syndrome, NOS
+diagnosis	submitted_diagnosis	Myeloid leukemia associated with Down syndrome
+diagnosis	submitted_diagnosis	Myeloid leukemia, NOS
+diagnosis	submitted_diagnosis	Myeloid sarcoma
+diagnosis	submitted_diagnosis	Myeloproliferative neoplasm, unclassifiable
+diagnosis	submitted_diagnosis	Myoepithelial carcinoma
+diagnosis	submitted_diagnosis	Myofibroblastic sarcoma
+diagnosis	submitted_diagnosis	Myofibroblastic tumor, NOS
+diagnosis	submitted_diagnosis	Myofibroma
+diagnosis	submitted_diagnosis	Myofibromatosis
+diagnosis	submitted_diagnosis	Myxofibrosarcoma
+diagnosis	submitted_diagnosis	Myxoid chondrosarcoma
+diagnosis	submitted_diagnosis	Myxoid glioneuronal tumor
+diagnosis	submitted_diagnosis	Myxoid liposarcoma
+diagnosis	submitted_diagnosis	Myxopapillary ependymoma
+diagnosis	submitted_diagnosis	Myxosarcoma
+diagnosis	submitted_diagnosis	Neoplasm, benign
+diagnosis	submitted_diagnosis	Neoplasm, malignant
+diagnosis	submitted_diagnosis	Neoplasm, malignant, uncertain whether primary or metastatic
+diagnosis	submitted_diagnosis	Neoplasm, metastatic
+diagnosis	submitted_diagnosis	Neoplasm, uncertain whether benign or malignant
+diagnosis	submitted_diagnosis	Nephroblastoma, NOS
+diagnosis	submitted_diagnosis	Neuroblastoma
+diagnosis	submitted_diagnosis	Neuroblastoma, NOS
+diagnosis	submitted_diagnosis	Neuroendocrine carcinoma, NOS
+diagnosis	submitted_diagnosis	Neuroendocrine tumor, NOS
+diagnosis	submitted_diagnosis	Neuroepithelioma, NOS
+diagnosis	submitted_diagnosis	Neurofibroma
+diagnosis	submitted_diagnosis	Neurofibroma, NOS
+diagnosis	submitted_diagnosis	Neurofibromatosis, NOS
+diagnosis	submitted_diagnosis	Neuroma, NOS
+diagnosis	submitted_diagnosis	Nodular melanoma
+diagnosis	submitted_diagnosis	Non-invasive follicular thyroid neoplasm with papillary-like nuclear features (NIFTP)
+diagnosis	submitted_diagnosis	Normal
+diagnosis	submitted_diagnosis	Not Reported
+diagnosis	submitted_diagnosis	Nuclear protein in testis (NUT)-associated carcinoma
+diagnosis	submitted_diagnosis	Odontogenic carcinosarcoma
+diagnosis	submitted_diagnosis	Odontogenic tumor, malignant
+diagnosis	submitted_diagnosis	Olfactory neuroblastoma
+diagnosis	submitted_diagnosis	Olfactory neurocytoma
+diagnosis	submitted_diagnosis	Oligoastrocytoma, NOS
+diagnosis	submitted_diagnosis	Oligodendroglioma, IDH-mutant, and 1p/19q-codeleted
+diagnosis	submitted_diagnosis	Oligodendroglioma, NOS
+diagnosis	submitted_diagnosis	Oligodendroglioma, anaplastic, NOS
+diagnosis	submitted_diagnosis	Ossifying fibromyxoid tumor, NOS
+diagnosis	submitted_diagnosis	Osteoblastoma, NOS
+diagnosis	submitted_diagnosis	Osteosarcoma
+diagnosis	submitted_diagnosis	Osteosarcoma, NOS
+diagnosis	submitted_diagnosis	Other
+diagnosis	submitted_diagnosis	Other CNS Embryonal tumors
+diagnosis	submitted_diagnosis	Other CNS tumor, NOS or NEC
+diagnosis	submitted_diagnosis	Other low-grade B-cell lymphomas of the CNS
+diagnosis	submitted_diagnosis	Other, NOS or NEC
+diagnosis	submitted_diagnosis	Pancreatic neuroendocrine tumor, nonfunctioning
+diagnosis	submitted_diagnosis	Pancreatoblastoma
+diagnosis	submitted_diagnosis	Papillary adenocarcinoma, NOS
+diagnosis	submitted_diagnosis	Papillary carcinoma, NOS
+diagnosis	submitted_diagnosis	Papillary carcinoma, encapsulated of thyroid
+diagnosis	submitted_diagnosis	Papillary carcinoma, follicular variant
+diagnosis	submitted_diagnosis	Papillary craniopharyngioma
+diagnosis	submitted_diagnosis	Papillary ependymoma
+diagnosis	submitted_diagnosis	Papillary glioneuronal tumor
+diagnosis	submitted_diagnosis	Papillary intralymphatic angioendothelioma
+diagnosis	submitted_diagnosis	Papillary microcarcinoma
+diagnosis	submitted_diagnosis	Papillary tumor of pineal region
+diagnosis	submitted_diagnosis	Papillary tumor of the pineal region
+diagnosis	submitted_diagnosis	Papillary urothelial carcinoma, non-invasive
+diagnosis	submitted_diagnosis	Paraganglioma
+diagnosis	submitted_diagnosis	Paraganglioma, NOS
+diagnosis	submitted_diagnosis	Paraganglioma, malignant
+diagnosis	submitted_diagnosis	Parosteal osteosarcoma
+diagnosis	submitted_diagnosis	Perineurioma
+diagnosis	submitted_diagnosis	Periosteal osteosarcoma
+diagnosis	submitted_diagnosis	Perivascular epithelioid tumor, malignant
+diagnosis	submitted_diagnosis	Pheochromocytoma, NOS
+diagnosis	submitted_diagnosis	Phyllodes tumor, benign
+diagnosis	submitted_diagnosis	Pigmented dermatofibrosarcoma protuberans
+diagnosis	submitted_diagnosis	Pigmented nevus, NOS
+diagnosis	submitted_diagnosis	Pilocytic astrocytoma
+diagnosis	submitted_diagnosis	Pilomyxoid astrocytoma
+diagnosis	submitted_diagnosis	Pineal parenchymal tumor of intermediate differentiation
+diagnosis	submitted_diagnosis	Pinealoma
+diagnosis	submitted_diagnosis	Pineoblastoma
+diagnosis	submitted_diagnosis	Pineocytoma
+diagnosis	submitted_diagnosis	Pituicytoma, granular cell tumor of the sellar region, and spindle cell oncocytoma
+diagnosis	submitted_diagnosis	Pituitary adenoma, NOS
+diagnosis	submitted_diagnosis	Pituitary adenoma/PitNET
+diagnosis	submitted_diagnosis	Pituitary blastoma
+diagnosis	submitted_diagnosis	Plasmacytoma, extramedullary
+diagnosis	submitted_diagnosis	Pleomorphic liposarcoma
+diagnosis	submitted_diagnosis	Pleomorphic rhabdomyosarcoma, adult type
+diagnosis	submitted_diagnosis	Pleomorphic xanthoastrocytoma
+diagnosis	submitted_diagnosis	Pleomorphic xanthoastrocytoma, NOS
+diagnosis	submitted_diagnosis	Pleuropulmonary blastoma
+diagnosis	submitted_diagnosis	Plexiform fibrohistiocytic tumor
+diagnosis	submitted_diagnosis	Plexiform neurofibroma
+diagnosis	submitted_diagnosis	Polymorphous low-grade neuroepithelial tumor of the young
+diagnosis	submitted_diagnosis	Posterior fossa ependymoma
+diagnosis	submitted_diagnosis	Posterior fossa ependymoma, NOS or NEC
+diagnosis	submitted_diagnosis	Posterior fossa ependymoma, group PFA
+diagnosis	submitted_diagnosis	Posterior fossa ependymoma, group PFB
+diagnosis	submitted_diagnosis	Precursor B-cell lymphoblastic leukemia
+diagnosis	submitted_diagnosis	Precursor T-cell lymphoblastic leukemia
+diagnosis	submitted_diagnosis	Precursor cell lymphoblastic leukemia, NOS
+diagnosis	submitted_diagnosis	Precursor cell lymphoblastic lymphoma, NOS
+diagnosis	submitted_diagnosis	Primary cutaneous CD30 positive T-cell lymphoproliferative disorder
+diagnosis	submitted_diagnosis	Primary cutaneous follicle center lymphoma
+diagnosis	submitted_diagnosis	Primary diffuse large B-cell lymphoma of the CNS
+diagnosis	submitted_diagnosis	Primary intracranial sarcoma, DICER1-mutant
+diagnosis	submitted_diagnosis	Primitive Neuroectodermal Tumor
+diagnosis	submitted_diagnosis	Proliferative dermal lesion in congenital nevus
+diagnosis	submitted_diagnosis	Renal cell carcinoma, NOS
+diagnosis	submitted_diagnosis	Retinoblastoma, NOS
+diagnosis	submitted_diagnosis	Retinoblastoma, diffuse
+diagnosis	submitted_diagnosis	Rhabdoid tumor, NOS
+diagnosis	submitted_diagnosis	Rhabdomyoma, NOS
+diagnosis	submitted_diagnosis	Rhabdomyosarcoma
+diagnosis	submitted_diagnosis	Rhabdomyosarcoma, NOS
+diagnosis	submitted_diagnosis	Rosai-Dorfman disease
+diagnosis	submitted_diagnosis	Rosette-forming glioneuronal tumor
+diagnosis	submitted_diagnosis	Sarcoma, NOS
+diagnosis	submitted_diagnosis	Schwannoma
+diagnosis	submitted_diagnosis	Schwannoma, NOS
+diagnosis	submitted_diagnosis	Sclerosing stromal tumor
+diagnosis	submitted_diagnosis	Secretory carcinoma
+diagnosis	submitted_diagnosis	Seminoma, NOS
+diagnosis	submitted_diagnosis	Serous carcinoma, NOS
+diagnosis	submitted_diagnosis	Sertoli cell tumor, NOS
+diagnosis	submitted_diagnosis	Sertoli-Leydig cell tumor of intermediate differentiation, NOS
+diagnosis	submitted_diagnosis	Sertoli-Leydig cell tumor, intermediate differentiation, with heterologous elements
+diagnosis	submitted_diagnosis	Sertoli-Leydig cell tumor, poorly differentiated
+diagnosis	submitted_diagnosis	Sertoli-Leydig cell tumor, poorly differentiated, with heterologous elements
+diagnosis	submitted_diagnosis	Sex cord-gonadal stromal tumor, NOS
+diagnosis	submitted_diagnosis	Sex cord-gonadal stromal tumor, incompletely differentiated
+diagnosis	submitted_diagnosis	Sex cord-gonadal stromal tumor, mixed forms
+diagnosis	submitted_diagnosis	Signet ring cell carcinoma
+diagnosis	submitted_diagnosis	Skin appendage adenoma
+diagnosis	submitted_diagnosis	Small cell carcinoma, NOS
+diagnosis	submitted_diagnosis	Small cell carcinoma, intermediate cell
+diagnosis	submitted_diagnosis	Small cell sarcoma
+diagnosis	submitted_diagnosis	Smooth muscle tumor of uncertain malignant potential
+diagnosis	submitted_diagnosis	Soft tissue tumor, benign
+diagnosis	submitted_diagnosis	Solid pseudopapillary neoplasm of pancreas
+diagnosis	submitted_diagnosis	Solid pseudopapillary tumor of ovary
+diagnosis	submitted_diagnosis	Solitary fibrous tumor
+diagnosis	submitted_diagnosis	Solitary fibrous tumor, NOS
+diagnosis	submitted_diagnosis	Solitary fibrous tumor/Hemangiopericytoma, grade 1
+diagnosis	submitted_diagnosis	Spinal ependymoma
+diagnosis	submitted_diagnosis	Spinal ependymoma, MYCN-amplified
+diagnosis	submitted_diagnosis	Spinal ependymoma, NOS or NEC
+diagnosis	submitted_diagnosis	Spindle cell carcinoma, NOS
+diagnosis	submitted_diagnosis	Spindle cell rhabdomyosarcoma
+diagnosis	submitted_diagnosis	Spindle cell sarcoma
+diagnosis	submitted_diagnosis	Squamous cell carcinoma in situ, NOS
+diagnosis	submitted_diagnosis	Squamous cell carcinoma, NOS
+diagnosis	submitted_diagnosis	Squamous cell carcinoma, large cell, nonkeratinizing, NOS
+diagnosis	submitted_diagnosis	Squamous cell carcinoma, metastatic, NOS
+diagnosis	submitted_diagnosis	Squamous cell carcinoma, small cell, nonkeratinizing
+diagnosis	submitted_diagnosis	Stromal tumor, NOS
+diagnosis	submitted_diagnosis	Subcutaneous panniculitis-like T-cell lymphoma
+diagnosis	submitted_diagnosis	Subependymal giant cell astrocytoma
+diagnosis	submitted_diagnosis	Subependymoma
+diagnosis	submitted_diagnosis	Supratentorial ependymoma
+diagnosis	submitted_diagnosis	Supratentorial ependymoma, NOS or NEC
+diagnosis	submitted_diagnosis	Supratentorial ependymoma, YAP1 fusion-positive
+diagnosis	submitted_diagnosis	Supratentorial ependymoma, ZFTA fusion-positive
+diagnosis	submitted_diagnosis	Sympathetic paraganglioma
+diagnosis	submitted_diagnosis	Synovial sarcoma, NOS
+diagnosis	submitted_diagnosis	Synovial sarcoma, biphasic
+diagnosis	submitted_diagnosis	Synovial sarcoma, spindle cell
+diagnosis	submitted_diagnosis	T lymphoblastic leukemia/lymphoma
+diagnosis	submitted_diagnosis	T-Cell Acute Lymphoblastic Leukemia, NOS
+diagnosis	submitted_diagnosis	T-cell and NK/T-cell lymphomas
+diagnosis	submitted_diagnosis	T-cell/histiocyte rich large B-cell lymphoma
+diagnosis	submitted_diagnosis	Telangiectatic osteosarcoma
+diagnosis	submitted_diagnosis	Tenosynovial giant cell tumor, NOS
+diagnosis	submitted_diagnosis	Teratocarcinoma
+diagnosis	submitted_diagnosis	Teratoma with malignant transformation
+diagnosis	submitted_diagnosis	Teratoma with somatic-type malignancy
+diagnosis	submitted_diagnosis	Teratoma, NOS
+diagnosis	submitted_diagnosis	Teratoma, benign
+diagnosis	submitted_diagnosis	Teratoma, malignant, NOS
+diagnosis	submitted_diagnosis	Thecoma, luteinized
+diagnosis	submitted_diagnosis	Therapy-related myelodysplastic syndrome, NOS
+diagnosis	submitted_diagnosis	Therapy-related myeloid neoplasm
+diagnosis	submitted_diagnosis	Thymic carcinoma, NOS
+diagnosis	submitted_diagnosis	Thymoma, NOS
+diagnosis	submitted_diagnosis	Transient abnormal myelopoiesis
+diagnosis	submitted_diagnosis	Transitional cell carcinoma, NOS
+diagnosis	submitted_diagnosis	Tumor cells, benign
+diagnosis	submitted_diagnosis	Tumor cells, malignant
+diagnosis	submitted_diagnosis	Tumor cells, uncertain whether benign or malignant
+diagnosis	submitted_diagnosis	Undifferentiated sarcoma
+diagnosis	submitted_diagnosis	Unknown
+diagnosis	submitted_diagnosis	Unknown, to be completed later
+diagnosis	submitted_diagnosis	Vipoma
+diagnosis	submitted_diagnosis	Wilms
+diagnosis	submitted_diagnosis	Yolk sac tumor
+diagnosis	submitted_diagnosis	Yolk sac tumor, NOS
+diagnosis	submitted_diagnosis	[---- Miscellaneous ----]
+diagnosis	submitted_diagnosis	see diagnosis_comment
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS1
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS2
 diagnosis	toronto_childhood_cancer_staging	Acute lymphoblastic leukemia CNS3
@@ -3311,35 +3851,35 @@ treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_cell_line	cell_line	sample	NA	NA
 of_cell_line	cell_line	study	NA	NA
+of_cell_line	cell_line	sample	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
 of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
 of_generic_file	generic_file	sample	NA	NA
 of_generic_file	generic_file	participant	NA	NA
 of_generic_file	generic_file	study	NA	NA
-of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
-of_laboratory_test	laboratory_test	sample	NA	NA
+of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
+of_laboratory_test	laboratory_test	sample	NA	NA
 of_medical_history	medical_history	participant	NA	NA
 of_methylation_array_file	methylation_array_file	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_pathology_file	pathology_file	sample	NA	NA
-of_pdx	pdx	study	NA	NA
 of_pdx	pdx	sample	NA	NA
+of_pdx	pdx	study	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
-of_sample	sample	pdx	NA	NA
 of_sample	sample	cell_line	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	pdx	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
@@ -3347,8 +3887,8 @@ of_study_funding	study_funding	study	NA	NA
 of_study_personnel	study_personnel	study	NA	NA
 of_survival	survival	participant	NA	NA
 of_synonym	synonym	participant	NA	NA
-of_synonym	synonym	sample	NA	NA
 of_synonym	synonym	study	NA	NA
+of_synonym	synonym	sample	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
@@ -3592,6 +4132,8 @@ study_period_start	The year in which the study started.
 study_period_stop	The year in which the study ended.
 study_personnel_id	A sequence of characters used to uniquely identify, name, or characterize the person who performs a particular role within the context of a specific study.
 study_status	The status of the study.
+submitted_anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
+submitted_diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
 survival_id	nnn
 synonym_id	A sequence of characters used to identify, name, or characterize a backup sequence of characters used to identify an entity.
 test	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
