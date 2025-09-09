@@ -84,6 +84,7 @@ Nodes:
       Template: 'Yes'
     Props:
       - diagnosis_id
+      - submitted_diagnosis
       - diagnosis
       - diagnosis_category
       - diagnosis_classification_system
@@ -91,6 +92,7 @@ Nodes:
       - diagnosis_comment
       - disease_phase
       - tumor_spatial_extent
+      - submitted_anatomic_site
       - anatomic_site
       - age_at_diagnosis
       - toronto_childhood_cancer_staging
