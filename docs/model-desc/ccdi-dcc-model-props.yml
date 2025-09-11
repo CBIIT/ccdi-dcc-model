@@ -1441,7 +1441,7 @@ PropDefinitions:
         Code: '12307007'
         Value: Subject Age at Imaging Day Count
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Private: false  
   #radiology_file
@@ -1587,7 +1587,7 @@ PropDefinitions:
         Code: '14589582'
         Value: Subject Age at Exposure Day Count
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Private: false
   #exposure
@@ -1959,7 +1959,7 @@ PropDefinitions:
         Code: '12306025'
         Value: Subject Age at Vitals Day Count
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Private: false
   #survival
@@ -2005,7 +2005,7 @@ PropDefinitions:
         Code: '3229334'
         Value: Study End Point Event Occurrence Day Count
         Version: "1.10"
-    Type: integer
+    Type: number
     Req: false
     Private: false
   #survival
@@ -5063,7 +5063,7 @@ PropDefinitions:
         Code: '15019300'
         Value: Subject Age at Diagnosis Day Count
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Private: false
   #diagnosis
@@ -6406,7 +6406,7 @@ PropDefinitions:
         Code: '14473376'
         Value: Subject Age At Specimen Collection Day Count
         Version: "2.00"
-    Type: integer
+    Type: number
     Req: true  
     Private: false
   #diagnosis
@@ -7298,7 +7298,7 @@ PropDefinitions:
         Code: '12304720'
         Value: Subject Age at Start of Treatment Course Day Count
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Private: false
   #treatment
@@ -7309,7 +7309,7 @@ PropDefinitions:
         Code: '12304723'
         Value: Subject Age at End of Treatment Course Day Count
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Private: false  
   #treatment
@@ -7366,7 +7366,7 @@ PropDefinitions:
         Code: '5432686'
         Value: Specimen Tumor Cell Percentage Value
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: false
     Private: false
   #sample
@@ -7377,7 +7377,7 @@ PropDefinitions:
         Code: '13368719'
         Value: Disease Response Percent Necrosis Percentage Value
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: false
     Private: false
   #pathology_file
@@ -13153,7 +13153,7 @@ PropDefinitions:
         Code: '12326598'
         Value: Subject Age at Response Assessment Day Count
         Version: "1.00"
-    Type: integer
+    Type: number
     Req: true
     Strict: false
     Private: false
