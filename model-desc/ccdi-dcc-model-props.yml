@@ -4,7 +4,7 @@ PropDefinitions:
     Desc: A sequence of characters used to uniquely identify, name, or characterize the presence and nature of a consent group in a study.
     Term:
       - Origin: caDSR
-        Code: 'TBD'
+        Code: '16306756'
         Value: Study Consent Group Identifier
         Version: "1.00"
     Type: string
@@ -1697,7 +1697,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2001716'
         Value: Smoking Use Average Number
-        Version: "1.00"
+        Version: "4.00"
     Type: integer
     Req: false
     Private: false
@@ -5013,6 +5013,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '15026558'
         Value: French-American-British Classification
+        Version: "1.00"
       - Origin: NCIt
         Code: 'C159157'
         Value: WHO AML Classification of Tumors
