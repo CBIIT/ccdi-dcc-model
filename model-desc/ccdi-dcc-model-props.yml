@@ -1385,7 +1385,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '2773166'
         Value: Cell Specimen Passage Number
-        Version: 1.00
+        Version: "1.00"
     Type: number
     Reg: false
     Private: false
