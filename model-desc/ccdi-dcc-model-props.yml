@@ -1367,6 +1367,7 @@ PropDefinitions:
     Req: true
     Key: true
     Private: false
+  #cell_line
   source:
     Desc: The words by which a permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space is known.
     Term:
@@ -1376,7 +1377,18 @@ PropDefinitions:
         Version: "1.00"
     Type: string
     Req: true
-    Private: false  
+    Private: false
+  #cell_line
+  cell_line_passage_number:
+    Desc: Removal of a cell culture from the culture vessel with a subculture (passage) process, in order to keep the cells at a sufficiently low density to stimulate further growth.:A numeral or string of numerals expressing value, quantity, or identification
+    Term:
+      - Origin: caDSR
+        Code: '2773166'
+        Value: Cell Specimen Passage Number
+        Version: 1.00
+    Type: number
+    Reg: false
+    Private: false
   #pathology_file
   magnification:
     Desc: A floating point numerical value describing the nominal magnification of an optical instrument using a combination of lenses to produce an image.
