@@ -11,7 +11,7 @@ Nodes:
     Props:
       - cell_line_id
       - source
-      - passage_number
+      - cell_line_passage_number
       - id
   clinical_measure_file: # 09.20.22 pdunn
     Desc: "The clinical measure file node is comprised of properties which describe file metadata for clinical and study level files."
