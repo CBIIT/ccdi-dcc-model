@@ -5015,7 +5015,7 @@ PropDefinitions:
       value_type: list
       item_type:
         - 'ICD-O-3.2'
-        - 'MCI CNS Integrated Diagnosis'
+        - 'CNS Category'
         - 'WHO CNS5'
         - 'Indication for Study'
         - 'French-American-British Classification'
