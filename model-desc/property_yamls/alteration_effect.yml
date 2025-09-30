@@ -1,0 +1,17 @@
+PropDefinitions:
+  alteration_effect:
+    - "Amplification"
+    - "Frameshift"
+    - "Gene Fusion"
+    - "Missense"
+    - "Monosomy"
+    - "None (inframe)"
+    - "Nullisomy"
+    - "Splice Acceptor"
+    - "Splice Donor"
+    - "Start Lost"
+    - "Stop Gained"
+    - "Stop Lost"
+    - "Synonymous"
+    - "Trisomy"
+    - "Not Reported"

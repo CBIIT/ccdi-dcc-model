@@ -1,0 +1,13 @@
+PropDefinitions:
+  response_category:
+    - "Bone Marrow Response"
+    - "CNS Response"
+    - "Metastatic Soft Tissue and Bone Response"
+    - "Myeloid Sarcoma Response"
+    - "Non-Target Lesions"
+    - "Not Reported"
+    - "Other"
+    - "Overall Response"
+    - "Primary Site Response"
+    - "Target Lesions"
+    - "Unknown"
