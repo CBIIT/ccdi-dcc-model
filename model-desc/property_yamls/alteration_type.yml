@@ -1,0 +1,17 @@
+PropDefinitions:
+  alteration_type:
+    - "Chromosomal Gain"
+    - "Chromosomal Loss"
+    - "Chromothripsis"
+    - "Deletion"
+    - "Duplication"
+    - "Internal Tandem Duplication"
+    - "Inversion"
+    - "Isochromosome"
+    - "Mutation, NOS"
+    - "Other"
+    - "Rearrangement"
+    - "Substitution"
+    - "Translocation"
+    - "Insertion"
+    - "Unknown"

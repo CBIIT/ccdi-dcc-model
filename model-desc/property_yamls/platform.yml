@@ -1,0 +1,14 @@
+PropDefinitions:
+  platform:
+    - "AB Capillary"
+    - "ABI Solid"
+    - "BGISEQ"
+    - "Complete Genomics"
+    - "Helicos"
+    - "Illumina"
+    - "Ion Torrent"
+    - "LS 454"
+    - "MGI"
+    - "Oxford Nanopore"
+    - "PacBio SMRT"
+    - "Other"

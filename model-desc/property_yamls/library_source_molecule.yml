@@ -1,0 +1,13 @@
+PropDefinitions:
+  library_source_molecule:
+    - "Circulating cell-free DNA"
+    - "Circulating Tumor-Derived DNA"
+    - "DNA"
+    - "MicroRNA"
+    - "Messenger RNA"
+    - "Not Reported"
+    - "Nucleic RNA Sample"
+    - "Protein"
+    - "RNA Specimen"
+    - "Total RNA"
+    - "Unknown" 
