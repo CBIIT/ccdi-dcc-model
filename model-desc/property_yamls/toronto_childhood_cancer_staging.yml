@@ -1,5 +1,5 @@
 PropDefinitions:
-  toronto_childhood_cancer_staging::
+  toronto_childhood_cancer_staging:
     - "Acute lymphoblastic leukemia CNS1"
     - "Acute lymphoblastic leukemia CNS2"
     - "Acute lymphoblastic leukemia CNS3"
