@@ -144,7 +144,6 @@ Nodes:
       Template: 'Yes'
     Props:
       - family_relationship_id
-      - relationship
       - family_id
       - id
   genetic_analysis:
@@ -211,6 +210,7 @@ Nodes:
       - laboratory_test_method
       - laboratory_test_name
       - specimen
+      - random_prop
       - test_result_text
       - test_result_modifier
       - test_result_numeric
