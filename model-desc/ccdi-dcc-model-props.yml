@@ -1531,7 +1531,7 @@ PropDefinitions:
     Enum:
       - "Alive"
       - "Dead"
-      - "Not Reported"
+      - "Not reported"
       - "Unknown"
       - "Unspecified"
     Req: true
