@@ -532,7 +532,7 @@ PropDefinitions:
     Desc: The curation status of the study.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '16459664'
         Value: Curation Status
         Version: "1.00"
     Type:
