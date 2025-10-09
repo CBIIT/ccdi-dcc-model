@@ -162,7 +162,7 @@ PropDefinitions:
         Value: Gene Human Chromosome Name
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/chromosome.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chromosome.yml
     Req: false
     Private: false
   #genetic_analysis
@@ -174,7 +174,7 @@ PropDefinitions:
         Value: Gene Human Chromosome Name
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/chromosome.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chromosome.yml
     Req: false
     Strict: true
     Private: false
@@ -308,7 +308,7 @@ PropDefinitions:
         Value: Gene Mutation Colloquial Name
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/alteration.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/alteration.yml
     Req: false
     Strict: false
     Private: false 
@@ -321,7 +321,7 @@ PropDefinitions:
         Value: Gene Alteration Type
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/alteration_type.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/alteration_type.yml
     Req: false
     Strict: false
     Private: false
@@ -334,7 +334,7 @@ PropDefinitions:
         Value: Gene Alteration Effect Type
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/alteration_effect.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/alteration_effect.yml
     Req: false
     Strict: false
     Private: false
@@ -532,7 +532,7 @@ PropDefinitions:
     Desc: The curation status of the study.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '16459664'
         Value: Curation Status
         Version: "1.00"
     Type:
@@ -1107,7 +1107,7 @@ PropDefinitions:
         Value: Biospecimen Preservation Procedure Type
         Version: "2.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/fixation_embedding_method.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/fixation_embedding_method.yml
     Req: true
     Strict: false
     Private: false
@@ -1198,7 +1198,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/medical_history_condition.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/medical_history_condition.yml
     Req: true
     Strict: false
     Private: false
@@ -1482,7 +1482,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/type_of_smoke_exposure.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/type_of_smoke_exposure.yml
     Req: false
     Strict: true
     Private: false
@@ -1621,7 +1621,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/adverse_event.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/adverse_event.yml
     Req: false
     Strict: false
     Private: false
@@ -1636,7 +1636,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/comorbidity.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/comorbidity.yml
     Req: false
     Strict: false
     Private: false          
@@ -1651,7 +1651,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/comorbidity_method_of_diagnosis.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/comorbidity_method_of_diagnosis.yml
     Req: false
     Strict: false
     Private: false
@@ -1705,7 +1705,7 @@ PropDefinitions:
         Value: Molecular Analysis Test Method Name
         Version: "2.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/laboratory_test_method.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/laboratory_test_method.yml
     Req: false
     Strict: false
     Private: false
@@ -1722,7 +1722,7 @@ PropDefinitions:
         Value: Laboratory Test Name
         Version: "1.00"    
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/laboratory_test_name.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/laboratory_test_name.yml
     Req: false
     Strict: false
     Private: false
@@ -1735,7 +1735,7 @@ PropDefinitions:
         Value: Specimen Material Category
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/specimen.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/specimen.yml
     Req: true
     Strict: false
     Private: false 
@@ -1805,7 +1805,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/risk_factor.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/risk_factor.yml
     Req: false
     Strict: false
     Private: false  
@@ -1818,7 +1818,7 @@ PropDefinitions:
         Value: Follow Up
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/follow_up_other.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/follow_up_other.yml
     Req: false
     Strict: false
     Private: false  
@@ -2083,7 +2083,7 @@ PropDefinitions:
         Value: Family Member Relationship Type
         Version: "2.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/relationship.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/relationship.yml
     Req: true
     Strict: false
     Private: false
@@ -2409,7 +2409,7 @@ PropDefinitions:
         Value: Childhood Cancer Toronto Guidelines Stage
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/toronto_childhood_cancer_staging.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/toronto_childhood_cancer_staging.yml
     Req: false
     Strict: true
     Private: false
@@ -2422,7 +2422,7 @@ PropDefinitions:
         Value: Neoplasm American Joint Committee on Cancer Clinical Distant Metastasis M Stage
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/tumor_stage_clinical_m.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/tumor_stage_clinical_m.yml
     Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
     Strict: false
     Private: false
@@ -2435,7 +2435,7 @@ PropDefinitions:
         Value: Neoplasm American Joint Committee on Cancer Clinical Regional Lymph Node N Stage
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/tumor_stage_clinical_n.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/tumor_stage_clinical_n.yml
     Req: false  # 02/22/2022 adeforge, not required? correct: 28feb22 pdunn
     Strict: false
     Private: false
@@ -2448,7 +2448,7 @@ PropDefinitions:
         Value: Neoplasm American Joint Committee on Cancer Clinical Primary Tumor T Stage
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/tumor_stage_clinical_t.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/tumor_stage_clinical_t.yml
     Req: false
     Strict: false
     Private: false
@@ -2494,7 +2494,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/data_category.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/data_category.yml
     Req: true
     Strict: false
     Private: false
@@ -2507,7 +2507,7 @@ PropDefinitions:
         Value: Electronic Data File Format Type
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/file_type.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/file_type.yml
     Req: true
     Strict: false
     Private: false
@@ -2715,7 +2715,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/race.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/race.yml
     Req: true
     Strict: false
     Private: false
@@ -2728,7 +2728,7 @@ PropDefinitions:
         Value: Person Sex at Birth Category
         Version: "2.0"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/sex_at_birth.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/sex_at_birth.yml
     Req: true
     Strict: false
     Private: false
@@ -2755,7 +2755,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/anatomic_site.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/anatomic_site.yml
     Req: true
     Strict: false
     Private: false
@@ -2770,7 +2770,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/anatomic_site.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/anatomic_site.yml
     Req: true
     Strict: false
     Private: false
@@ -2826,7 +2826,7 @@ PropDefinitions:
         Value: Disease Phase Timepoint Category
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/disease_phase.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/disease_phase.yml
     Req: true
     Strict: false
     Private: false
@@ -2911,7 +2911,7 @@ PropDefinitions:
         Value: Sequencing Library Technique Type
         Version: "2.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/library_strategy.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/library_strategy.yml
     Req: true
     Strict: true
     Private: false
@@ -2928,7 +2928,7 @@ PropDefinitions:
         Value: Sequencing Platform Name 
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/platform.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/platform.yml
     Req: true
     Strict: true
     Private: false
@@ -2941,7 +2941,7 @@ PropDefinitions:
         Value: Sequencing Library Platform Model Name
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/instrument_model.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/instrument_model.yml
     Req: true
     Strict: false
     Private: false
@@ -2992,7 +2992,7 @@ PropDefinitions:
         Value: Specimen Analyte Type
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/library_source_molecule.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/library_source_molecule.yml
     Req: true
     Strict: true
     Private: false  
@@ -3081,7 +3081,7 @@ PropDefinitions:
         Value: Sequencing Library Creation Method Type
         Version: "2.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/library_selection.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/library_selection.yml
     Req: true
     Strict: true
     Private: false
@@ -3469,7 +3469,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/treatment_type.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_type.yml
     Req: true
     Strict: false
     Private: false
@@ -3586,7 +3586,7 @@ PropDefinitions:
         Value: Diagnosis Disease or Disorder Text
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/diagnosis.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis.yml
     Req: true
     Strict: true
     Private: false  
@@ -3599,7 +3599,7 @@ PropDefinitions:
         Value: Diagnosis Disease or Disorder Text
         Version: "1.00"
     Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/diagnosis.yml
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis.yml
     Req: true
     Strict: false
     Private: false
@@ -3626,7 +3626,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/diagnosis_category.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis_category.yml
     Req: true
     Strict: false
     Private: false
@@ -3641,7 +3641,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/treatment_agent.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_agent.yml
     Req: false
     Strict: false
     Private: false
@@ -3668,7 +3668,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/response.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/response.yml
     Req: true
     Strict: false
     Private: false
@@ -3695,7 +3695,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/response_category.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/response_category.yml
     Req: true
     Strict: false
     Private: false
@@ -3710,7 +3710,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/CCDIDC-2043_enum_list_yml/model-desc/property_yamls/response_system.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/response_system.yml
     Req: true
     Strict: false
     Private: false
