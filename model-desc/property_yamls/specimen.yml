@@ -1,0 +1,15 @@
+PropDefinitions:
+  specimen:
+    - "Blood"
+    - "Bone Marrow"
+    - "Cell Free DNA BCT"
+    - "Cerebrospinal Fluid"
+    - "Peritoneal Fluid"
+    - "Plasma"
+    - "Saliva"
+    - "Serum"
+    - "Stool Sample"
+    - "Urine"
+    - "Other"
+    - "Unknown"
+    - "Not Reported"

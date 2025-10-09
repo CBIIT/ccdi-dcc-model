@@ -1,0 +1,15 @@
+PropDefinitions:
+  response_system:
+    - "Choi"
+    - "INRC, Brodeur 1993"
+    - "INRC, Park 2017"
+    - "iRANO"
+    - "Modified MacDonald"
+    - "mRECIST"
+    - "Not Reported"
+    - "PERCIST"
+    - "RANO"
+    - "RAPNO"
+    - "RECIST"
+    - "Unknown"
+    - "WHO"
