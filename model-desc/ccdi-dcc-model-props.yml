@@ -3458,6 +3458,39 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  #study_status
+  study_repository_start:
+    Desc: The month and year in which the repository started to receive the data.
+    Term: 
+      - Origin: caDSR
+        Code: 'TBD'
+        Value: ""
+        Version: ""
+    Type: 
+      pattern: '\b(0?[1-9]|1[0-2])/[0-9]{4}\b'
+    Req: false
+    Private: false
+  #study_status
+  study_repository_released:
+    Desc: The month and year in which the repository released the received data.
+    Term: 
+      - Origin: caDSR
+        Code: ''
+        Value: ""
+        Version: ""
+    Type: 
+      pattern: '\b(0?[1-9]|1[0-2])/[0-9]{4}\b'
+  #study_status
+  number_of_files:
+    Desc: The number of unique files associated with the study.    
+    Term:
+      - Origin: caDSR
+        Code: 'TBD'
+        Value: ""
+        Version: ""
+    Type: integer
+    Req: false
+    Private: false    
   #treatment
   treatment_type:
     Desc: Text term that describes the kind of treatment administered.
