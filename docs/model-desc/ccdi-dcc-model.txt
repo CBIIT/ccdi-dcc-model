@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit 3bd2737
+commit ef19929
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -253,6 +253,7 @@ methylation_array_file	methylation_platform	STRING
 methylation_array_file	reporter_label	STRING
 participant	crdc_id	STRING
 participant	id	STRING
+participant	occupation	EXTERNAL
 participant	participant_id	STRING
 participant	sex_at_birth	EXTERNAL
 pathology_file	acl	STRING
@@ -567,20 +568,20 @@ treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_cell_line	cell_line	sample	NA	NA
 of_cell_line	cell_line	study	NA	NA
-of_clinical_measure_file	clinical_measure_file	participant	NA	NA
-of_clinical_measure_file	clinical_measure_file	study	NA	NA
+of_cell_line	cell_line	sample	NA	NA
 of_clinical_measure_file	clinical_measure_file	sample	NA	NA
+of_clinical_measure_file	clinical_measure_file	study	NA	NA
+of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
-of_diagnosis	diagnosis	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
+of_diagnosis	diagnosis	sample	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
-of_generic_file	generic_file	sample	NA	NA
 of_generic_file	generic_file	participant	NA	NA
 of_generic_file	generic_file	study	NA	NA
+of_generic_file	generic_file	sample	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
@@ -589,22 +590,22 @@ of_medical_history	medical_history	participant	NA	NA
 of_methylation_array_file	methylation_array_file	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_pathology_file	pathology_file	sample	NA	NA
-of_pdx	pdx	sample	NA	NA
 of_pdx	pdx	study	NA	NA
+of_pdx	pdx	sample	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	pdx	NA	NA
 of_sample	sample	cell_line	NA	NA
+of_sample	sample	participant	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
 of_study_funding	study_funding	study	NA	NA
 of_study_personnel	study_personnel	study	NA	NA
 of_survival	survival	participant	NA	NA
+of_synonym	synonym	sample	NA	NA
 of_synonym	synonym	study	NA	NA
 of_synonym	synonym	participant	NA	NA
-of_synonym	synonym	sample	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
@@ -771,6 +772,7 @@ number_of_bp	Count of unique basecalls present in the data. Please count each ba
 number_of_participants	The number of unique participant instances associated with a systematic investigation into a subject.
 number_of_reads	The number of sequencing reaction results that were pooled to assemble a sequence for a genomic region of interest.
 number_of_samples	The number of samples associated with a subset of a larger population associated with systematic investigation into a subject.
+occupation	The text term that describes a person's occupation.
 orcid	A persistent unique digital identifier assigned to a person by the Open Researcher and Contributor ID (ORCID) organization.
 organism_species	The organism from which the sample is derived or originated.
 pack_years_smoked	Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years smoked divided by 20.
