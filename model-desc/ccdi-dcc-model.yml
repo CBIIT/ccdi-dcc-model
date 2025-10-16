@@ -253,6 +253,7 @@ Nodes:
       - participant_id
       - race       
       - sex_at_birth
+      - occupation
       - id
       - crdc_id
   pathology_file: 

@@ -2732,6 +2732,19 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
+  #participant
+  occupation:
+    Desc: "The text term that describes a person's occupation."
+    Term:
+      - Origin: caDSR
+        Code: '10156751'
+        Value: Person Occupation Category
+        Version: "1.0"
+    Enum:
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/occupation.yml
+    Req: false
+    Strict: false
+    Private: false
   # sample
   sample_id:
     Desc: A unique sequence of alphanumeric characters used to identify the specimen at it's point of origin.
