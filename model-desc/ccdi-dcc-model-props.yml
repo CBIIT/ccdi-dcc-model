@@ -3618,11 +3618,11 @@ PropDefinitions:
     Private: false
   #diagnosis
   diagnosis_category:
-    Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
+    Desc: The primary disease grouping assigned to an abnormal condition for evaluation and treatment.
     Term:
       - Origin: caDSR
-        Code: '14714127'
-        Value: Diagnosis Disease Text
+        Code: '16284367'
+        Value: Disease Primary Diagnosis Group Category
         Version: "1.00"
       - Origin: caDSR
         Code: '14741381'
