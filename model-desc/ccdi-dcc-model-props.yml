@@ -3487,7 +3487,7 @@ PropDefinitions:
     Term: 
       - Origin: caDSR
         Code: 'TBD'
-        Value: TBD
+        Value: 'TBD'
         Version: ""
     Type: string
     Req: true
@@ -3509,7 +3509,7 @@ PropDefinitions:
     Term: 
       - Origin: caDSR
         Code: 'TBD'
-        Value: ""
+        Value: 'TBD'
         Version: ""
     Type: 
       pattern: '\b(0?[1-9]|1[0-2])/[0-9]{4}\b'
@@ -3520,8 +3520,8 @@ PropDefinitions:
     Desc: The month and year in which the repository released the received data.
     Term: 
       - Origin: caDSR
-        Code: ''
-        Value: ""
+        Code: 'TBD'
+        Value: 'TBD'
         Version: ""
     Type: 
       pattern: '\b(0?[1-9]|1[0-2])/[0-9]{4}\b'
@@ -3531,7 +3531,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: 'TBD'
-        Value: ""
+        Value: 'TBD'
         Version: ""
     Type: integer
     Req: false
