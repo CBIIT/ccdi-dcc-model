@@ -553,6 +553,26 @@ Nodes:
       - orcid
       - id
       - crdc_id
+  study_status:
+    Desc: "The study status node is comprised of properties which describe the current status of the study across multiple repositories."
+    Tags:
+      Category: study
+      Assignment: core
+      Class: secondary
+      Template: 'Yes'
+    Props:
+      - study_status_id
+      - repository_name
+      - version
+      - study_repository_start
+      - study_repository_released
+      - external_url
+      - release_status
+      - number_of_participants
+      - number_of_samples
+      - number_of_files
+      - total_size_of_data_files
+      - id
   survival:
     Desc: "The survival node is comprised of properties which describe metadata related to vital status and medical events at timepoints for a participant."
     Tags:
