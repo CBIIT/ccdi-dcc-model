@@ -2348,7 +2348,6 @@ PropDefinitions:
       value_type: list
       item_type:
         - 'ICD-O-3.2'
-        - 'CNS Category'
         - 'WHO CNS5'
         - 'Indication for Study'
         - 'French-American-British Classification'
