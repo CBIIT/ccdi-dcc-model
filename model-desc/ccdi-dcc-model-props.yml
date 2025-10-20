@@ -2330,12 +2330,12 @@ PropDefinitions:
     Desc: 'The standard or agency upon which the specific term used as the diagnosis value was obtained.'
     Term:
       - Origin: caDSR
-        Code: '14714144'
-        Value: Diagnosis Term Source Name
-        Version: "1.00"
-      - Origin: NCIt
-        Code: 'C42673'
-        Value: Definition Source
+        Code: '13606067'
+        Value: Diagnosis Disease ICD-O-3 Morphology Label Text
+        Version: "2.00"
+      - Origin: caDSR
+        Code: '14741263'
+        Value: Diagnosis Disease WHO CNS5 Type
         Version: "1.00"
       - Origin: caDSR
         Code: '15026558'
@@ -2348,13 +2348,11 @@ PropDefinitions:
       value_type: list
       item_type:
         - 'ICD-O-3.2'
-        - 'CNS Category'
         - 'WHO CNS5'
         - 'Indication for Study'
         - 'French-American-British Classification'
         - 'WHO AML Classification of Tumors'
-        - 'Unknown'
-        - 'Not Reported'
+        - 'Other'
     Req: true
     Strict: false
     Private: false 
