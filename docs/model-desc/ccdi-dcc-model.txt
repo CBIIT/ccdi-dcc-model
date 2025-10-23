@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit c177a53
+commit 1229d18
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -518,6 +518,17 @@ study_personnel	personnel_type	Data Manager
 study_personnel	personnel_type	Data Submitter
 study_personnel	personnel_type	PI
 study_personnel	study_personnel_id	STRING
+study_status	external_url	STRING
+study_status	id	STRING
+study_status	number_of_files	INTEGER
+study_status	number_of_participants	INTEGER
+study_status	number_of_samples	INTEGER
+study_status	repository_name	STRING
+study_status	study_repository_released	REGEXP /\b(0?[1-9]|1[0-2])/[0-9]{4}\b/
+study_status	study_repository_start	REGEXP /\b(0?[1-9]|1[0-2])/[0-9]{4}\b/
+study_status	study_status_id	STRING
+study_status	total_size_of_data_files	INTEGER
+study_status	version	STRING
 survival	age_at_event_free_survival_status	NUMBER
 survival	age_at_last_known_survival_status	NUMBER
 survival	cause_of_death	Due to non-study treatment
@@ -568,11 +579,11 @@ treatment_response	id	STRING
 treatment_response	treatment_response_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_cell_line	cell_line	sample	NA	NA
 of_cell_line	cell_line	study	NA	NA
-of_clinical_measure_file	clinical_measure_file	sample	NA	NA
-of_clinical_measure_file	clinical_measure_file	participant	NA	NA
+of_cell_line	cell_line	sample	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
+of_clinical_measure_file	clinical_measure_file	participant	NA	NA
+of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
@@ -580,8 +591,8 @@ of_diagnosis	diagnosis	participant	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
 of_generic_file	generic_file	participant	NA	NA
-of_generic_file	generic_file	sample	NA	NA
 of_generic_file	generic_file	study	NA	NA
+of_generic_file	generic_file	sample	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
@@ -590,13 +601,13 @@ of_medical_history	medical_history	participant	NA	NA
 of_methylation_array_file	methylation_array_file	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_pathology_file	pathology_file	sample	NA	NA
-of_pdx	pdx	study	NA	NA
 of_pdx	pdx	sample	NA	NA
+of_pdx	pdx	study	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
 of_sample	sample	participant	NA	NA
-of_sample	sample	cell_line	NA	NA
 of_sample	sample	pdx	NA	NA
+of_sample	sample	cell_line	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
@@ -604,8 +615,8 @@ of_study_funding	study_funding	study	NA	NA
 of_study_personnel	study_personnel	study	NA	NA
 of_survival	survival	participant	NA	NA
 of_synonym	synonym	participant	NA	NA
-of_synonym	synonym	sample	NA	NA
 of_synonym	synonym	study	NA	NA
+of_synonym	synonym	sample	NA	NA
 of_treatment	treatment	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
 
@@ -769,6 +780,7 @@ mouse_strain	The words by which breeds of mice utilized for biological research 
 mrImageReconstructionProtocolElement	mrImageReconstructionProtocolElement
 multipleSpinEchoIndicator	An indicator response as to whether or not the pulse sequence is a multiple spin Echo pulse sequence.
 number_of_bp	Count of unique basecalls present in the data. Please count each base only once if using secondary alignments.
+number_of_files	The number of unique files associated with the study.
 number_of_participants	The number of unique participant instances associated with a systematic investigation into a subject.
 number_of_reads	The number of sequencing reaction results that were pooled to assemble a sequence for a genomic region of interest.
 number_of_samples	The number of samples associated with a subset of a larger population associated with systematic investigation into a subject.
@@ -806,6 +818,7 @@ repetition_time	A measurement of the amount of time in milliseconds between succ
 reported_significance	The treatment or management implications for a patient's condition caused by a gain, loss or alteration of the sequences comprising a gene, as defined by the American College of Medical Genetics and Genomics (ACMG) .
 reported_significance_system	The source of the reported significance.
 reporter_label	The text term to describe the labeled methyl group used as a molecular tag.
+repository_name	A textual description of a storage location for digital data.
 repository_of_synonym_id	A textual description of a storage location for digital data.
 resonantNucleusCode	Text specifying the atomic nucleus that is resonant at the transmitter frequency.
 respirable_crystalline_silica_exposure	The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
@@ -850,10 +863,13 @@ study_name	The narrative title used as a textual label for a research data colle
 study_period_start	The year in which the study started.
 study_period_stop	The year in which the study ended.
 study_personnel_id	A sequence of characters used to uniquely identify, name, or characterize the person who performs a particular role within the context of a specific study.
+study_repository_released	The month and year in which the repository released the received data.
+study_repository_start	The month and year in which the repository started to receive the data.
 study_status	The status of the study.
+study_status_id	A unique sequence of characters used to identify an attribute shared by all members of a class.
 submitted_anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 submitted_diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
-survival_id	nnn
+survival_id	A unique sequence of characters used to identify an attribute shared by all members of a class.
 synonym_id	A sequence of characters used to identify, name, or characterize a backup sequence of characters used to identify an entity.
 test	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
 test_result_modifier	Text term that helps define the outcome of a laboratory test.
@@ -867,6 +883,7 @@ tobacco_smoking_quit_year	A record of an individual's background in regard to sm
 tobacco_smoking_status	A category which describes an individual's history of smoking tobacco.
 toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
 total_number_of_input_cells	Numeric value used to describe the number of cells used for molecular testing.
+total_size_of_data_files	The measure (in bytes) of how much space all data files, for a given study, take up on a storage medium
 transcript	Alphanumeric value used to describe the transcript of a specific genetic variant.
 translocation_partner_chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
 translocation_partner_cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
@@ -886,5 +903,6 @@ type_of_smoke_exposure	The type of environmental, occupational or consumer-based
 type_of_tobacco_used	The response that indicates which smoking products a person has ever used regularly.
 vaf_numeric	A decimal number capturing the relative rate of occurrence of a specific variant allele within a population.
 validation_technique	Any technique used to validate PDX against their original patient tumour, including fingerprinting, histology, immunohistochemistry.
+version	The version identifier assigned to the data submission.
 year_of_diagnosis	The year in which a subject was diagnosed.
 years_smoked	The number of years spent puffing and/or inhaling smoke from a lit cigarette, cigar, or pipe.
