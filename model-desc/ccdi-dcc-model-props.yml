@@ -3699,8 +3699,8 @@ PropDefinitions:
     Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
     Term:
       - Origin: caDSR
-        Code: '14714127'
-        Value: Diagnosis Disease Text
+        Code: '16607972'
+        Value: Diagnosis Pediatric Oncology Grouping Category
         Version: "1.00"
       - Origin: caDSR
         Code: '14741381'
