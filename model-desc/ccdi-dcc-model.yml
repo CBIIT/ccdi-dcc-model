@@ -610,24 +610,6 @@ Nodes:
       - domain_category
       - data_location
       - id
-  #treatment:
-    Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
-    Tags:
-      Category: clinical
-      Assignment: core
-      Class: primary
-      Template: 'Yes'
-    Props:
-      - treatment_id
-      - age_at_treatment_start
-      - age_at_treatment_end
-      - treatment_type
-      - treatment_agent
-      - dose
-      - dose_unit
-      - dose_route
-      - dose_frequency
-   #   - id
   treatment_chemotherapy:
     Desc: ""
     Tags:
@@ -676,10 +658,10 @@ Nodes:
       - treatment_category
       - age_at_treatment_start
       - age_at_treatment_end
-	    - surgical_resection_margin_status
-	    - biopsy_or_resection
-	    - anatomic_site
-	    - comment
+	  - surgical_resection_margin_status
+	  - biopsy_or_resection
+      - anatomic_site
+	  - comment
       - guid
   treatemtent_other:
     Props: 
@@ -687,8 +669,8 @@ Nodes:
       - treatment_category
       - age_at_treatment_start
       - age_at_treatment_end
-	    - treatment_other_type #"Allogeneic Hematopoietic Stem Cell Transplantation, Autologous Stem Cell Transplantation, Cellular Therapy, Palliative Care, Not Reported, Organ Transplantation, Stem Cell Transplant, Unknown
-	    - comment
+	  - treatment_other_type #"Allogeneic Hematopoietic Stem Cell Transplantation, Autologous Stem Cell Transplantation, Cellular Therapy, Palliative Care, Not Reported, Organ Transplantation, Stem Cell Transplant, Unknown
+	  - comment
       - guid 
   treatment_response:
     Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
