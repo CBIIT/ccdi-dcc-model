@@ -610,7 +610,7 @@ Nodes:
       - domain_category
       - data_location
       - id
-  treatment:
+  #treatment:
     Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
     Tags:
       Category: clinical
@@ -627,7 +627,69 @@ Nodes:
       - dose_unit
       - dose_route
       - dose_frequency
-      - id
+   #   - id
+  treatment_chemotherapy:
+    Desc: ""
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
+      Props:
+      - treatment_chemotherapy_id
+      - treatment_category
+      - age_at_treatment_start
+      - age_at_treatment_end
+      - chemotherapy_type #Chemotherapy, Concurrent Chemoradiation, Hormone Therapy, Immunotherapy, Pharmacotherapy, Radiopharmaceutical, Targeted Molecular Therapy
+      - chemotherapy_agent
+      - chemotherapy_class
+      - chemotherapy_subclass
+      - dose
+      - dose_unit
+      - dose_route
+      - dose_frequency
+      - protocol
+      - guid
+  treatment_radiation:
+    Desc: ""
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
+    Props:
+      - treatment_radiation__id
+      - treatment_category
+      - age_at_treatment_start
+      - age_at_treatment_end
+      - radiation_type
+      - radiation_technique
+      - total_radiation_dose
+      - anatomic_site
+      - laterality_of_radiation_field
+      - fraction_number
+      - fraction_radiation_dose
+      - guid
+  treatment_surgery:
+    Props:
+      - treatment_surgery_id
+      - treatment_category
+      - age_at_treatment_start
+      - age_at_treatment_end
+	    - surgical_resection_margin_status
+	    - biopsy_or_resection
+	    - anatomic_site
+	    - comment
+      - guid
+  treatemtent_other:
+    Props: 
+      - treatment_othjer_id
+      - treatment_category
+      - age_at_treatment_start
+      - age_at_treatment_end
+	    - treatment_other_type #"Allogeneic Hematopoietic Stem Cell Transplantation, Autologous Stem Cell Transplantation, Cellular Therapy, Palliative Care, Not Reported, Organ Transplantation, Stem Cell Transplant, Unknown
+	    - comment
+      - guid 
   treatment_response:
     Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
     Tags:
