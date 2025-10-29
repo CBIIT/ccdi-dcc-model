@@ -619,7 +619,7 @@ Nodes:
       Template: 'Yes'
       Props:
       - treatment_chemotherapy_id
-      - treatment_category
+      - chemotherapy_category
       - age_at_treatment_start
       - age_at_treatment_end
       - chemotherapy_type #Chemotherapy, Concurrent Chemoradiation, Hormone Therapy, Immunotherapy, Pharmacotherapy, Radiopharmaceutical, Targeted Molecular Therapy
@@ -641,7 +641,7 @@ Nodes:
       Template: 'Yes'
     Props:
       - treatment_radiation__id
-      - treatment_category
+      - radiation_category
       - age_at_treatment_start
       - age_at_treatment_end
       - radiation_type
@@ -655,22 +655,20 @@ Nodes:
   treatment_surgery:
     Props:
       - treatment_surgery_id
-      - treatment_category
+      - surgery_category #biopsy , resection
       - age_at_treatment_start
       - age_at_treatment_end
 	  - surgical_resection_margin_status
-	  - biopsy_or_resection
       - anatomic_site
 	  - comment
       - guid
   treatemtent_other:
     Props: 
-      - treatment_othjer_id
-      - treatment_category
+      - treatment_other_id
+      - other_treatment_category
       - age_at_treatment_start
       - age_at_treatment_end
 	  - treatment_other_type #"Allogeneic Hematopoietic Stem Cell Transplantation, Autologous Stem Cell Transplantation, Cellular Therapy, Palliative Care, Not Reported, Organ Transplantation, Stem Cell Transplant, Unknown
-	  - comment
       - guid 
   treatment_response:
     Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
