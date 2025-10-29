@@ -3506,6 +3506,21 @@ PropDefinitions:
     Req: false
     Private: false    
   #treatment
+  treatment_agent:
+    Desc: The name of the individual therapeutic agent(s) used as part of a treatment regimen.
+    Term:
+      - Origin: caDSR
+        Code: '13579886'
+        Value: Therapeutic Procedure Agent Name
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_agent.yml
+    Req: false
+    Strict: false
+    Private: false
+  #treatment
   dose:
     Desc: The amount of exposure that a subject actually receives.
     Term:
@@ -3827,21 +3842,6 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis_category.yml
     Req: true
-    Strict: false
-    Private: false
-  #treatment
-  treatment_agent:
-    Desc: The name of the individual therapeutic agent(s) used as part of a treatment regimen.
-    Term:
-      - Origin: caDSR
-        Code: '13579886'
-        Value: Therapeutic Procedure Agent Name
-        Version: "1.00"
-    Type:
-      value_type: list
-      item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_agent.yml
-    Req: false
     Strict: false
     Private: false
   #treatment_response
