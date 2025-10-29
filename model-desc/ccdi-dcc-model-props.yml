@@ -3587,7 +3587,43 @@ PropDefinitions:
     Req: true
     Private: false  
   #treatment
-  treatment_id: 
+  treatment_chemotherapy_id: 
+    Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14569111'
+        Value: Treatment Method Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #treatment
+  treatment_radiation__id: 
+    Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14569111'
+        Value: Treatment Method Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #treatment
+  treatment_surgery_id: 
+    Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14569111'
+        Value: Treatment Method Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #treatment
+  treatment_other_id: 
     Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
     Term:
       - Origin: caDSR
