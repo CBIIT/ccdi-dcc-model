@@ -617,14 +617,14 @@ Nodes:
       Assignment: core
       Class: primary
       Template: 'Yes'
-      Props:
+    Props:
       - treatment_chemotherapy_id
 	  - treatment_type
       - chemotherapy_category
       - age_at_treatment_start
       - age_at_treatment_end
-      - chemotherapy_type #Chemotherapy, Concurrent Chemoradiation, Hormone Therapy, Immunotherapy, Pharmacotherapy, Radiopharmaceutical, Targeted Molecular Therapy
-      - chemotherapy_agent
+      - chemotherapy_type 
+	  - chemotherapy_agent
       - chemotherapy_class
       - chemotherapy_subclass
       - dose
