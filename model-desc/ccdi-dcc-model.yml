@@ -619,12 +619,12 @@ Nodes:
       Template: 'Yes'
     Props:
       - treatment_chemotherapy_id
-	  - treatment_type
+      - treatment_type
       - chemotherapy_category
       - age_at_treatment_start
       - age_at_treatment_end
       - chemotherapy_type 
-	  - chemotherapy_agent
+      - chemotherapy_agent
       - chemotherapy_class
       - chemotherapy_subclass
       - dose
@@ -642,7 +642,7 @@ Nodes:
       Template: 'Yes'
     Props:
       - treatment_radiation__id
-	  - treatment_type
+      - treatment_type
       - radiation_category
       - age_at_treatment_start
       - age_at_treatment_end
@@ -663,7 +663,7 @@ Nodes:
       Template: 'Yes'
     Props:
       - treatment_surgery_id
-	  - treatment_type
+      - treatment_type
       - surgery_category
       - age_at_treatment_start
       - age_at_treatment_end
@@ -678,12 +678,12 @@ Nodes:
       Template: 'Yes'
     Props: 
       - treatment_other_id
-	  - treatment_type
+      - treatment_type
       - other_treatment_category
       - age_at_treatment_start
       - age_at_treatment_end
-	  - treatment_other_type 
-	  - guid 
+      - treatment_other_type 
+      - guid 
   treatment_response:
     Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
     Tags:
