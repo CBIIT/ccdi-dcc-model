@@ -3642,9 +3642,9 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-   			 - "Electron Beam Radiation Therapy"
-   			 - "Photon Beam Radiation Therapy" 
-         - "Proton Beam Radiation Therapy"
+        - "Electron Beam Radiation Therapy"
+        - "Photon Beam Radiation Therapy" 
+        - "Proton Beam Radiation Therapy"
     Req: true
     Strict: false
     Private: false
