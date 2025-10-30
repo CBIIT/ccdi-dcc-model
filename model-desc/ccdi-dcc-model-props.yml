@@ -3555,7 +3555,7 @@ PropDefinitions:
     Private: false 
   #treatment
   dose_frequency:
-    Desc: The text that represents the planned dosage frequency for a agent.
+    Desc: The text that represents the planned dosage frequency for an agent.
     Term:
       - Origin: caDSR
         Code: '2179580'
@@ -3565,6 +3565,23 @@ PropDefinitions:
     Req: false
     Private: false 
   #treatment
+  treatment_type:
+    Desc: Text term that describes the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14737565'
+        Value: Therapeutic Procedure Performed Type
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - "Chemotherapy"
+        - "Radiation"
+        - "Surgery"
+        - "Other"
+    Req: true
+    Strict: true
+    Private: false
   chemotherapy_category:
     Desc: Text term that describes the kind of treatment administered.
     Term:
@@ -3616,11 +3633,11 @@ PropDefinitions:
     Private: false
   #treatment
   radiation_type:
-    Desc: ""
+    Desc: A textual description of the type of external beam radiation therapy that was administered.
     Term:
       - Origin: caDSR
-        Code: '14737565'
-        Value: Therapeutic Procedure Performed Type
+        Code: '7755383'
+        Value: External Beam Radiation Therapy Administered Type
         Version: "1.00"
     Type:
       value_type: list
@@ -3628,7 +3645,6 @@ PropDefinitions:
    			 - "Electron Beam Radiation Therapy"
    			 - "Photon Beam Radiation Therapy" 
          - "Proton Beam Radiation Therapy"
-                 - "Tomotherapy"
     Req: true
     Strict: false
     Private: false
