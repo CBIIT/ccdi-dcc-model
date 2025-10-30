@@ -611,7 +611,7 @@ Nodes:
       - data_location
       - id
   treatment_chemotherapy:
-    Desc: ""
+    Desc: "Text term that describes the kind of treatment administered."
     Tags:
       Category: clinical
       Assignment: core
@@ -634,7 +634,7 @@ Nodes:
       - protocol
       - guid
   treatment_radiation:
-    Desc: ""
+    Desc: "Text term that describes the kind of treatment administered."
     Tags:
       Category: clinical
       Assignment: core
@@ -655,6 +655,12 @@ Nodes:
       - fraction_radiation_dose
       - guid
   treatment_surgery:
+    Desc: "Text term that describes the kind of treatment administered."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props:
       - treatment_surgery_id
 	  - treatment_type
@@ -665,7 +671,13 @@ Nodes:
       - anatomic_site
 	  - comment
       - guid
-  treatemtent_other:
+  treatment_other:
+    Desc: "Text term that describes the kind of treatment administered."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
     Props: 
       - treatment_other_id
 	  - treatment_type
@@ -865,11 +877,29 @@ Relationships:
         Dst: participant
       - Src: synonym
         Dst: sample
-  of_treatment:
+  of_treatment_other:
     Props: null
     Mul: many_to_one
     Ends:
-      - Src: treatment
+      - Src: treatment_other
+        Dst: participant
+  of_treatment_chemotherapy:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_chemotherapy
+        Dst: participant
+  of_treatment_radiation:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_radiation
+        Dst: participant
+  of_treatment_surgery:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_surgery
         Dst: participant
   of_treatment_response:
     Props: null
