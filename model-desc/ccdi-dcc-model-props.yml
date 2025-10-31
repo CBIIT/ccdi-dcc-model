@@ -3704,7 +3704,18 @@ PropDefinitions:
     Type: string
     Req: false
     Private: false
-    #treatment
+  #treatment
+  radiation_therapy_fraction:
+    Desc: Value indicating thevalue indicating a single radiation therapy fraction doses administered to a treatment field or site.
+    Term:
+      - Origin: caDSR
+        Code: '4682096'
+        Value: RT Field Fraction Count
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
   fraction_radiation_dose:
     Desc: The amount of exposure that a subject actually receives.
     Term:
