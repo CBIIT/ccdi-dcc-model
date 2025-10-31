@@ -668,6 +668,7 @@ Nodes:
       - age_at_treatment_start
       - age_at_treatment_end
       - anatomic_site
+      - resection_margin_status
       - id
   treatment_other:
     Desc: "Text term that describes the kind of treatment administered."
