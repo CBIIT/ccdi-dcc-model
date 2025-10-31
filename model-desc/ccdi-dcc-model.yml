@@ -651,6 +651,7 @@ Nodes:
       - laterality_of_radiation_field
       - radiation_therapy_fraction
       - fraction_radiation_dose
+      - fraction_radiation_dose_unit
       - guid
   treatment_surgery:
     Desc: "Text term that describes the kind of treatment administered."
