@@ -631,7 +631,7 @@ Nodes:
       - dose_route
       - dose_frequency
       - protocol
-      - guid
+      - id
   treatment_radiation:
     Desc: "Text term that describes the kind of treatment administered."
     Tags:
@@ -653,7 +653,7 @@ Nodes:
       - radiation_therapy_fraction
       - fraction_radiation_dose
       - fraction_radiation_dose_unit
-      - guid
+      - id
   treatment_surgery:
     Desc: "Text term that describes the kind of treatment administered."
     Tags:
@@ -668,7 +668,7 @@ Nodes:
       - age_at_treatment_start
       - age_at_treatment_end
       - anatomic_site
-      - guid
+      - id
   treatment_other:
     Desc: "Text term that describes the kind of treatment administered."
     Tags:
@@ -682,7 +682,7 @@ Nodes:
       - other_treatment_type
       - age_at_treatment_start
       - age_at_treatment_end
-      - guid 
+      - id 
   treatment_response:
     Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
     Tags:
