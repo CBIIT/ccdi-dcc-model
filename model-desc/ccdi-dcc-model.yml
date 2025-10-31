@@ -647,6 +647,7 @@ Nodes:
       - age_at_treatment_end
       - beam_radiation_type
       - total_radiation_dose
+      - total_radiation_dose_unit
       - anatomic_site
       - laterality_of_radiation_field
       - radiation_therapy_fraction
