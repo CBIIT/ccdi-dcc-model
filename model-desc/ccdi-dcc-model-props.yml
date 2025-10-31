@@ -3565,6 +3565,17 @@ PropDefinitions:
     Req: false
     Private: false 
   #treatment
+  protocol:
+    Desc: The name of the formal plan for an experiment or research activity.
+    Term:
+      - Origin: caDSR
+        Code: 16284288
+        Value: Treatment Protocol Name
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
   treatment_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
@@ -3582,6 +3593,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
+  #treatment
   chemotherapy_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
