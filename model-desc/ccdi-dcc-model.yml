@@ -642,11 +642,10 @@ Nodes:
     Props:
       - treatment_radiation__id
       - treatment_type
-      - radiation_category
+      - radiation_therapy_type
       - age_at_treatment_start
       - age_at_treatment_end
       - beam_radiation_type
-      - radiation_technique
       - total_radiation_dose
       - anatomic_site
       - laterality_of_radiation_field
