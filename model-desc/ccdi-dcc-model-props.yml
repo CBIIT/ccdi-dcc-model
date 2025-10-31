@@ -3775,10 +3775,10 @@ PropDefinitions:
   resection_margin_status:
     Desc: Text terms to describe the status of a tissue margin following surgical resection.
     Term:
-      Origin: caDSR
-      Code: '2608702'
-      Value: Surgical Margin Resection Status
-      Version: "2.00"
+      - Origin: caDSR
+        Code: '2608702'
+        Value: Surgical Margin Resection Status
+        Version: "2.00"
     Type:
       value_type: list
       item_type:
