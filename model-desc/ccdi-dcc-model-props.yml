@@ -3767,7 +3767,26 @@ PropDefinitions:
       item_type:
         - "Biopsy"
         - "Resection"
+        - "Not Reported"
     Req: true
+    Strict: false
+    Private: false
+  #treatment
+  resection_margin_status:
+    Desc: Text terms to describe the status of a tissue margin following surgical resection.
+    Term:
+      Origin: caDSR
+      Code: '2608702'
+      Value: Surgical Margin Resection Status
+      Version: "2.00"
+    Type:
+      value_type" ist
+      item_type:
+        - "R0, All Margins Pathologically Negative"
+        - "R1, Microscopically Positive Margins or Microscopic Residual Disease"
+        - "R2, Macroscopically Positive Margins or Gross Residual Disease"
+        - "RX, Presence of Residual Disease Cannot Be Assessed"
+    Req: false
     Strict: false
     Private: false
   #treatment
