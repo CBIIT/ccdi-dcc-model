@@ -3637,7 +3637,7 @@ PropDefinitions:
     Strict: false
     Private: false
   #treatment
-  radiation_category:
+  radiation_therapy_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
       - Origin: caDSR
