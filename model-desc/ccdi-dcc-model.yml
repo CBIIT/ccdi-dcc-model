@@ -645,7 +645,7 @@ Nodes:
       - radiation_category
       - age_at_treatment_start
       - age_at_treatment_end
-      - radiation_type
+      - beam_radiation_type
       - radiation_technique
       - total_radiation_dose
       - anatomic_site
