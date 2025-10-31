@@ -620,7 +620,6 @@ Nodes:
     Props:
       - treatment_chemotherapy_id
       - treatment_type
-      - chemotherapy_category
       - age_at_treatment_start
       - age_at_treatment_end
       - chemotherapy_type 
