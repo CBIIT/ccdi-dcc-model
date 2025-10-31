@@ -3727,6 +3727,23 @@ PropDefinitions:
     Req: false
     Private: false
   #treatment
+  laterality_of_radiation_field:
+    Desc: the side or laterality of the physical structure of an organism treated with radiation therapy, treatment of a disease by means of exposure of the target or the whole body to radiation.
+    Term:
+      - Origin: caDSR
+        Code: '2178530'
+        Value: Radiation Therapy Body Region Side Administered Type
+        Version: "2.00"
+    Enum:
+      - "Both"
+      - "Left"
+      - "Right"
+      - "Neither"
+      - "Not Reported"
+    Req: false
+    Strict: false
+    Private: false
+  #treatment
   surgery_category:
     Desc: Text term that describes the kind of treatment administered.
     Term:
