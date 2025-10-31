@@ -3755,7 +3755,7 @@ PropDefinitions:
     Strict: false
     Private: false
   #treatment
-  surgery_category:
+  surgery_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
       - Origin: caDSR
@@ -3771,7 +3771,7 @@ PropDefinitions:
     Strict: false
     Private: false
   #treatment
-  other_treatment_category:
+  other_treatment_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
       - Origin: caDSR
