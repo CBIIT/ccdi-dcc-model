@@ -649,7 +649,7 @@ Nodes:
       - total_radiation_dose
       - anatomic_site
       - laterality_of_radiation_field
-      - fraction_number
+      - radiation_therapy_fraction
       - fraction_radiation_dose
       - guid
   treatment_surgery:
