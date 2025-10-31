@@ -3683,6 +3683,50 @@ PropDefinitions:
     Strict: false
     Private: false
   #treatment
+  total_radiation_dose:
+    Desc: The amount of exposure that a subject actually receives.
+    Term:
+      - Origin: caDSR
+        Code: '6642895'
+        Value: Dose
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  total_radiation_dose_unit:
+    Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
+    Term:
+      - Origin: caDSR
+        Code: '6824805'
+        Value: Dose Units
+        Version: "5.00"
+    Type: string
+    Req: false
+    Private: false
+    #treatment
+  fraction_radiation_dose:
+    Desc: The amount of exposure that a subject actually receives.
+    Term:
+      - Origin: caDSR
+        Code: '6642895'
+        Value: Dose
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  fraction_radiation_dose_unit:
+    Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
+    Term:
+      - Origin: caDSR
+        Code: '6824805'
+        Value: Dose Units
+        Version: "5.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
   surgery_category:
     Desc: Text term that describes the kind of treatment administered.
     Term:
