@@ -3506,7 +3506,7 @@ PropDefinitions:
     Req: false
     Private: false    
   #treatment
-  treatment_agent:
+  chemotherapy_agent:
     Desc: The name of the individual therapeutic agent(s) used as part of a treatment regimen.
     Term:
       - Origin: caDSR
@@ -3519,6 +3519,28 @@ PropDefinitions:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_agent.yml
     Req: false
     Strict: false
+    Private: false
+  #treatment
+  chemotherapy_class:
+    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Term:
+      - Origin: caDSR
+        Code: '3378323'
+        Value: Clinical Trial Drug Classification Name
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
+  chemotherapy_subclass:
+    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Term:
+      - Origin: caDSR
+        Code: '3378323'
+        Value: Clinical Trial Drug Classification Name
+        Version: "1.00"
+    Type: string
+    Req: false
     Private: false
   #treatment
   dose:
