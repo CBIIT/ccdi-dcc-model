@@ -3582,7 +3582,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  chemotherapy_category:
+  chemotherapy_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
       - Origin: caDSR
