@@ -3780,7 +3780,7 @@ PropDefinitions:
       Value: Surgical Margin Resection Status
       Version: "2.00"
     Type:
-      value_type: ist
+      value_type: list
       item_type:
         - "R0, All Margins Pathologically Negative"
         - "R1, Microscopically Positive Margins or Microscopic Residual Disease"
