@@ -3666,7 +3666,7 @@ PropDefinitions:
     Strict: false
     Private: false
   #treatment
-  radiation_type:
+  beam_radiation_type:
     Desc: A textual description of the type of external beam radiation therapy that was administered.
     Term:
       - Origin: caDSR
