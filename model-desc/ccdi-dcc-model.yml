@@ -640,7 +640,7 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:
-      - treatment_radiation__id
+      - treatment_radiation_id
       - treatment_type
       - radiation_therapy_type
       - age_at_treatment_start
