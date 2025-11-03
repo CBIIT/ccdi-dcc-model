@@ -3846,7 +3846,7 @@ PropDefinitions:
     Private: false
     Key: true
   #treatment
-  treatment_radiation__id: 
+  treatment_radiation_id: 
     Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
     Term:
       - Origin: caDSR
