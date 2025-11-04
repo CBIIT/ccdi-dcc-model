@@ -1142,8 +1142,7 @@ PropDefinitions:
     Private: false  
   #radiology_file
   deidentification_method:
-    Desc: The type of means, manner of procedure, or systematic course of action used in the removal of text elements that would make data individually identifiable in an electronic record.
-    Term:
+    Desc: The type of procedure used to remove text elements that would make data individually identifiable in an electronic record.    Term:
       - Origin: caDSR
         Code: '14576319'
         Value: Electronic Data File Deidentification Method Type
