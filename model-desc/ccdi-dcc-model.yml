@@ -572,7 +572,7 @@ Nodes:
       - number_of_samples
       - number_of_files
       - total_size_of_data_files
-      - id
+      - guid
   survival:
     Desc: "The survival node is comprised of properties which describe metadata related to vital status and medical events at timepoints for a participant."
     Tags:
