@@ -3114,8 +3114,8 @@ PropDefinitions:
     Desc: A sequence of characters used to identify, name, or characterize a pediatric study.
     Term:
       - Origin: caDSR
-        Code: '12960571'
-        Value: Study Pediatric Identifier
+        Code: '6380045'
+        Value: Study Identifier
         Version: "1.00"
     Type: string
     Req: true
@@ -3451,12 +3451,12 @@ PropDefinitions:
     Private: false
   #study_personnel
   institution:
-    Desc: A sequence of characters used to identify, name, or characterize the laboratory, institute, or consortium that provided the information.
+    Desc: the name of the organization entering patients on a clinical trial.
     Term:
       - Origin: caDSR
-        Code: '12662779'
-        Value: Data Source Organizational Unit Identifier
-        Version: "1.00"
+        Code: '1100'
+        Value: Institution Name
+        Version: "4.00"
     Type: string
     Req: true
     Private: false
