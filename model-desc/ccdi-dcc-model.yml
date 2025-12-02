@@ -609,7 +609,7 @@ Nodes:
       - domain_description
       - domain_category
       - data_location
-      - id
+      - guid
   treatment_chemotherapy:
     Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
     Tags:
@@ -631,7 +631,7 @@ Nodes:
       - dose_route
       - dose_frequency
       - protocol
-      - id
+      - guid
   treatment_radiation:
     Desc: "Text term that describes the kind of treatment administered."
     Tags:
@@ -653,7 +653,7 @@ Nodes:
       - radiation_therapy_fraction
       - fraction_radiation_dose
       - fraction_radiation_dose_unit
-      - id
+      - guid
   treatment_surgery:
     Desc: "Text term that describes the kind of treatment administered."
     Tags:
@@ -669,7 +669,7 @@ Nodes:
       - age_at_treatment_end
       - anatomic_site
       - resection_margin_status
-      - id
+      - guid
   treatment_other:
     Desc: "Text term that describes the kind of treatment administered."
     Tags:
@@ -683,7 +683,6 @@ Nodes:
       - other_treatment_type
       - age_at_treatment_start
       - age_at_treatment_end
-      - id 
       - guid
   treatment_response:
     Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
