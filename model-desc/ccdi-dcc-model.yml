@@ -611,9 +611,6 @@ Nodes:
       - data_location
       - id
   treatment_chemotherapy:
-    Desc: "Text term that describes the kind of treatment administered."
-      - guid
-  treatment:
     Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
     Tags:
       Category: clinical
