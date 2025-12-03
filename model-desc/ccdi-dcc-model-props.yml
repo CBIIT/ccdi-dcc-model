@@ -399,50 +399,6 @@ PropDefinitions:
     Req: false
     Private: false 
     Strict: true 
-  #treatment
-  dose:
-    Desc: The amount of exposure that a subject actually receives.
-    Term:
-      - Origin: caDSR
-        Code: '6642895'
-        Value: Dose
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false 
-  #treatment
-  dose_unit:
-    Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
-    Term:
-      - Origin: caDSR
-        Code: '6824805'
-        Value: Dose Units
-        Version: "5.00"
-    Type: string
-    Req: false
-    Private: false
-  #treatment
-  dose_route:
-    Desc: The text that describe the dosage route.
-    Term:
-      - Origin: caDSR
-        Code: '2179582'
-        Value: Dose Route Text
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false 
-  #treatment
-  dose_frequency:
-    Desc: The text that represents the planned dosage frequency for a agent.
-    Term:
-      - Origin: caDSR
-        Code: '2179580'
-        Value: Dose Frequency Text
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false 
   #synonym
   associated_id:
     Desc: Text to identify the other name or alias of a person.
@@ -3548,6 +3504,98 @@ PropDefinitions:
     Req: false
     Private: false    
   #treatment
+  chemotherapy_agent:
+    Desc: The name of the individual therapeutic agent(s) used as part of a treatment regimen.
+    Term:
+      - Origin: caDSR
+        Code: '13579886'
+        Value: Therapeutic Procedure Agent Name
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_agent.yml
+    Req: false
+    Strict: false
+    Private: false
+  #treatment
+  chemotherapy_class:
+    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Term:
+      - Origin: caDSR
+        Code: '3378323'
+        Value: Clinical Trial Drug Classification Name
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
+  chemotherapy_subclass:
+    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Term:
+      - Origin: caDSR
+        Code: '3378323'
+        Value: Clinical Trial Drug Classification Name
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
+  dose:
+    Desc: The amount of exposure that a subject actually receives.
+    Term:
+      - Origin: caDSR
+        Code: '6642895'
+        Value: Dose
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  dose_unit:
+    Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
+    Term:
+      - Origin: caDSR
+        Code: '6824805'
+        Value: Dose Units
+        Version: "5.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
+  dose_route:
+    Desc: The text that describe the dosage route.
+    Term:
+      - Origin: caDSR
+        Code: '2179582'
+        Value: Dose Route Text
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  dose_frequency:
+    Desc: The text that represents the planned dosage frequency for an agent.
+    Term:
+      - Origin: caDSR
+        Code: '2179580'
+        Value: Dose Frequency Text
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  protocol:
+    Desc: The name of the formal plan for an experiment or research activity.
+    Term:
+      - Origin: caDSR
+        Code: '16284288'
+        Value: Treatment Protocol Name
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
   treatment_type:
     Desc: Text term that describes the kind of treatment administered.
     Term:
@@ -3558,7 +3606,209 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_type.yml
+        - "Chemotherapy"
+        - "Radiation"
+        - "Surgery"
+        - "Other"
+    Req: true
+    Strict: true
+    Private: false
+  #treatment
+  chemotherapy_type:
+    Desc: Text term that describes the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14737565'
+        Value: Therapeutic Procedure Performed Type
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - "Chemotherapy"
+        - "Concurrent Chemoradiation"
+        - "Hormone Therapy"
+        - "Immunotherapy"
+        - "Pharmacotherapy"
+        - "Radiopharmaceutical"
+        - "Targeted Molecular Therapy"
+        - "Not Reported"
+    Req: true
+    Strict: false
+    Private: false
+  #treatment
+  radiation_therapy_type:
+    Desc: Text term that describes the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14737565'
+        Value: Therapeutic Procedure Performed Type
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - "3-Dimensional Conformal Radiation Therapy"
+        - "Conventional Radiotherapy"
+        - "Electron Beam Radiation Therapy"
+        - "External Beam Radiation Therapy"
+        - "High-Dose Rate Brachytherapy"  
+        - "Intensity-Modulated Radiation Therapy"
+        - "Low-Dose Rate Brachytherapy"
+        - "Photon Beam Radiation Therapy"
+        - "Proton Beam Radiation Therapy"
+        - "Radiation Therapy"
+        - "Radiofrequency Ablation"
+        - "Radiopharmaceutical"
+        - "Stereotactic Body Radiation Therapy"
+        - "Stereotactic Radiosurgery"
+        - "Tomotherapy"
+        - "Not Reported"
+    Req: true
+    Strict: false
+    Private: false
+  #treatment
+  beam_radiation_type:
+    Desc: A textual description of the type of external beam radiation therapy that was administered.
+    Term:
+      - Origin: caDSR
+        Code: '7755383'
+        Value: External Beam Radiation Therapy Administered Type
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - "Electron Beam Radiation Therapy"
+        - "Photon Beam Radiation Therapy" 
+        - "Proton Beam Radiation Therapy"
+        - "Not Reported"
+    Req: true
+    Strict: false
+    Private: false
+  #treatment
+  total_radiation_dose:
+    Desc: The amount of exposure that a subject actually receives.
+    Term:
+      - Origin: caDSR
+        Code: '6642895'
+        Value: Dose
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  total_radiation_dose_unit:
+    Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
+    Term:
+      - Origin: caDSR
+        Code: '6824805'
+        Value: Dose Units
+        Version: "5.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
+  radiation_therapy_fraction:
+    Desc: Value indicating thevalue indicating a single radiation therapy fraction doses administered to a treatment field or site.
+    Term:
+      - Origin: caDSR
+        Code: '4682096'
+        Value: RT Field Fraction Count
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  fraction_radiation_dose:
+    Desc: The amount of exposure that a subject actually receives.
+    Term:
+      - Origin: caDSR
+        Code: '6642895'
+        Value: Dose
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false 
+  #treatment
+  fraction_radiation_dose_unit:
+    Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
+    Term:
+      - Origin: caDSR
+        Code: '6824805'
+        Value: Dose Units
+        Version: "5.00"
+    Type: string
+    Req: false
+    Private: false
+  #treatment
+  laterality_of_radiation_field:
+    Desc: the side or laterality of the physical structure of an organism treated with radiation therapy, treatment of a disease by means of exposure of the target or the whole body to radiation.
+    Term:
+      - Origin: caDSR
+        Code: '2178530'
+        Value: Radiation Therapy Body Region Side Administered Type
+        Version: "2.00"
+    Enum:
+      - "Both"
+      - "Left"
+      - "Right"
+      - "Neither"
+      - "Not Reported"
+    Req: false
+    Strict: false
+    Private: false
+  #treatment
+  surgery_type:
+    Desc: Text term that describes the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14737565'
+        Value: Therapeutic Procedure Performed Type
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+        - "Biopsy"
+        - "Resection"
+        - "Not Reported"
+    Req: true
+    Strict: false
+    Private: false
+  #treatment
+  resection_margin_status:
+    Desc: Text terms to describe the status of a tissue margin following surgical resection.
+    Term:
+      - Origin: caDSR
+        Code: '2608702'
+        Value: Surgical Margin Resection Status
+        Version: "2.00"
+    Type:
+      value_type: list
+      item_type:
+        - "R0, All Margins Pathologically Negative"
+        - "R1, Microscopically Positive Margins or Microscopic Residual Disease"
+        - "R2, Macroscopically Positive Margins or Gross Residual Disease"
+        - "RX, Presence of Residual Disease Cannot Be Assessed"
+    Req: false
+    Strict: false
+    Private: false
+  #treatment
+  other_treatment_type:
+    Desc: Text term that describes the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14737565'
+        Value: Therapeutic Procedure Performed Type
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type:
+          - "Allogeneic Hematopoietic Stem Cell Transplantation"
+          - "Autologous Stem Cell Transplantation"
+          - "Cellular Therapy"
+          - "Organ Transplantation"
+          - "Palliative Care"
+          - "Stem Cell Transplant"
+          - "Not Reported"
+          - "Unknown"
     Req: true
     Strict: false
     Private: false
@@ -3585,7 +3835,43 @@ PropDefinitions:
     Req: true
     Private: false  
   #treatment
-  treatment_id: 
+  treatment_chemotherapy_id: 
+    Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14569111'
+        Value: Treatment Method Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #treatment
+  treatment_radiation_id: 
+    Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14569111'
+        Value: Treatment Method Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #treatment
+  treatment_surgery_id: 
+    Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+    Term:
+      - Origin: caDSR
+        Code: '14569111'
+        Value: Treatment Method Unique Identifier
+        Version: "1.00"
+    Type: string
+    Req: true
+    Private: false
+    Key: true
+  #treatment
+  treatment_other_id: 
     Desc: A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
     Term:
       - Origin: caDSR
@@ -3717,21 +4003,6 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis_category.yml
     Req: true
-    Strict: false
-    Private: false
-  #treatment
-  treatment_agent:
-    Desc: The name of the individual therapeutic agent(s) used as part of a treatment regimen.
-    Term:
-      - Origin: caDSR
-        Code: '13579886'
-        Value: Therapeutic Procedure Agent Name
-        Version: "1.00"
-    Type:
-      value_type: list
-      item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_agent.yml
-    Req: false
     Strict: false
     Private: false
   #treatment_response

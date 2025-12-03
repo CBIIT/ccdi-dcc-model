@@ -610,7 +610,7 @@ Nodes:
       - domain_category
       - data_location
       - guid
-  treatment:
+  treatment_chemotherapy:
     Desc: "The treatment node is comprised of properties which describe the treatment regiments and time periods for a participant."
     Tags:
       Category: clinical
@@ -618,15 +618,71 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:
-      - treatment_id
+      - treatment_chemotherapy_id
+      - treatment_type
+      - chemotherapy_type 
       - age_at_treatment_start
       - age_at_treatment_end
-      - treatment_type
-      - treatment_agent
+      - chemotherapy_agent
+      - chemotherapy_class
+      - chemotherapy_subclass
       - dose
       - dose_unit
       - dose_route
       - dose_frequency
+      - protocol
+      - guid
+  treatment_radiation:
+    Desc: "Text term that describes the kind of treatment administered."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
+    Props:
+      - treatment_radiation_id
+      - treatment_type
+      - radiation_therapy_type
+      - age_at_treatment_start
+      - age_at_treatment_end
+      - beam_radiation_type
+      - total_radiation_dose
+      - total_radiation_dose_unit
+      - anatomic_site
+      - laterality_of_radiation_field
+      - radiation_therapy_fraction
+      - fraction_radiation_dose
+      - fraction_radiation_dose_unit
+      - guid
+  treatment_surgery:
+    Desc: "Text term that describes the kind of treatment administered."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
+    Props:
+      - treatment_surgery_id
+      - treatment_type
+      - surgery_type
+      - age_at_treatment_start
+      - age_at_treatment_end
+      - anatomic_site
+      - resection_margin_status
+      - guid
+  treatment_other:
+    Desc: "Text term that describes the kind of treatment administered."
+    Tags:
+      Category: clinical
+      Assignment: core
+      Class: primary
+      Template: 'Yes'
+    Props: 
+      - treatment_other_id
+      - treatment_type
+      - other_treatment_type
+      - age_at_treatment_start
+      - age_at_treatment_end
       - guid
   treatment_response:
     Desc: "The treatment response node is comprised of properties which describe the patient's response to a treatment."
@@ -819,11 +875,29 @@ Relationships:
         Dst: participant
       - Src: synonym
         Dst: sample
-  of_treatment:
+  of_treatment_other:
     Props: null
     Mul: many_to_one
     Ends:
-      - Src: treatment
+      - Src: treatment_other
+        Dst: participant
+  of_treatment_chemotherapy:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_chemotherapy
+        Dst: participant
+  of_treatment_radiation:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_radiation
+        Dst: participant
+  of_treatment_surgery:
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: treatment_surgery
         Dst: participant
   of_treatment_response:
     Props: null
