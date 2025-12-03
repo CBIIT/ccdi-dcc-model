@@ -2305,6 +2305,7 @@ PropDefinitions:
       item_type:
         - 'ICD-O-3.2'
         - 'WHO CNS5'
+        - 'WHO5 Pediatric Tumor'
         - 'Indication for Study'
         - 'French-American-British Classification'
         - 'WHO AML Classification of Tumors'
