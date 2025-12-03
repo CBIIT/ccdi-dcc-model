@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit 72cce1e
+commit 60944ce
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -566,35 +566,60 @@ synonym	domain_description	STRING
 synonym	guid	STRING
 synonym	repository_of_synonym_id	STRING
 synonym	synonym_id	STRING
-treatment	age_at_treatment_end	NUMBER
-treatment	age_at_treatment_start	NUMBER
-treatment	dose	STRING
-treatment	dose_frequency	STRING
-treatment	dose_route	STRING
-treatment	dose_unit	STRING
-treatment	guid	STRING
-treatment	treatment_id	STRING
+treatment_chemotherapy	age_at_treatment_end	NUMBER
+treatment_chemotherapy	age_at_treatment_start	NUMBER
+treatment_chemotherapy	chemotherapy_class	STRING
+treatment_chemotherapy	chemotherapy_subclass	STRING
+treatment_chemotherapy	dose	STRING
+treatment_chemotherapy	dose_frequency	STRING
+treatment_chemotherapy	dose_route	STRING
+treatment_chemotherapy	dose_unit	STRING
+treatment_chemotherapy	guid	STRING
+treatment_chemotherapy	protocol	STRING
+treatment_chemotherapy	treatment_chemotherapy_id	STRING
+treatment_other	age_at_treatment_end	NUMBER
+treatment_other	age_at_treatment_start	NUMBER
+treatment_other	guid	STRING
+treatment_other	treatment_other_id	STRING
+treatment_radiation	age_at_treatment_end	NUMBER
+treatment_radiation	age_at_treatment_start	NUMBER
+treatment_radiation	fraction_radiation_dose	STRING
+treatment_radiation	fraction_radiation_dose_unit	STRING
+treatment_radiation	guid	STRING
+treatment_radiation	laterality_of_radiation_field	Both
+treatment_radiation	laterality_of_radiation_field	Left
+treatment_radiation	laterality_of_radiation_field	Neither
+treatment_radiation	laterality_of_radiation_field	Not Reported
+treatment_radiation	laterality_of_radiation_field	Right
+treatment_radiation	radiation_therapy_fraction	STRING
+treatment_radiation	total_radiation_dose	STRING
+treatment_radiation	total_radiation_dose_unit	STRING
+treatment_radiation	treatment_radiation_id	STRING
 treatment_response	age_at_response	NUMBER
 treatment_response	guid	STRING
 treatment_response	treatment_response_id	STRING
+treatment_surgery	age_at_treatment_end	NUMBER
+treatment_surgery	age_at_treatment_start	NUMBER
+treatment_surgery	guid	STRING
+treatment_surgery	treatment_surgery_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_cell_line	cell_line	sample	NA	NA
 of_cell_line	cell_line	study	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
-of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_clinical_measure_file	clinical_measure_file	participant	NA	NA
+of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
+of_generic_file	generic_file	study	NA	NA
 of_generic_file	generic_file	participant	NA	NA
 of_generic_file	generic_file	sample	NA	NA
-of_generic_file	generic_file	study	NA	NA
-of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
+of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
 of_medical_history	medical_history	participant	NA	NA
@@ -614,11 +639,14 @@ of_study_arm	study_arm	study	NA	NA
 of_study_funding	study_funding	study	NA	NA
 of_study_personnel	study_personnel	study	NA	NA
 of_survival	survival	participant	NA	NA
+of_synonym	synonym	sample	NA	NA
 of_synonym	synonym	study	NA	NA
 of_synonym	synonym	participant	NA	NA
-of_synonym	synonym	sample	NA	NA
-of_treatment	treatment	participant	NA	NA
+of_treatment_chemotherapy	treatment_chemotherapy	participant	NA	NA
+of_treatment_other	treatment_other	participant	NA	NA
+of_treatment_radiation	treatment_radiation	participant	NA	NA
 of_treatment_response	treatment_response	participant	NA	NA
+of_treatment_surgery	treatment_surgery	participant	NA	NA
 
 property	description
 UMI_barcode_offset	The offset in sequence of the UMI identifying barcode. E.g. "16".
@@ -650,6 +678,7 @@ asbestos_exposure	The category related to contact with chemical, biological, or 
 associated_id	Text to identify the other name or alias of a person.
 authz	A free text field used to document whether the data in a repository is open access or controlled access. Open access files should have authz = ['/open']. Controlled access files have an acl value format of ['/programs/phsNNN'] (e.g.  ['/programs/1234'].
 avg_read_length	The average length for nucleic acid sequencing reads obtained after completion of the sequencing process.
+beam_radiation_type	A textual description of the type of external beam radiation therapy that was administered.
 cDNA_read	The type of read that contains the cDNA read:index1/index2/read1/read2.
 cDNA_read_offset	A description of the cDNA offset.
 cDNA_read_size	The size of the cDNA read. E.g. "98".
@@ -661,6 +690,10 @@ cell_line_id	A sequence of characters used to identify, name, or characterize a 
 cell_line_passage_number	Removal of a cell culture from the culture vessel with a subculture (passage) process, in order to keep the cells at a sufficiently low density to stimulate further growth.:A numeral or string of numerals expressing value, quantity, or identification
 checksum_algorithm	The method by which the file checksum was calculated.
 checksum_value	A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity.
+chemotherapy_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.
+chemotherapy_class	The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+chemotherapy_subclass	The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+chemotherapy_type	Text term that describes the kind of treatment administered.
 chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
 cigarettes_per_day	The average number of cigarettes smoked per day.
 clinical_measure_file_id	A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
@@ -700,7 +733,7 @@ dna_index_numeric	A decimal number capturing the ratio of the DNA content or chr
 domain_category	A textual description of a storage location for digital data.
 domain_description	A textual description of a storage location for digital data.
 dose	The amount of exposure that a subject actually receives.
-dose_frequency	The text that represents the planned dosage frequency for a agent.
+dose_frequency	The text that represents the planned dosage frequency for an agent.
 dose_route	The text that describe the dosage route.
 dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 echoPlanarPulseSequenceIndicator	The process by which an image is acquired or obtained.:An indication as to whether multiple echos of different phase steps are acquired using rephasing gradients instead of repeated 180-degree pulses. (BRIDG):The preferred Value Domain to indicate a question with permissible values of yes/no.
@@ -729,6 +762,8 @@ fixation_embedding_method	Text term that represents the method used to maintain 
 flip_angle	A measurement in magnetic resonance imaging capturing the rotation of the average axis of the protons, relative to the main magnetic field direction, induced by radiofrequency signals.
 follow_up_category	A text term based on grouping information about the health status of an individual after a study has officially closed
 follow_up_other	NCI-GLOSS Definition Monitoring a person's health over time after treatment. This includes keeping track of the health of people who participate in a clinical study or clinical trial for a period of time, both during the study and after the study ends
+fraction_radiation_dose	The amount of exposure that a subject actually receives.
+fraction_radiation_dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 funding_agency	The name of the funding source organization or sponsor.
 funding_source_program_name	The name of the program assigned by the funding agency.
 fusion_partner_exon	The text term used to describe a specific exon targeted or included in molecular analysis.
@@ -757,6 +792,7 @@ laboratory_test_method	The text term used to describe the method used for molecu
 laboratory_test_name	The name of the lab test or examination used to obtain the measurement or finding.
 last_known_survival_status	Participant vital status
 laterality	Designates the side of the body where disease is found.
+laterality_of_radiation_field	the side or laterality of the physical structure of an organism treated with radiation therapy, treatment of a disease by means of exposure of the target or the whole body to radiation.
 library_construction_method	A textual description of the procedures performed for building a collection of double stranded DNA fragments flanked by oligonucleotide sequence adapters to enable their analysis by high-throughput sequencing.
 library_id	A short unique identifier assigned to a nucleotide sequencing library.
 library_layout	The read strategy or method that was used for sequencing and analysis of a nucleotide library.
@@ -787,6 +823,7 @@ number_of_samples	The number of samples associated with a subset of a larger pop
 occupation	The text term that describes a person's occupation.
 orcid	A persistent unique digital identifier assigned to a person by the Open Researcher and Contributor ID (ORCID) organization.
 organism_species	The organism from which the sample is derived or originated.
+other_treatment_type	Text term that describes the kind of treatment administered.
 pack_years_smoked	Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years smoked divided by 20.
 participant_age_at_collection	The age (in days) of the subject at the time of specimen collection.
 participant_age_at_imaging	The age (in days) of the subject at the time of an imaging procedure.
@@ -803,11 +840,14 @@ personnel_type	The role of personnel in the study.
 phaseContrastIndicator	An indicator response as to whether or not the pulse sequence is a phase contrast sequence.
 pixel_spacing	Physical distance between the center of each pixel in an image.
 platform	The words used to describe the instrument used to carry out a high-throughput sequencing experiment.
+protocol	The name of the formal plan for an experiment or research activity.
 protocols_link	A sequence of letters, numbers, or other characters that uniquely identifies a study protocol or a unique code used by publishers in the identification and exchange of the content of a digital object.
 publication_id	A Digital Object Identifier (DOI) of the publication associated with the study.
 pubmed_id	PubMed identifier of the publication associated with the study.
 pulseSequenceName	The process by which an image is acquired or obtained. The literal identifier for the pulse sequence.
 race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories SPD 15 (spd15revision.gov).
+radiation_therapy_fraction	Value indicating thevalue indicating a single radiation therapy fraction doses administered to a treatment field or site.
+radiation_therapy_type	Text term that describes the kind of treatment administered.
 radiology_file_id	A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
 radon_exposure	The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
 reference_genome	One or more characters used to identify the published NCBI genetic sequence that is used as a reference against which other sequences are compared.
@@ -820,6 +860,7 @@ reported_significance_system	The source of the reported significance.
 reporter_label	The text term to describe the labeled methyl group used as a molecular tag.
 repository_name	A textual description of a storage location for digital data.
 repository_of_synonym_id	A textual description of a storage location for digital data.
+resection_margin_status	Text terms to describe the status of a tissue margin following surgical resection.
 resonantNucleusCode	Text specifying the atomic nucleus that is resonant at the transmitter frequency.
 respirable_crystalline_silica_exposure	The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
 response	The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
@@ -869,6 +910,7 @@ study_status	The status of the study.
 study_status_id	A unique sequence of characters used to identify an attribute shared by all members of a class.
 submitted_anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 submitted_diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
+surgery_type	Text term that describes the kind of treatment administered.
 survival_id	A unique sequence of characters used to identify an attribute shared by all members of a class.
 synonym_id	A sequence of characters used to identify, name, or characterize a backup sequence of characters used to identify an entity.
 test	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
@@ -883,13 +925,17 @@ tobacco_smoking_quit_year	A record of an individual's background in regard to sm
 tobacco_smoking_status	A category which describes an individual's history of smoking tobacco.
 toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childhood Cancer Stage Guidelines.
 total_number_of_input_cells	Numeric value used to describe the number of cells used for molecular testing.
+total_radiation_dose	The amount of exposure that a subject actually receives.
+total_radiation_dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 total_size_of_data_files	The measure (in bytes) of how much space all data files, for a given study, take up on a storage medium
 transcript	Alphanumeric value used to describe the transcript of a specific genetic variant.
 translocation_partner_chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
 translocation_partner_cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
-treatment_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.
-treatment_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+treatment_chemotherapy_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+treatment_other_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
+treatment_radiation_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
 treatment_response_id	In medicine, an improvement related to treatment. One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.
+treatment_surgery_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
 treatment_type	Text term that describes the kind of treatment administered.
 tumor_confirmed_not_to_be_mus_or_ebv_origin	Tumor confirmed not to be of mouse/EBV origin
 tumor_grade	A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
