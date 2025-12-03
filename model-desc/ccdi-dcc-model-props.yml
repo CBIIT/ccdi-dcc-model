@@ -3514,7 +3514,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/treatment_agent.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_agent.yml
     Req: false
     Strict: false
     Private: false
