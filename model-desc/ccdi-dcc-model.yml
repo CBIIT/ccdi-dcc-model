@@ -487,13 +487,11 @@ Nodes:
       - study_description
       - external_url
       - experimental_strategy_and_data_subtype
-      - study_status
+      - study_phase
       - study_period_start
       - study_period_stop
       - study_data_types
-      - size_of_data_being_uploaded
-      - curation_status
-      - release_status
+      - promotion_status
       - guid
       - crdc_id
   study_admin:
@@ -508,8 +506,6 @@ Nodes:
       - organism_species
       - adult_or_childhood_study 
       - file_types_and_format
-      - number_of_participants
-      - number_of_samples
       - guid
   study_arm: 
     Desc: "The study arm node is comprised of properties which describe the arms that are present in the study."
