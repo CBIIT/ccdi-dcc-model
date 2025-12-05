@@ -3169,17 +3169,6 @@ PropDefinitions:
     Req: true
     Private: false    
   #study_admin
-  size_of_data_being_uploaded:
-    Desc: The measure (in bytes) of how much space a data file takes up on a storage medium.
-    Term:
-      - Origin: NCIt
-        Code: 'C171192'
-        Value: Electronic Data File Size Integer
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false
-  #study_admin
   study_data_types:
     Desc: The type of study or experimental data generated for testing or research purposes.
     Term:
@@ -3457,10 +3446,14 @@ PropDefinitions:
     Private: false
   #study_status
   total_size_of_data_files:
-    Desc: The measure (in bytes) of how much space all data files, for a given study, take up on a storage medium
+    Desc: "The measure (in bytes) of how much space all data files, for a given study, takes up on a storage medium."
     Term:
       - Origin: caDSR
         Code: '11479876'
+        Value: Electronic Data File Size Integer
+        Version: "1.00"
+      - Origin: NCIt
+        Code: 'C171192'
         Value: Electronic Data File Size Integer
         Version: "1.00"
     Type: integer
