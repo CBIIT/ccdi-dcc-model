@@ -841,6 +841,12 @@ Relationships:
     Ends:
       - Src: study_admin
         Dst: study
+  of_study_status: 
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: study_status
+        Dst: study      
   of_study_arm: 
     Props: null
     Mul: many_to_one
