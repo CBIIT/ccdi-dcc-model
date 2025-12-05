@@ -484,29 +484,24 @@ PropDefinitions:
         Version: "1.00"
     Type: integer
   #study
-  curation_status:
-    Desc: The curation status of the study.
+  promotion_status:
+    Desc: "The promotion flag for the entire study."
     Term:
       - Origin: caDSR
-        Code: '16459664'
-        Value: Curation Status
+        Code: ''
+        Value: Promotion Status
         Version: "1.00"
     Type:
       value_type: list
       item_type:
-        - "Under curation"
-        - "On hold"
-        - "Validated"
-        - "DCF indexed"
-        - "dbGaP released"
-        - "CCDI released"
-        - "Redacted"
+        - "Promote"
+        - "Redact"
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #study
   release_status:
-    Desc: "The status on whether the study is to be made available for release to production."
+    Desc: "The production state of the study given a repository."
     Term:
       - Origin: caDSR
         Code: ''
