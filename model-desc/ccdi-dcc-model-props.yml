@@ -449,7 +449,7 @@ PropDefinitions:
     Req: false
     Private: false 
   #study
-  study_status:
+  study_phase:
     Desc: The status of the study.
     Term:
       - Origin: caDSR
