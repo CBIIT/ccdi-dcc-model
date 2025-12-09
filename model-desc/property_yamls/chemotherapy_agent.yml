@@ -1,5 +1,5 @@
 PropDefinitions:
-  treatment_agent:
+  chemotherapy_agent:
     - "10-Deacetyltaxol"
     - "11C Topotecan"
     - "11D10 AluGel Anti-Idiotype Monoclonal Antibody"
