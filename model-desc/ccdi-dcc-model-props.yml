@@ -3509,24 +3509,30 @@ PropDefinitions:
     Private: false
   #treatment
   chemotherapy_class:
-    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Desc: The type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
     Term:
       - Origin: caDSR
-        Code: '3378323'
-        Value: Clinical Trial Drug Classification Name
+        Code: '16804858'
+        Value: Treatment Chemotherapy Agent Class Category
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
+      item_type:
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_class.yml
     Req: false
     Private: false
   #treatment
   chemotherapy_subclass:
-    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Desc: The sub-type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
     Term:
       - Origin: caDSR
-        Code: '3378323'
-        Value: Clinical Trial Drug Classification Name
+        Code: '16804870'
+        Value: Treatment Chemotherapy Agent Subclass Category
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
+      item_type:
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_subclassyml
     Req: false
     Private: false
   #treatment
