@@ -3532,7 +3532,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_subclassyml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_subclass.yml
     Req: false
     Private: false
   #treatment
