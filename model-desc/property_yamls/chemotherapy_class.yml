@@ -1,0 +1,15 @@
+PropDefinitions:
+  chemotherapy_class:
+    - "Alkylating Agent"
+    - "Anthracyclines"
+    - "Antimetabolites"
+    - "Corticosteroids"
+    - "Nitrosoureas"
+    - "Other Anti-Tumor Antibiotic"
+    - "Other types of chemotherapy"
+    - "Taxanes"
+    - "Topoisomerase-I Inhibitor"
+    - "Topoisomerase-II Inhibitor"
+    - "Vinca alkaloids"
+
+
