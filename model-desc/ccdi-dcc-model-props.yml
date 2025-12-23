@@ -483,6 +483,8 @@ PropDefinitions:
         Value: Administrative Activity Study Period End Year Date
         Version: "1.00"
     Type: integer
+    Req: false
+    Private: false
   #study
   promotion_status:
     Desc: "The promotion flag for the entire study."
@@ -1036,7 +1038,7 @@ PropDefinitions:
         Value: Cell Specimen Passage Number
         Version: "1.00"
     Type: number
-    Reg: false
+    Req: false
     Private: false
   #pathology_file
   magnification:
@@ -3481,6 +3483,8 @@ PropDefinitions:
         Version: ""
     Type: 
       pattern: '\b(0?[1-9]|1[0-2])/[0-9]{4}\b'
+    Req: false
+    Private: false  
   #study_status
   number_of_files:
     Desc: The number of unique files associated with the study.    
