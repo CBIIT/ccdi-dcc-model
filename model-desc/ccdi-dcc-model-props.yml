@@ -2734,7 +2734,7 @@ PropDefinitions:
       value_type: list
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/anatomic_site.yml
-    Req: true
+    Req: false
     Strict: false
     Private: false
   #sample
