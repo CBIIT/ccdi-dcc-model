@@ -449,7 +449,7 @@ PropDefinitions:
     Req: false
     Private: false 
   #study
-  study_status:
+  study_phase:
     Desc: The status of the study.
     Term:
       - Origin: caDSR
@@ -484,29 +484,24 @@ PropDefinitions:
         Version: "1.00"
     Type: integer
   #study
-  curation_status:
-    Desc: The curation status of the study.
+  promotion_status:
+    Desc: "The promotion flag for the entire study."
     Term:
       - Origin: caDSR
-        Code: '16459664'
-        Value: Curation Status
+        Code: ''
+        Value: Promotion Status
         Version: "1.00"
     Type:
       value_type: list
       item_type:
-        - "Under curation"
-        - "On hold"
-        - "Validated"
-        - "DCF indexed"
-        - "dbGaP released"
-        - "CCDI released"
-        - "Redacted"
+        - "Promote"
+        - "Redact"
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #study
   release_status:
-    Desc: "The status on whether the study is to be made available for release to production."
+    Desc: "The production state of the study given a repository."
     Term:
       - Origin: caDSR
         Code: ''
@@ -2305,6 +2300,7 @@ PropDefinitions:
       item_type:
         - 'ICD-O-3.2'
         - 'WHO CNS5'
+        - 'WHO5 Pediatric Tumor'
         - 'Indication for Study'
         - 'French-American-British Classification'
         - 'WHO AML Classification of Tumors'
@@ -2724,7 +2720,7 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/anatomic_site.yml
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #sample
   submitted_anatomic_site:
@@ -3150,7 +3146,7 @@ PropDefinitions:
     Req: false
     Strict: true
     Private: false  
-  #study_admin
+  #study_status
   number_of_participants:
     Desc: The number of unique participant instances associated with a systematic investigation into a subject.
     Term:
@@ -3159,9 +3155,9 @@ PropDefinitions:
         Value: Research Activity Unique Subjects Count
         Version: "1.00"
     Type: integer
-    Req: false
+    Req: true
     Private: false
-  #study_admin
+  #study_staus
   number_of_samples:
     Desc: The number of samples associated with a subset of a larger population associated with systematic investigation into a subject.    
     Term:
@@ -3170,19 +3166,8 @@ PropDefinitions:
         Value: Research Activity Sample Size Count
         Version: "1.00"
     Type: integer
-    Req: false
+    Req: true
     Private: false    
-  #study_admin
-  size_of_data_being_uploaded:
-    Desc: The measure (in bytes) of how much space a data file takes up on a storage medium.
-    Term:
-      - Origin: NCIt
-        Code: 'C171192'
-        Value: Electronic Data File Size Integer
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false
   #study_admin
   study_data_types:
     Desc: The type of study or experimental data generated for testing or research purposes.
@@ -3461,10 +3446,14 @@ PropDefinitions:
     Private: false
   #study_status
   total_size_of_data_files:
-    Desc: The measure (in bytes) of how much space all data files, for a given study, take up on a storage medium
+    Desc: "The measure (in bytes) of how much space all data files, for a given study, takes up on a storage medium."
     Term:
       - Origin: caDSR
         Code: '11479876'
+        Value: Electronic Data File Size Integer
+        Version: "1.00"
+      - Origin: NCIt
+        Code: 'C171192'
         Value: Electronic Data File Size Integer
         Version: "1.00"
     Type: integer
@@ -3501,7 +3490,7 @@ PropDefinitions:
         Value: 'TBD'
         Version: ""
     Type: integer
-    Req: false
+    Req: true
     Private: false    
   #treatment
   chemotherapy_agent:
@@ -3520,24 +3509,30 @@ PropDefinitions:
     Private: false
   #treatment
   chemotherapy_class:
-    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Desc: The type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
     Term:
       - Origin: caDSR
-        Code: '3378323'
-        Value: Clinical Trial Drug Classification Name
+        Code: '16804858'
+        Value: Treatment Chemotherapy Agent Class Category
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
+      item_type:
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_class.yml
     Req: false
     Private: false
   #treatment
   chemotherapy_subclass:
-    Desc: The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+    Desc: The sub-type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
     Term:
       - Origin: caDSR
-        Code: '3378323'
-        Value: Clinical Trial Drug Classification Name
+        Code: '16804870'
+        Value: Treatment Chemotherapy Agent Subclass Category
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
+      item_type:
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_subclass.yml
     Req: false
     Private: false
   #treatment
@@ -3964,7 +3959,7 @@ PropDefinitions:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis.yml
     Req: true
     Strict: true
-    Private: false  
+    Private: false
   #diagnosis, sample
   submitted_diagnosis:
     Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.    

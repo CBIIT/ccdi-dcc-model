@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit 60944ce
+commit 4b209e3
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -476,22 +476,19 @@ study	crdc_id	STRING
 study	dbgap_accession	STRING
 study	external_url	STRING
 study	guid	STRING
-study	size_of_data_being_uploaded	STRING
 study	study_acronym	STRING
 study	study_description	STRING
 study	study_id	STRING
 study	study_name	STRING
 study	study_period_start	INTEGER
 study	study_period_stop	INTEGER
-study	study_status	Active
-study	study_status	Completed
-study	study_status	Provisional
+study	study_phase	Active
+study	study_phase	Completed
+study	study_phase	Provisional
 study_admin	adult_or_childhood_study	Adult
 study_admin	adult_or_childhood_study	Pediatric
 study_admin	file_types_and_format	STRING
 study_admin	guid	STRING
-study_admin	number_of_participants	INTEGER
-study_admin	number_of_samples	INTEGER
 study_admin	organism_species	Canine
 study_admin	organism_species	Cell Line
 study_admin	organism_species	Human
@@ -568,8 +565,6 @@ synonym	repository_of_synonym_id	STRING
 synonym	synonym_id	STRING
 treatment_chemotherapy	age_at_treatment_end	NUMBER
 treatment_chemotherapy	age_at_treatment_start	NUMBER
-treatment_chemotherapy	chemotherapy_class	STRING
-treatment_chemotherapy	chemotherapy_subclass	STRING
 treatment_chemotherapy	dose	STRING
 treatment_chemotherapy	dose_frequency	STRING
 treatment_chemotherapy	dose_route	STRING
@@ -607,8 +602,8 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_cell_line	cell_line	sample	NA	NA
 of_cell_line	cell_line	study	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
-of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_clinical_measure_file	clinical_measure_file	sample	NA	NA
+of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
@@ -618,30 +613,31 @@ of_family_relationship	family_relationship	participant	NA	NA
 of_generic_file	generic_file	study	NA	NA
 of_generic_file	generic_file	participant	NA	NA
 of_generic_file	generic_file	sample	NA	NA
-of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
+of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
 of_medical_history	medical_history	participant	NA	NA
 of_methylation_array_file	methylation_array_file	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_pathology_file	pathology_file	sample	NA	NA
-of_pdx	pdx	sample	NA	NA
 of_pdx	pdx	study	NA	NA
+of_pdx	pdx	sample	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
 of_sample	sample	pdx	NA	NA
-of_sample	sample	participant	NA	NA
 of_sample	sample	cell_line	NA	NA
+of_sample	sample	participant	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
 of_study_funding	study_funding	study	NA	NA
 of_study_personnel	study_personnel	study	NA	NA
+of_study_status	study_status	study	NA	NA
 of_survival	survival	participant	NA	NA
+of_synonym	synonym	participant	NA	NA
 of_synonym	synonym	sample	NA	NA
 of_synonym	synonym	study	NA	NA
-of_synonym	synonym	participant	NA	NA
 of_treatment_chemotherapy	treatment_chemotherapy	participant	NA	NA
 of_treatment_other	treatment_other	participant	NA	NA
 of_treatment_radiation	treatment_radiation	participant	NA	NA
@@ -691,8 +687,8 @@ cell_line_passage_number	Removal of a cell culture from the culture vessel with 
 checksum_algorithm	The method by which the file checksum was calculated.
 checksum_value	A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity.
 chemotherapy_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.
-chemotherapy_class	The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
-chemotherapy_subclass	The text that represents the name of the drug classification/category associated with a specific therapeutic agent.
+chemotherapy_class	The type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
+chemotherapy_subclass	The sub-type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
 chemotherapy_type	Text term that describes the kind of treatment administered.
 chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
 cigarettes_per_day	The average number of cigarettes smoked per day.
@@ -708,7 +704,6 @@ consent_group_name	The words or acronym which describe a set of study participan
 consent_group_suffix	Suffix applied to DCF indexing file record to note the appropriate participant's consent group.
 coverage	The number of times a particular locus (site, nucleotide, amplicon, region) was sequenced.
 crdc_id	The crdc_id is a unique identifier that is generated by CRDC Data Submission Portal.
-curation_status	The curation status of the study.
 custom_assembly_fasta_file_for_alignment	The name of the custom assembly fasta file used during sequence alignment.
 cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
 cytogenomic_file_id	A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
@@ -840,6 +835,7 @@ personnel_type	The role of personnel in the study.
 phaseContrastIndicator	An indicator response as to whether or not the pulse sequence is a phase contrast sequence.
 pixel_spacing	Physical distance between the center of each pixel in an image.
 platform	The words used to describe the instrument used to carry out a high-throughput sequencing experiment.
+promotion_status	The promotion flag for the entire study.
 protocol	The name of the formal plan for an experiment or research activity.
 protocols_link	A sequence of letters, numbers, or other characters that uniquely identifies a study protocol or a unique code used by publishers in the identification and exchange of the content of a digital object.
 publication_id	A Digital Object Identifier (DOI) of the publication associated with the study.
@@ -853,7 +849,7 @@ radon_exposure	The category related to contact with chemical, biological, or phy
 reference_genome	One or more characters used to identify the published NCBI genetic sequence that is used as a reference against which other sequences are compared.
 reference_genome_assembly	One or more characters used to identify the published NCBI genetic sequence that is used as a reference against which other sequences are compared.
 relationship	The subgroup that describes the state of connectedness between members of the unit of society organized around kinship ties.
-release_status	The status on whether the study is to be made available for release to production.
+release_status	The production state of the study given a repository.
 repetition_time	A measurement of the amount of time in milliseconds between successive pulse sequences applied to the same slice.
 reported_significance	The treatment or management implications for a patient's condition caused by a gain, loss or alteration of the sequences comprising a gene, as defined by the American College of Medical Genetics and Genomics (ACMG) .
 reported_significance_system	The source of the reported significance.
@@ -881,7 +877,6 @@ sequence_alignment_software	The name of the software program used to align nucle
 sequencing_file_id	A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
 sex_at_birth	A textual description of a person's sex at birth.
 single_cell_entity	The type of single cell entity derived from isolation protocol e.g. "whole cell", "nucleus", "cell-cell multimer", "spatially encoded cell barcoding".
-size_of_data_being_uploaded	The measure (in bytes) of how much space a data file takes up on a storage medium.
 slice_thickness	A string of characters representing either a fixed point number or a floating point number capturing the nominal slice thickness relative to the patient-based coordinate system expressed in number of millimeters.
 slim_url	File path to IDS SLIM viewer
 smoking_frequency	The number of occurrences of smoking over a time period.
@@ -904,9 +899,9 @@ study_name	The narrative title used as a textual label for a research data colle
 study_period_start	The year in which the study started.
 study_period_stop	The year in which the study ended.
 study_personnel_id	A sequence of characters used to uniquely identify, name, or characterize the person who performs a particular role within the context of a specific study.
+study_phase	The status of the study.
 study_repository_released	The month and year in which the repository released the received data.
 study_repository_start	The month and year in which the repository started to receive the data.
-study_status	The status of the study.
 study_status_id	A unique sequence of characters used to identify an attribute shared by all members of a class.
 submitted_anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 submitted_diagnosis	The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
@@ -927,7 +922,7 @@ toronto_childhood_cancer_staging	Cancer stage as captured by the Toronto Childho
 total_number_of_input_cells	Numeric value used to describe the number of cells used for molecular testing.
 total_radiation_dose	The amount of exposure that a subject actually receives.
 total_radiation_dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
-total_size_of_data_files	The measure (in bytes) of how much space all data files, for a given study, take up on a storage medium
+total_size_of_data_files	The measure (in bytes) of how much space all data files, for a given study, takes up on a storage medium.
 transcript	Alphanumeric value used to describe the transcript of a specific genetic variant.
 translocation_partner_chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
 translocation_partner_cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.

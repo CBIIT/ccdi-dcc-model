@@ -1,5 +1,5 @@
 Handle: CCDI-DCC
-Version: v0.0.2
+Version: v1.0.0
 Nodes:
   cell_line:
     Desc: "The cell line node is comprised of properties which describe cell lines that are either derived from samples or commercially obtained."
@@ -338,6 +338,7 @@ Nodes:
       - authz
       - file_url
       - dcf_indexd_guid
+      - submitted_anatomic_site
       - anatomic_site
       - participant_age_at_imaging
       - image_modality
@@ -403,6 +404,7 @@ Nodes:
       Template: 'Yes'
     Props:
       - sample_id
+      - submitted_anatomic_site
       - anatomic_site
       - participant_age_at_collection
       - sample_tumor_status
@@ -487,13 +489,11 @@ Nodes:
       - study_description
       - external_url
       - experimental_strategy_and_data_subtype
-      - study_status
+      - study_phase
       - study_period_start
       - study_period_stop
       - study_data_types
-      - size_of_data_being_uploaded
-      - curation_status
-      - release_status
+      - promotion_status
       - guid
       - crdc_id
   study_admin:
@@ -508,8 +508,6 @@ Nodes:
       - organism_species
       - adult_or_childhood_study 
       - file_types_and_format
-      - number_of_participants
-      - number_of_samples
       - guid
   study_arm: 
     Desc: "The study arm node is comprised of properties which describe the arms that are present in the study."
@@ -648,6 +646,7 @@ Nodes:
       - beam_radiation_type
       - total_radiation_dose
       - total_radiation_dose_unit
+      - submitted_anatomic_site
       - anatomic_site
       - laterality_of_radiation_field
       - radiation_therapy_fraction
@@ -667,6 +666,7 @@ Nodes:
       - surgery_type
       - age_at_treatment_start
       - age_at_treatment_end
+      - submitted_anatomic_site
       - anatomic_site
       - resection_margin_status
       - guid
@@ -841,6 +841,12 @@ Relationships:
     Ends:
       - Src: study_admin
         Dst: study
+  of_study_status: 
+    Props: null
+    Mul: many_to_one
+    Ends:
+      - Src: study_status
+        Dst: study      
   of_study_arm: 
     Props: null
     Mul: many_to_one
