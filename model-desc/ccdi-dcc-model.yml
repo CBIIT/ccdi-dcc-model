@@ -195,8 +195,10 @@ Nodes:
       Template: 'Yes'
     Props:
       - medical_history_id
+      - age_at_event
       - medical_history_category
-      - medical_history_condition
+      - medical_history_event
+      - comorbidity_method_of_diagnosis
       - guid
   laboratory_test:
     Desc: "The molecular test node is comprised of properties which describe varying tests results for participants."
@@ -585,12 +587,6 @@ Nodes:
       - first_event
       - event_free_survival_status
       - age_at_event_free_survival_status
-      - follow_up_category
-      - follow_up_other
-      - adverse_event
-      - comorbidity
-      - comorbidity_method_of_diagnosis
-      - risk_factor
       - cause_of_death
       - guid
   synonym:
