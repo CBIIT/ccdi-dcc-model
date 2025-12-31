@@ -338,6 +338,7 @@ Nodes:
       - authz
       - file_url
       - dcf_indexd_guid
+      - submitted_anatomic_site
       - anatomic_site
       - participant_age_at_imaging
       - image_modality
@@ -403,6 +404,7 @@ Nodes:
       Template: 'Yes'
     Props:
       - sample_id
+      - submitted_anatomic_site
       - anatomic_site
       - participant_age_at_collection
       - sample_tumor_status
@@ -644,6 +646,7 @@ Nodes:
       - beam_radiation_type
       - total_radiation_dose
       - total_radiation_dose_unit
+      - submitted_anatomic_site
       - anatomic_site
       - laterality_of_radiation_field
       - radiation_therapy_fraction
@@ -663,6 +666,7 @@ Nodes:
       - surgery_type
       - age_at_treatment_start
       - age_at_treatment_end
+      - submitted_anatomic_site
       - anatomic_site
       - resection_margin_status
       - guid
