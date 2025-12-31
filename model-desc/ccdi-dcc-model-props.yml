@@ -2720,7 +2720,7 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/anatomic_site.yml
     Req: true
-    Strict: false
+    Strict: true
     Private: false
   #sample
   submitted_anatomic_site:
@@ -3959,7 +3959,7 @@ PropDefinitions:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis.yml
     Req: true
     Strict: true
-    Private: false  
+    Private: false
   #diagnosis, sample
   submitted_diagnosis:
     Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.    
