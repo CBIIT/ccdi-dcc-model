@@ -1130,9 +1130,12 @@ PropDefinitions:
         Value: Medical History Relevant Condition Category
         Version: "1.00"
     Enum:
+      - "Adverse Event"
       - "Autoimmune Disease"
       - "Cancer"
+      - "Comorbidity"
       - "Congenital Anomaly"
+      - "Risk Factor"
       - "Structural Birth Defect"
       - "Genetic Syndrome"
       - "Not Reported"
@@ -1558,67 +1561,6 @@ PropDefinitions:
     Req: false
     Private: false
   #survival
-  follow_up_category:
-    Desc: A text term based on grouping information about the health status of an individual after a study has officially closed
-    Term:
-      - Origin: caDSR
-        Code: '14480973'
-        Value: Subject Follow-Up Category
-        Version: "1.00"
-    Enum:
-      - "adverse_event"
-      - "comorbidity"
-      - "risk_factor"
-      - "other"
-    Req: false
-    Strict: false
-    Private: false
-  #survival
-  adverse_event:
-    Desc: Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name
-    Term:
-      - Origin: caDSR
-        Code: '3125302'
-        Value: adverse event
-        Version: "1.10"
-    Type:
-      value_type: list
-      item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/adverse_event.yml
-    Req: false
-    Strict: false
-    Private: false
-  #survival
-  comorbidity:
-    Desc: The class or category of the secondary disease(s).
-    Term:
-      - Origin: caDSR
-        Code: '14483678'
-        Value: Person Comorbidity Type
-        Version: "1.00"
-    Type:
-      value_type: list
-      item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/comorbidity.yml
-    Req: false
-    Strict: false
-    Private: false          
-  #survival
-  comorbidity_method_of_diagnosis:
-    Desc: The class of clinical or laboratory procedure(s) used to determine the secondary disease diagnosis.
-    Term: 
-      - Origin: caDSR
-        Code: '14483681'
-        Value: Comorbidity Disease Diagnosis Method Type
-        Version: "1.00"
-    Type:
-      value_type: list
-      item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/comorbidity_method_of_diagnosis.yml
-    Req: false
-    Strict: false
-    Private: false
-  #survival
   cause_of_death:
     Desc: A high level grouping of the circumstance or condition of greatest rank or importance that results in the death of a living being.
     Term:
@@ -1757,34 +1699,6 @@ PropDefinitions:
     Type: number
     Req: true
     Private: false
-#follow_up
-  risk_factor:
-    Desc: "The text term used to describe a risk factor the patient had at the time of or prior to their diagnosis."
-    Term:
-      - Origin: caDSR
-        Code: '6142389'
-        Value: Risk Factor 
-        Version: "2.00"
-    Type:
-      value_type: list
-      item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/risk_factor.yml
-    Req: false
-    Strict: false
-    Private: false  
-  #follow_up
-  follow_up_other:
-    Desc: "NCI-GLOSS Definition Monitoring a person's health over time after treatment. This includes keeping track of the health of people who participate in a clinical study or clinical trial for a period of time, both during the study and after the study ends"
-    Term: 
-      - Origin: caDSR
-        Code: '3119787'
-        Value: Follow Up
-        Version: "1.00"
-    Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/follow_up_other.yml
-    Req: false
-    Strict: false
-    Private: false  
   #sequencing_file
   cDNA_read:
     Desc: The type of read that contains the cDNA read:index1/index2/read1/read2.
