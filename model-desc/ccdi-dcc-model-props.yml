@@ -1141,7 +1141,17 @@ PropDefinitions:
     Strict: false
     Private: false
   #medical_history
-  medical_history_condition:
+  age_at_event:
+    Desc: The age of the subject.
+    Term:
+      - Origin: caDSR
+        Code: 6412753
+        Value: Age
+    Type: number
+    Req: true
+    Private: false
+  #medical_history
+  medical_history_event:
     Desc: The identifiable class of injuries, disabilities, syndromes, or symptoms found in an individual's health background.
     Term:
       - Origin: caDSR
@@ -1151,7 +1161,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/medical_history_condition.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/medical_history_event.yml
     Req: true
     Strict: false
     Private: false
