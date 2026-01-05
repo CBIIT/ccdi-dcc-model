@@ -186,19 +186,6 @@ Nodes:
       - translocation_partner_chromosome
       - translocation_partner_cytoband
       - guid
-  medical_history:
-    Desc: "The medical history node is comprised of properties which describe the participant's medical conditions."
-    Tags:
-      Category: clinical
-      Assignment: extended
-      Class: secondary
-      Template: 'Yes'
-    Props:
-      - medical_history_id
-      - age_at_event
-      - medical_history_category
-      - medical_history_event
-      - guid
   laboratory_test:
     Desc: "The molecular test node is comprised of properties which describe varying tests results for participants."
     Tags:
@@ -217,6 +204,19 @@ Nodes:
       - test_result_numeric
       - test_result_unit
       - sensitivity
+      - guid
+  medical_history:
+    Desc: "The medical history node is comprised of properties which describe the participant's medical conditions."
+    Tags:
+      Category: clinical
+      Assignment: extended
+      Class: secondary
+      Template: 'Yes'
+    Props:
+      - medical_history_id
+      - age_at_event
+      - medical_history_category
+      - medical_history_event
       - guid
   methylation_array_file:
     Desc: "The methylation array file node is comprised of properties which describe file metadata specific to methylation array analysis."
