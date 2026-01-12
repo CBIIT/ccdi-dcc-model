@@ -7,6 +7,7 @@ PropDefinitions:
     - "bed"
     - "bif"
     - "bw"
+    - "cnn"
     - "cnr"
     - "cns"
     - "cram"
