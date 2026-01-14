@@ -1168,6 +1168,17 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
+  #medical_history
+  medical_event_result: 
+    Desc: The clinical test or procedure result value.
+    Term: 
+      - Origin: caDSR
+        Code: '16306793'
+        Value: Health Status Assessment Clinical Observation Original Result or Finding Text
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
   #exposure
   exposure_id:
     Desc: A unique sequence of characters used to identify, name, or characterize the type of chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
