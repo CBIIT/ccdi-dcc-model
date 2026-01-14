@@ -217,6 +217,7 @@ Nodes:
       - age_at_event
       - medical_history_category
       - medical_history_event
+      - medical_event_result
       - guid
   methylation_array_file:
     Desc: "The methylation array file node is comprised of properties which describe file metadata specific to methylation array analysis."
