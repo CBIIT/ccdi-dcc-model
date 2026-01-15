@@ -216,7 +216,7 @@ Nodes:
       - medical_history_id
       - age_at_event
       - medical_history_category
-      - medical_history_event
+      - medical_history_condition_event
       - medical_event_result
       - guid
   methylation_array_file:
