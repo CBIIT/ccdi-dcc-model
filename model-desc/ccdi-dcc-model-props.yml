@@ -1156,7 +1156,7 @@ PropDefinitions:
     Req: true
     Private: false
   #medical_history
-  medical_history_event:
+  medical_history_condition_event:
     Desc: The identifiable class of injuries, disabilities, syndromes, or symptoms found in an individual's health background.
     Term:
       - Origin: caDSR
@@ -1166,7 +1166,7 @@ PropDefinitions:
     Type:
       value_type: list
       item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/medical_history_event.yml
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/medical_history_condition_event.yml
     Req: true
     Strict: false
     Private: false
