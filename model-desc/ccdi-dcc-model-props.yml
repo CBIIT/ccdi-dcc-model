@@ -1133,11 +1133,13 @@ PropDefinitions:
       - "Adverse Event"
       - "Autoimmune Disease"
       - "Cancer"
+      - "Clinical Assessment"
       - "Comorbidity"
       - "Congenital Anomaly"
       - "Risk Factor"
       - "Structural Birth Defect"
       - "Genetic Syndrome"
+      - "Moleculare Targeted Therapy"
       - "Not Reported"
       - "Unknown"
     Req: true
