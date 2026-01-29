@@ -2808,6 +2808,7 @@ PropDefinitions:
       - 'Locoregional'
       - 'Metastatic'
       - 'Regional'
+      - 'Not Applicable'
       - 'Not Reported'
       - 'Unknown'
     Req: true
