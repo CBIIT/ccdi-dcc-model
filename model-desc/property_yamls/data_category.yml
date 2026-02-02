@@ -21,6 +21,7 @@ PropDefinitions:
     - "Radiology Imaging"
     - "Sequencing"
     - "Simple Nucleotide Variation"
+    - "Spatial Transcriptomics"
     - "Supplemental"
     - "Transcriptome Profiling"
     - "Tumor Normal Clinical Data"
