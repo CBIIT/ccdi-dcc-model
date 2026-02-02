@@ -1,7 +1,6 @@
 PropDefinitions:
   file_type:
     - "bam"
-    - "bam_index"
     - "bai"
     - "bcf"
     - "bed"
@@ -11,7 +10,6 @@ PropDefinitions:
     - "cnr"
     - "cns"
     - "cram"
-    - "cram_index"
     - "crai"
     - "csi"
     - "csv"
