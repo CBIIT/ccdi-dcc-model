@@ -2100,6 +2100,7 @@ PropDefinitions:
         Version: "1.00"
     Enum:
       - 'brain stem'
+      - 'cerebellum'
       - 'intraperitoneal cavity'
       - 'left cerebrum'
       - 'mammary fat pad'
