@@ -2,9 +2,9 @@ PropDefinitions:
   data_category:
     - "Clinical"
     - "Copy Number Variation"
-    - "COG Clinical Data"
+    - "COG Clinical Report"
     - "Gene Expression"
-    - "Gene Fusion Clinical Data"
+    - "Gene Fusion Clinical Report"
     - "Generic"
     - "Genomic Structural Variation"
     - "Genomics"
