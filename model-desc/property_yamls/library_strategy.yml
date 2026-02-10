@@ -6,6 +6,7 @@ PropDefinitions:
     - "Bisulfite-Seq"
     - "ChIA-PET"
     - "ChIP-Seq"
+    - "CITE-Seq"
     - "CLONE"
     - "CLONEEND"
     - "CTS"
