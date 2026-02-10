@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit e40f4ba
+commit 97a3bf5
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -455,7 +455,7 @@ sequencing_file	library_source_material	Other
 sequencing_file	library_source_material	Single-cells
 sequencing_file	library_source_material	Single-nuclei
 sequencing_file	library_source_molecule	EXTERNAL
-sequencing_file	library_strand	Not reported
+sequencing_file	library_strand	Not Reported
 sequencing_file	library_strand	Unknown
 sequencing_file	library_strand	antisense
 sequencing_file	library_strand	both
@@ -557,7 +557,7 @@ survival	follow_up_other	EXTERNAL
 survival	guid	STRING
 survival	last_known_survival_status	Alive
 survival	last_known_survival_status	Dead
-survival	last_known_survival_status	Not reported
+survival	last_known_survival_status	Not Reported
 survival	last_known_survival_status	Unknown
 survival	last_known_survival_status	Unspecified
 survival	survival_id	STRING
@@ -603,22 +603,22 @@ treatment_surgery	guid	STRING
 treatment_surgery	treatment_surgery_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_cell_line	cell_line	sample	NA	NA
 of_cell_line	cell_line	study	NA	NA
-of_clinical_measure_file	clinical_measure_file	participant	NA	NA
-of_clinical_measure_file	clinical_measure_file	sample	NA	NA
+of_cell_line	cell_line	sample	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
+of_clinical_measure_file	clinical_measure_file	sample	NA	NA
+of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
-of_generic_file	generic_file	study	NA	NA
-of_generic_file	generic_file	participant	NA	NA
 of_generic_file	generic_file	sample	NA	NA
-of_genetic_analysis	genetic_analysis	participant	NA	NA
+of_generic_file	generic_file	participant	NA	NA
+of_generic_file	generic_file	study	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
+of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_medical_history	medical_history	participant	NA	NA
@@ -629,9 +629,9 @@ of_pdx	pdx	sample	NA	NA
 of_pdx	pdx	study	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
-of_sample	sample	pdx	NA	NA
-of_sample	sample	cell_line	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	cell_line	NA	NA
+of_sample	sample	pdx	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
