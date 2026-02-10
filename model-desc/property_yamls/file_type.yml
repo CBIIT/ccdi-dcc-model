@@ -28,6 +28,7 @@ PropDefinitions:
     - "maf"
     - "ndpi"
     - "nifti"
+    - "parquet"
     - "pdf"
     - "ped"
     - "png"
