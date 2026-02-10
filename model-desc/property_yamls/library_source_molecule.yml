@@ -5,6 +5,7 @@ PropDefinitions:
     - "DNA"
     - "MicroRNA"
     - "Messenger RNA"
+    - "Not Applicable"
     - "Not Reported"
     - "Nucleic RNA Sample"
     - "Protein"
