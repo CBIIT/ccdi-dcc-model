@@ -2284,6 +2284,14 @@ PropDefinitions:
     Desc: 'The standard or agency upon which the specific term used as the diagnosis value was obtained.'
     Term:
       - Origin: caDSR
+        Code: '16964044'
+        Value: Diagnosis Disease WHO Classification of Pediatric Tumors Text
+        Version: "1.00"
+      - Origin: caDSR
+        Code: '16963161'
+        Value: Diagnosis Disease CC4K Text
+        Version: "1.00"
+      - Origin: caDSR
         Code: '13606067'
         Value: Diagnosis Disease ICD-O-3 Morphology Label Text
         Version: "2.00"
