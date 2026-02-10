@@ -2945,6 +2945,7 @@ PropDefinitions:
       - "Bulk Tissue"
       - "Single-cells"
       - "Single-nuclei"
+      - "Not Applicable"
       - "Not Reported"  
       - "Other"
     Req: true
