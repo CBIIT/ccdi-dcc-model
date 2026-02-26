@@ -2081,12 +2081,14 @@ PropDefinitions:
         Code: '14596198'
         Value: PDX Implantation Type
         Version: "1.00"
-    Enum:
-      - 'injection'
-      - 'intravenous'
-      - 'orthotopic'
-      - 'surgical'
-      - 'trocar'
+    Type:
+      value_type: list
+      item_type:
+        - 'injection'
+        - 'intravenous'
+        - 'orthotopic'
+        - 'surgical'
+        - 'trocar'
     Req: true
     Strict: false
     Private: false
