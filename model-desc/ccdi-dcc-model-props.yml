@@ -1712,7 +1712,7 @@ PropDefinitions:
         Value: Laboratory Procedure Test Result Modifier Text
         Version: "1.00"
     Type: string
-    Req: flase
+    Req: false
     Private: false 
   #laboratory_test
   test_result_numeric:
