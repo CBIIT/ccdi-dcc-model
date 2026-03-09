@@ -1689,7 +1689,7 @@ PropDefinitions:
         Version: "1.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/specimen.yml
-    Req: true
+    Req: false
     Strict: false
     Private: false 
   #laboratory_test
@@ -1712,7 +1712,7 @@ PropDefinitions:
         Value: Laboratory Procedure Test Result Modifier Text
         Version: "1.00"
     Type: string
-    Req: true
+    Req: false
     Private: false 
   #laboratory_test
   test_result_numeric:
@@ -1734,7 +1734,7 @@ PropDefinitions:
         Value: Lab Test Result Unit of Measure Code
         Version: "2.00"
     Type: string
-    Req: true
+    Req: false
     Private: false
   #laboratory_test
   sensitivity:
@@ -1745,7 +1745,7 @@ PropDefinitions:
         Value: Disease Measurable Residual Disease Sensitivity Float
         Version: "1.00"
     Type: number
-    Req: true
+    Req: false
     Private: false
 #follow_up
   risk_factor:
