@@ -709,7 +709,7 @@ Relationships:
         Dst: sample 
   of_clinical_measure_file:
     Props: null
-    Mul: many_to_one 
+    Mul: many_to_many 
     Ends:
       - Src: clinical_measure_file
         Dst: study
@@ -725,7 +725,7 @@ Relationships:
         Dst: study
   of_cytogenomic_file:
     Props: null
-    Mul: many_to_one
+    Mul: many_to_many
     Ends:
       - Src: cytogenomic_file
         Dst: sample
@@ -751,7 +751,7 @@ Relationships:
         Dst: participant      
   of_generic_file:
     Props: null
-    Mul: many_to_one
+    Mul: many_to_many
     Ends:
       - Src: generic_file
         Dst: study
@@ -783,13 +783,13 @@ Relationships:
         Dst: participant
   of_methylation_array_file:
     Props: null
-    Mul: many_to_one
+    Mul: many_to_many
     Ends:
       - Src: methylation_array_file
         Dst: sample
   of_pathology_file:
     Props: null
-    Mul: many_to_one
+    Mul: many_to_many
     Ends:
       - Src: pathology_file
         Dst: sample
@@ -815,7 +815,7 @@ Relationships:
       Dst: study
   of_radiology_file:
     Props: null
-    Mul: many_to_one
+    Mul: many_to_many
     Ends:
       - Src: radiology_file
         Dst: participant
@@ -831,7 +831,7 @@ Relationships:
         Dst: cell_line 
   of_sequencing_file: 
     Props: null
-    Mul: many_to_one
+    Mul: many_to_many
     Ends:
       - Src: sequencing_file
         Dst: sample
