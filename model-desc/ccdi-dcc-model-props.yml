@@ -1743,7 +1743,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14313826'
         Value: Disease Measurable Residual Disease Sensitivity Float
-        Version: "1.00"
+        Version: "2.00"
     Type: number
     Req: false
     Private: false
