@@ -1,6 +1,7 @@
 PropDefinitions:
   anatomic_site:
     - "abdomen"
+    - "abdomen connective tissue"
     - "abdominal lymph node"
     - "abdominal part of esophagus"
     - "adnexa of uterus"
@@ -162,6 +163,7 @@ PropDefinitions:
     - "major salivary gland"
     - "male genital swelling"
     - "male prepuce epithelium"
+    - "male reproductive organ"
     - "male reproductive system"
     - "mammalian vulva"
     - "mandible"
@@ -213,6 +215,7 @@ PropDefinitions:
     - "pelvic girdle region"
     - "pelvic lymph node"
     - "pelvic region of trunk"
+    - "pelvis connective tissue"
     - "penis"
     - "peritoneal fluid"
     - "perineum"
@@ -314,3 +317,4 @@ PropDefinitions:
     - "vermiform appendix"
     - "vertebral column"
     - "Not Reported"
+    - "Unknown"
