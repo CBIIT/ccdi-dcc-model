@@ -1139,7 +1139,7 @@ PropDefinitions:
       - "Risk Factor"
       - "Structural Birth Defect"
       - "Genetic Syndrome"
-      - "Moleculare Targeted Therapy"
+      - "Molecular Targeted Therapy"
       - "Not Reported"
       - "Unknown"
     Req: true
