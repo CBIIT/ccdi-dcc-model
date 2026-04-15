@@ -302,6 +302,8 @@ Nodes:
       - sample_type_for_implantation
       - implantation_type
       - implantation_site
+      - source_anatomic_site
+      - source_diagnosis
       - tumor_confirmed_not_to_be_mus_or_ebv_origin
       - is_tumor_from_untreated_patient
       - passage_number
@@ -702,7 +704,7 @@ Relationships:
       - Src: cell_line
         Dst: study  
       - Src: cell_line
-        Dst: sample 
+        Dst: participant 
   of_clinical_measure_file:
     Props: null
     Mul: many_to_many 
@@ -802,7 +804,7 @@ Relationships:
       - Src: pdx
         Dst: study
       - Src: pdx
-        Dst: sample
+        Dst: participant
   of_publication: 
     Props: null
     Mul: many_to_one
