@@ -1136,10 +1136,9 @@ PropDefinitions:
       - "Clinical Assessment"
       - "Comorbidity"
       - "Congenital Anomaly"
+      - "Genetic Syndrome"
       - "Risk Factor"
       - "Structural Birth Defect"
-      - "Genetic Syndrome"
-      - "Molecular Targeted Therapy"
       - "Not Reported"
       - "Unknown"
     Req: true
@@ -3564,9 +3563,9 @@ PropDefinitions:
         - "Concurrent Chemoradiation"
         - "Hormone Therapy"
         - "Immunotherapy"
+        - "Molecular Targeted Therapy"
         - "Pharmacotherapy"
         - "Radiopharmaceutical"
-        - "Targeted Molecular Therapy"
         - "Not Reported"
     Req: true
     Strict: false
