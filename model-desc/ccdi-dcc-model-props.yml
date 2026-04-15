@@ -1149,7 +1149,7 @@ PropDefinitions:
     Desc: The age of the subject.
     Term:
       - Origin: caDSR
-        Code: 6412753
+        Code: '6412753'
         Value: Age
     Type: number
     Req: true
