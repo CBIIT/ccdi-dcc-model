@@ -302,8 +302,6 @@ Nodes:
       - sample_type_for_implantation
       - implantation_type
       - implantation_site
-      - source_anatomic_site
-      - source_diagnosis
       - tumor_confirmed_not_to_be_mus_or_ebv_origin
       - is_tumor_from_untreated_patient
       - passage_number
