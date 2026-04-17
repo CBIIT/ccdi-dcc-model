@@ -3900,7 +3900,7 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
-  #diagnosis, sample
+  #diagnosis
   diagnosis:
     Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.    
     Term:
@@ -3913,7 +3913,7 @@ PropDefinitions:
     Req: true
     Strict: true
     Private: false
-  #diagnosis, sample
+  #diagnosis
   submitted_diagnosis:
     Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.    
     Term:
