@@ -2025,6 +2025,8 @@ PropDefinitions:
         - 'orthotopic'
         - 'surgical'
         - 'trocar'
+        - 'Not Reported'
+        - 'Unknown'
     Req: true
     Strict: false
     Private: false
