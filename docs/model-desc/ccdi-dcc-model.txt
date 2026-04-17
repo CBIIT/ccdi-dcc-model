@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit e74a1e2
+commit f87a3c6
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -224,12 +224,18 @@ laboratory_test	test_result_modifier	STRING
 laboratory_test	test_result_numeric	STRING
 laboratory_test	test_result_text	STRING
 laboratory_test	test_result_unit	STRING
+medical_history	age_at_event	NUMBER
 medical_history	guid	STRING
+medical_history	medical_event_result	STRING
+medical_history	medical_history_category	Adverse Event
 medical_history	medical_history_category	Autoimmune Disease
 medical_history	medical_history_category	Cancer
+medical_history	medical_history_category	Clinical Assessment
+medical_history	medical_history_category	Comorbidity
 medical_history	medical_history_category	Congenital Anomaly
 medical_history	medical_history_category	Genetic Syndrome
 medical_history	medical_history_category	Not Reported
+medical_history	medical_history_category	Risk Factor
 medical_history	medical_history_category	Structural Birth Defect
 medical_history	medical_history_category	Unknown
 medical_history	medical_history_id	STRING
@@ -544,11 +550,6 @@ survival	first_event	Progression
 survival	first_event	Relapse
 survival	first_event	Second Malignant Neoplasm
 survival	first_event	Unknown
-survival	follow_up_category	adverse_event
-survival	follow_up_category	comorbidity
-survival	follow_up_category	other
-survival	follow_up_category	risk_factor
-survival	follow_up_other	EXTERNAL
 survival	guid	STRING
 survival	last_known_survival_status	Alive
 survival	last_known_survival_status	Dead
@@ -598,35 +599,35 @@ treatment_surgery	guid	STRING
 treatment_surgery	treatment_surgery_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_cell_line	cell_line	study	NA	NA
 of_cell_line	cell_line	sample	NA	NA
+of_cell_line	cell_line	study	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
-of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_clinical_measure_file	clinical_measure_file	sample	NA	NA
+of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
+of_generic_file	generic_file	sample	NA	NA
 of_generic_file	generic_file	study	NA	NA
 of_generic_file	generic_file	participant	NA	NA
-of_generic_file	generic_file	sample	NA	NA
-of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
+of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
 of_laboratory_test	laboratory_test	sample	NA	NA
 of_medical_history	medical_history	participant	NA	NA
 of_methylation_array_file	methylation_array_file	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_pathology_file	pathology_file	sample	NA	NA
-of_pdx	pdx	study	NA	NA
 of_pdx	pdx	sample	NA	NA
+of_pdx	pdx	study	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
 of_sample	sample	participant	NA	NA
-of_sample	sample	cell_line	NA	NA
 of_sample	sample	pdx	NA	NA
+of_sample	sample	cell_line	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
@@ -650,8 +651,8 @@ UMI_barcode_size	The size of the UMI identifying barcode. E.g. "10".
 acl	A free text field used to document whether the data in a repository is open access or controlled access. If access to the data are unrestricted, the acl field should be listed [“*]. Controlled access should be denoted as a comma delimited list of phs accession numbers, for example, [“phs000123] or [“phs000123,phs000124].
 acquisitionContrastCode	Text specifying the kind of contrast used during the imaging acquisition process.
 adult_or_childhood_study	The identifiable class of the study participant based upon their age.
-adverse_event	Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name
 age_at_diagnosis	Age at the time of diagnosis expressed in number of days since birth.
+age_at_event	The age of the subject.
 age_at_event_free_survival_status	Time from diagnosis to first event (or censoring), in days.
 age_at_exposure	The age (in days) of subject at a known exposure to a hazardous factor or substance.
 age_at_genetic_analysis	The age in days of the subject at the time of the genetic analysis.
@@ -695,8 +696,6 @@ clinical_measure_file_id	A sequence of characters used to uniquely identify, nam
 clinical_trial_identifier	One or more characters assigned by the Clinical Trial Sponsor to uniquely identify the investigational protocol or research activity.
 clinical_trial_repository	Organization or research site participating in a type of research study that tests how well new medical treatments or other interventions work in people.
 coal_dust_exposure	The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
-comorbidity	The class or category of the secondary disease(s).
-comorbidity_method_of_diagnosis	The class of clinical or laboratory procedure(s) used to determine the secondary disease diagnosis.
 complexImageComponentCode	Text specifying the kind of channel of the quadrature detected data, or the combination derived from those channels, used to reconstruct the image.
 consent_group_id	A sequence of characters used to uniquely identify, name, or characterize the presence and nature of a consent group in a study.
 consent_group_name	The words or acronym which describe a set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository.
@@ -754,8 +753,6 @@ file_url	The specification of a node (file or directory) in a hierarchical file 
 first_event	Identify the nature of the event that best characterizes the endpoint of the study.
 fixation_embedding_method	Text term that represents the method used to maintain the sample or biospecimen in a viable state.
 flip_angle	A measurement in magnetic resonance imaging capturing the rotation of the average axis of the protons, relative to the main magnetic field direction, induced by radiofrequency signals.
-follow_up_category	A text term based on grouping information about the health status of an individual after a study has officially closed
-follow_up_other	NCI-GLOSS Definition Monitoring a person's health over time after treatment. This includes keeping track of the health of people who participate in a clinical study or clinical trial for a period of time, both during the study and after the study ends
 fraction_radiation_dose	The amount of exposure that a subject actually receives.
 fraction_radiation_dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 funding_agency	The name of the funding source organization or sponsor.
@@ -799,8 +796,9 @@ license	Official or legal permission to do or own a specified thing.
 magnetic_field_strength	A measurement of the force of magnetism that acts in the region around a magnetic material or a moving electrical charge.
 magnification	A floating point numerical value describing the nominal magnification of an optical instrument using a combination of lenses to produce an image.
 md5sum	A 32-character hexadecimal number that is computed on a file.
+medical_event_result	The clinical test or procedure result value.
 medical_history_category	A high level grouping of any injuries, disabilities, syndromes, or symptoms present in an individual's background.
-medical_history_condition	The identifiable class of injuries, disabilities, syndromes, or symptoms found in an individual's health background.
+medical_history_condition_event	The identifiable class of injuries, disabilities, syndromes, or symptoms found in an individual's health background.
 medical_history_id	A unique sequence of characters used to identify, name, or characterize the identifiable class of injuries, disabilities, syndromes, or symptoms found in an individual's health background.
 method	The type of systematic investigation using controlled observations and measurements to test hypotheses or develop a plan of action based on the facts discovered.
 methylation_array_file_id	A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
@@ -863,7 +861,6 @@ response_category	A text term based on categorization of the pathologic and/or c
 response_system	The type of standard from which a judgment concerning tumor response to therapy can be established.
 result	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
 reverse_transcription_primer	An oligo to which new deoxyribonucleotides can be added by DNA polymerase [SO_0000112]. The type of primer used for reverse transcription, e.g. oligo-dT or random primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA
-risk_factor	The text term used to describe a risk factor the patient had at the time of or prior to their diagnosis.
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the specimen at it's point of origin.
 sample_tumor_status	Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.
