@@ -157,18 +157,20 @@ Nodes:
     Props:
       - genetic_analysis_id
       - age_at_genetic_analysis
-      - genomic_source_category
+      - alteration_category
       - reported_significance
       - reported_significance_system
-      - test
-      - method
-      - result
+      - platform
+      - analysis_type
+      - analysis_method
       - reference_genome
       - chromosome
       - cytoband
       - gene_symbol
+      - alteration_region
+      - alteration_region_number
+      - alteration_location_role
       - transcript
-      - exon
       - hgvs_coding
       - hgvs_protein
       - hgvs_genome
@@ -180,11 +182,9 @@ Nodes:
       - dna_index_numeric
       - iscn
       - status
-      - fusion_partner_gene
-      - fusion_partner_transcript
-      - fusion_partner_exon
-      - translocation_partner_chromosome
-      - translocation_partner_cytoband
+      - zygosity
+      - external_references
+      - alteration_description
       - guid
   laboratory_test:
     Desc: "The molecular test node is comprised of properties which describe varying tests results for participants."
