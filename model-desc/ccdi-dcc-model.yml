@@ -159,7 +159,6 @@ Nodes:
       - age_at_genetic_analysis
       - alteration_category
       - reported_significance
-      - reported_significance_system
       - platform
       - analysis_type
       - analysis_method

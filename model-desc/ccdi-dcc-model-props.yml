@@ -83,19 +83,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '13347079'
-        Value: Gene Mutation ACMG Clinical Significance Category
+        Value: Gene Mutation ACMG Clinical Significance Source and Category
         Version: "1.00"
-    Type: string
-    Req: true
-    Private: false
-  #genetic_analysis
-  reported_significance_system:
-    Desc: The source of the reported significance.
-    Term:
-      - Origin: caDSR
-        Code: ''
-        Value: tbd
-        Version: "tbd"
     Type: string
     Req: true
     Private: false
