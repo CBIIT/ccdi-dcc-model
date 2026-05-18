@@ -2379,8 +2379,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11284037'
-        Value: Electronic Data File Name
-        Version: "2.0"
+        Value: Data File Name Text
+        Version: "3.0"
     Type: string
     Req: true
     Private: false
@@ -2390,8 +2390,8 @@ PropDefinitions:
     Term: 
       - Origin: caDSR
         Code: '14824731'
-        Value: Electronic Data File Content Category
-        Version: "1.00"
+        Value: Data File Content Category
+        Version: "2.00"
     Type:
       value_type: list
       item_type:
@@ -2418,8 +2418,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11280338'
-        Value: Electronic Data File Description Text   
-        Version: "1.00"
+        Value: Data File Description Text   
+        Version: "2.00"
     Type: string
     Req: false 
     Private: false
@@ -2440,7 +2440,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11556150'
-        Value: Electronic Data File MD5 Checksum Text
+        Value: Data File MD5 Checksum Text
         Version: "2.00"
     Type: string
     Req: true
@@ -2484,7 +2484,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Electronic Data File Access Level Text 
+        Value: Data File Access Level Text 
         Version: "2.00"
     Type: string
     Req: true
@@ -2495,7 +2495,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Electronic Data File Access Level Text 
+        Value: Data File Access Level Text 
         Version: "2.00"
     Type: string
     Req: true
@@ -2506,7 +2506,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Electronic Data File Access Level Text 
+        Value: Data File Access Level Text 
         Version: "2.00"
     Enum:
       - "Controlled"
@@ -3196,8 +3196,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11416926'
-        Value: Electronic Data File Format Type 
-        Version: "1.00"
+        Value: Data File Format Type 
+        Version: "2.00"
     Type: string
     Req: false
     Private: false
@@ -3852,7 +3852,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12033935'
         Value: Methylation Analysis Instrumentation Text
-        Version: "1.00"
+        Version: "2.00"
     Type: string
     Req: true
     Private: false
