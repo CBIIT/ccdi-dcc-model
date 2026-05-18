@@ -211,9 +211,9 @@ PropDefinitions:
         Value: Alteration Location Role
         Version: ""
     Enum:
-      - "Primary"
-      - "Secondary"
-      - "Tertiary"
+      - "Primary Alteration Location"
+      - "Secondary Alteration Location"
+      - "Tertiary Alteration Location"
       - "Five Prime Partner"
       - "Three Prime Partner"
       - "Breakend 1"
