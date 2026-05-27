@@ -93,7 +93,7 @@ PropDefinitions:
     Desc: The type of analysis performed to identify a genetic alteration, such as a mutation, fusion, or copy number variation.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '17267800'
         Value: Genomic Alteration Activity Experimental Method Type
         Version: ""
     Enum:
@@ -112,7 +112,7 @@ PropDefinitions:
     Desc: The specific technique, process, panel or software used to perform a genetic analysis.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '17268674'
         Value: Genomic Alteration Activity Experimental Method Name
         Version: ""
     Type: string
@@ -173,7 +173,7 @@ PropDefinitions:
     Desc: "The text term used to describe the region of a gene where a genetic alteration occurs."
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '14787331'
         Value: Alteration Region Occurence Type
         Version: ""
     Enum:
@@ -196,7 +196,7 @@ PropDefinitions:
     Desc: The number of the region of a gene where a genetic alteration occurs.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '17270235'
         Value: Alteration Region Occurence Number
         Version: ""
     Type: string
@@ -390,7 +390,7 @@ PropDefinitions:
     Desc: A list of external reference identifiers associated with a genetic alteration.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '17273324'
         Value: Genetic Alteration External Reference
         Version: ""
     Type:
@@ -403,7 +403,7 @@ PropDefinitions:
     Desc: A textual description of a genetic alteration.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '17273314'
         Value: Gene Mutation Description Text
         Version: ""
     Type: string
