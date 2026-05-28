@@ -2185,17 +2185,6 @@ PropDefinitions:
     Req: true
     Private: false
   # clinical_measure_file
-  participant_list:
-    Desc: A series of characters, one after the other, used to uniquely identify the subjects who have taken part in the investigation or research study.
-    Term:
-      - Origin: caDSR
-        Code: '14608610'
-        Value: Study Subject Identifier List Text
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false
-  # clinical_measure_file
   clinical_measure_file_id: 
     Desc: A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
     Term:
