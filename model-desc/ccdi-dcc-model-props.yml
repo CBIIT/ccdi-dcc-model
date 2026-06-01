@@ -3045,8 +3045,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11459812'
-        Value: Study Short Name Text
-        Version: "2.00"
+        Value: Study Administration Study Short Name Text
+        Version: "4.00"
     Type: string
     Req: true
     Private: false
