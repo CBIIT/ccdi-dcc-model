@@ -116,12 +116,15 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12373576'
         Value: Research Activity Experimental Method Type
-        Version: "2.00"
+        Version: "3.00"
     Enum:
       - "Archer Fusion"
       - "DNA Sequencing"
+      - "Immunofluorescence"
       - "Methylation Analysis"
+      - "Multigene Expression Assay"
       - "Pathology"
+      - "Quantitative Immunofluorescence"
       - "Radiology"
       - "RNA Sequencing"
       - "Not Reported"
