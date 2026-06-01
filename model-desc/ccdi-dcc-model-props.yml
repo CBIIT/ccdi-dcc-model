@@ -2421,7 +2421,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11479876'
-        Value: 	Data File Size Integer
+        Value: Data File Size Integer
         Version: "2.00"
     Type: integer
     Req: true
