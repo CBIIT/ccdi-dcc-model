@@ -2772,13 +2772,14 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '14688604'
-        Value: Specimen Neoplasm Category
-        Version: "1.00"
+        Value: Specimen Source Location Category
+        Version: "2.00"
     Enum:
       - 'Normal'
       - 'Peritumoral'
       - 'Tumor'
       - 'Not Reported'
+      - 'Unknown'
     Req: true
     Strict: false
     Private: false
