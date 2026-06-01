@@ -2397,8 +2397,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11416926'
-        Value: Electronic Data File Format Type
-        Version: "1.00"
+        Value: Data File Format Type
+        Version: "2.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/file_type.yml
     Req: true
@@ -2421,8 +2421,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11479876'
-        Value: Electronic Data File Size Integer
-        Version: "1.00"
+        Value: 	Data File Size Integer
+        Version: "2.00"
     Type: integer
     Req: true
     Private: false
@@ -2574,8 +2574,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '12137353'
-        Value: Imaging Technology DICOM Modality Type
-        Version: "1.00"
+        Value: Imaging DICOM Modality Type
+        Version: "2.00"
     Enum:
       - "Computed Tomography"
       - "Magnetic Resonance"
@@ -2816,7 +2816,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '6273393'
-        Value: Sequencing Library Technique Type
+        Value: Molecular Analysis Library Sequencing Technique Type
         Version: "2.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/library_strategy.yml
