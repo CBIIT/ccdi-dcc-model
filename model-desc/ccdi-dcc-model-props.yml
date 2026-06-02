@@ -207,7 +207,7 @@ PropDefinitions:
     Desc: The role of the location of a genetic alteration.
     Term:
       - Origin: caDSR
-        Code: ''
+        Code: '17308860'
         Value: Alteration Location Role
         Version: ""
     Enum:
