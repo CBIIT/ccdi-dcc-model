@@ -116,12 +116,15 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12373576'
         Value: Research Activity Experimental Method Type
-        Version: "2.00"
+        Version: "3.00"
     Enum:
       - "Archer Fusion"
       - "DNA Sequencing"
+      - "Immunofluorescence"
       - "Methylation Analysis"
+      - "Multigene Expression Assay"
       - "Pathology"
+      - "Quantitative Immunofluorescence"
       - "Radiology"
       - "RNA Sequencing"
       - "Not Reported"
@@ -2394,8 +2397,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11416926'
-        Value: Electronic Data File Format Type
-        Version: "1.00"
+        Value: Data File Format Type
+        Version: "2.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/file_type.yml
     Req: true
@@ -2418,8 +2421,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11479876'
-        Value: Electronic Data File Size Integer
-        Version: "1.00"
+        Value: Data File Size Integer
+        Version: "2.00"
     Type: integer
     Req: true
     Private: false
@@ -2571,8 +2574,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '12137353'
-        Value: Imaging Technology DICOM Modality Type
-        Version: "1.00"
+        Value: Imaging DICOM Modality Type
+        Version: "2.00"
     Enum:
       - "Computed Tomography"
       - "Magnetic Resonance"
@@ -2769,13 +2772,14 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '14688604'
-        Value: Specimen Neoplasm Category
-        Version: "1.00"
+        Value: Specimen Source Location Category
+        Version: "2.00"
     Enum:
       - 'Normal'
       - 'Peritumoral'
       - 'Tumor'
       - 'Not Reported'
+      - 'Unknown'
     Req: true
     Strict: false
     Private: false
@@ -2812,7 +2816,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '6273393'
-        Value: Sequencing Library Technique Type
+        Value: Molecular Analysis Library Sequencing Technique Type
         Version: "2.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/library_strategy.yml
@@ -3041,8 +3045,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11459812'
-        Value: Study Short Name Text
-        Version: "2.00"
+        Value: Study Administration Study Short Name Text
+        Version: "4.00"
     Type: string
     Req: true
     Private: false
