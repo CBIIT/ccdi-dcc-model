@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit b5c0210
+commit bca1bf5
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -171,50 +171,74 @@ generic_file	md5sum	STRING
 genetic_analysis	age_at_genetic_analysis	NUMBER
 genetic_analysis	allelic_ratio	NUMBER
 genetic_analysis	alteration	EXTERNAL
+genetic_analysis	alteration_category	Epigenetic
+genetic_analysis	alteration_category	Germline
+genetic_analysis	alteration_category	Not Reported
+genetic_analysis	alteration_category	Somatic
+genetic_analysis	alteration_category	Somatic Mosaic
+genetic_analysis	alteration_category	Unknown
+genetic_analysis	alteration_description	STRING
 genetic_analysis	alteration_effect	EXTERNAL
+genetic_analysis	alteration_location_role	Breakend 1
+genetic_analysis	alteration_location_role	Breakend 2
+genetic_analysis	alteration_location_role	Five Prime Partner
+genetic_analysis	alteration_location_role	Not Applicable
+genetic_analysis	alteration_location_role	Not Reported
+genetic_analysis	alteration_location_role	Primary Alteration Location
+genetic_analysis	alteration_location_role	Secondary Alteration Location
+genetic_analysis	alteration_location_role	Tertiary Alteration Location
+genetic_analysis	alteration_location_role	Three Prime Partner
+genetic_analysis	alteration_location_role	Unknown
+genetic_analysis	alteration_region	3' UTR
+genetic_analysis	alteration_region	5' UTR
+genetic_analysis	alteration_region	CpG Island
+genetic_analysis	alteration_region	Enhancer Region
+genetic_analysis	alteration_region	Exon
+genetic_analysis	alteration_region	Intergenic Region
+genetic_analysis	alteration_region	Intronic Region
+genetic_analysis	alteration_region	Not Applicable
+genetic_analysis	alteration_region	Not Reported
+genetic_analysis	alteration_region	Promoter Region
+genetic_analysis	alteration_region	Splice Site
+genetic_analysis	alteration_region	Unknown
+genetic_analysis	alteration_region_number	STRING
 genetic_analysis	alteration_type	EXTERNAL
+genetic_analysis	analysis_method	STRING
+genetic_analysis	analysis_type	Gene Expression Analysis
+genetic_analysis	analysis_type	Gene Fusion Analysis
+genetic_analysis	analysis_type	Germline Mutation Analysis
+genetic_analysis	analysis_type	Methylation Analysis
+genetic_analysis	analysis_type	Not Reported
+genetic_analysis	analysis_type	Other
+genetic_analysis	analysis_type	Somatic Mutation Analysis
+genetic_analysis	analysis_type	Structural Variant Analysis
 genetic_analysis	chromosome	EXTERNAL
 genetic_analysis	cytoband	STRING
 genetic_analysis	dna_index_numeric	NUMBER
-genetic_analysis	exon	STRING
-genetic_analysis	fusion_partner_exon	STRING
-genetic_analysis	fusion_partner_gene	STRING
-genetic_analysis	fusion_partner_transcript	STRING
-genetic_analysis	gene_symbol	STRING
 genetic_analysis	genetic_analysis_id	STRING
-genetic_analysis	genomic_source_category	Germline
-genetic_analysis	genomic_source_category	Not Reported
-genetic_analysis	genomic_source_category	Somatic
-genetic_analysis	genomic_source_category	Somatic Mosaic
-genetic_analysis	genomic_source_category	Unknown
 genetic_analysis	guid	STRING
 genetic_analysis	hgvs_coding	STRING
 genetic_analysis	hgvs_genome	STRING
 genetic_analysis	hgvs_protein	STRING
 genetic_analysis	iscn	STRING
-genetic_analysis	method	Archer Fusion
-genetic_analysis	method	DNA Sequencing
-genetic_analysis	method	Immunofluorescence
-genetic_analysis	method	Methylation Analysis
-genetic_analysis	method	Multigene Expression Assay
-genetic_analysis	method	Not Reported
-genetic_analysis	method	Pathology
-genetic_analysis	method	Quantitative Immunofluorescence
-genetic_analysis	method	RNA Sequencing
-genetic_analysis	method	Radiology
+genetic_analysis	platform	EXTERNAL
 genetic_analysis	reference_genome	STRING
 genetic_analysis	reported_significance	STRING
-genetic_analysis	reported_significance_system	STRING
-genetic_analysis	result	STRING
 genetic_analysis	status	Absent
+genetic_analysis	status	Indeterminate
 genetic_analysis	status	Not Done
 genetic_analysis	status	Present
 genetic_analysis	status	Unknown
-genetic_analysis	test	STRING
 genetic_analysis	transcript	STRING
-genetic_analysis	translocation_partner_chromosome	EXTERNAL
-genetic_analysis	translocation_partner_cytoband	STRING
 genetic_analysis	vaf_numeric	NUMBER
+genetic_analysis	zygosity	Compound Heterozygous
+genetic_analysis	zygosity	Hemizygous
+genetic_analysis	zygosity	Heterozygous
+genetic_analysis	zygosity	Homozygous
+genetic_analysis	zygosity	Mosaic
+genetic_analysis	zygosity	Not Reported
+genetic_analysis	zygosity	Nullizygous
+genetic_analysis	zygosity	Unknown
 laboratory_test	age_at_laboratory_test	NUMBER
 laboratory_test	guid	STRING
 laboratory_test	laboratory_test_id	STRING
@@ -602,24 +626,24 @@ treatment_surgery	guid	STRING
 treatment_surgery	treatment_surgery_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-of_cell_line	cell_line	participant	NA	NA
 of_cell_line	cell_line	study	NA	NA
+of_cell_line	cell_line	participant	NA	NA
 of_clinical_measure_file	clinical_measure_file	participant	NA	NA
-of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
+of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
-of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
+of_diagnosis	diagnosis	participant	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
-of_generic_file	generic_file	sample	NA	NA
 of_generic_file	generic_file	study	NA	NA
+of_generic_file	generic_file	sample	NA	NA
 of_generic_file	generic_file	participant	NA	NA
-of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
-of_laboratory_test	laboratory_test	sample	NA	NA
+of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
+of_laboratory_test	laboratory_test	sample	NA	NA
 of_medical_history	medical_history	participant	NA	NA
 of_methylation_array_file	methylation_array_file	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
@@ -669,8 +693,15 @@ alcohol_drinks_per_day	Numeric value used to describe the average number of alco
 alcohol_intensity	Category to describe the patient's current level of alcohol use as self-reported by the patient.
 allelic_ratio	A decimal number capturing the ratio of variant alleles to wild-type alleles present in a sample.
 alteration	The words by which the generally used name of the mutation is known.
+alteration_category	The text term that describes the origin of a variation in the nucleic acid sequence of a specific gene.
+alteration_description	A textual description of a genetic alteration.
 alteration_effect	The type of effect of a sequence change on the function of an RNA, DNA, or protein.
+alteration_location_role	The role of the location of a genetic alteration.
+alteration_region	The text term used to describe the region of a gene where a genetic alteration occurs.
+alteration_region_number	The number of the region of a gene where a genetic alteration occurs.
 alteration_type	The type of gain, loss or alteration of the sequences comprising a gene.
+analysis_method	The specific technique, process, panel or software used to perform a genetic analysis.
+analysis_type	The type of analysis performed to identify a genetic alteration, such as a mutation, fusion, or copy number variation.
 anatomic_site	The location within the body as captured in the topography label of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
 arterialSpinLabelingContrastCode	Text specifying the kind of contrast used during the imaging acquisition process.
 asbestos_exposure	The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
@@ -739,9 +770,9 @@ email_address	The string of characters that represents the electronic mail addre
 end_bias	The type of overabundance of transcripts seen in a sequencing library.
 environmental_tobacco_smoke_exposure	The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
 event_free_survival_status	Identify the nature of the event that best characterizes the endpoint of the study.
-exon	The text term used to describe a specific exon targeted or included in molecular analysis.
 experimental_strategy_and_data_subtype	The type of systematic investigation using controlled observations and measurements to test hypotheses or develop a plan of action based on the facts discovered.
 exposure_id	A unique sequence of characters used to identify, name, or characterize the type of chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
+external_references	A list of external reference identifiers associated with a genetic alteration.
 external_url	The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.
 family_id	A sequence of characters used to uniquely identify, name, or characterize the domestic group of someone who takes part in an activity.
 family_relationship_id	A sequence of characters used to uniquely identify, name, or characterize the state of connectedness between entities or objects referencing the state of connectedness between people linked through descent.
@@ -760,13 +791,9 @@ fraction_radiation_dose	The amount of exposure that a subject actually receives.
 fraction_radiation_dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 funding_agency	The name of the funding source organization or sponsor.
 funding_source_program_name	The name of the program assigned by the funding agency.
-fusion_partner_exon	The text term used to describe a specific exon targeted or included in molecular analysis.
-fusion_partner_gene	A short-form abbreviation for a particular gene assigned by the HGNC (HUGO Gene Nomenclature Committee - an organism specific nomenclature committee).
-fusion_partner_transcript	Alphanumeric value used to describe the transcript of a specific genetic variant.
 gene_symbol	A short-form abbreviation for a particular gene assigned by the HGNC (HUGO Gene Nomenclature Committee - an organism specific nomenclature committee).
 generic_file_id	A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
 genetic_analysis_id	A unique sequence of characters used to identify the digital data associated with genetic testing.
-genomic_source_category	The text term that describes the origin of a variation in the nucleic acid sequence of a specific gene.
 grant_id	Unique alphanumeric Identifier of a grant funding resource used to treat a patient on a study.
 guid	A unique sequence of characters used to identify, name, or characterize an attribute shared by all members of a class.
 hgvs_coding	The words which describe the designation of a DNA coding sequence variation based on the Human Genome Variation Society (HGVS) nomenclature guidelines.
@@ -803,7 +830,6 @@ medical_event_result	The clinical test or procedure result value.
 medical_history_category	A high level grouping of any injuries, disabilities, syndromes, or symptoms present in an individual's background.
 medical_history_condition_event	The identifiable class of injuries, disabilities, syndromes, or symptoms found in an individual's health background.
 medical_history_id	A unique sequence of characters used to identify, name, or characterize the identifiable class of injuries, disabilities, syndromes, or symptoms found in an individual's health background.
-method	The type of systematic investigation using controlled observations and measurements to test hypotheses or develop a plan of action based on the facts discovered.
 methylation_array_file_id	A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
 methylation_platform	The equipment used to detect the presence and/or location of methyl groups during DNA or protein analysis.
 model_id	A unique sequence of characters used to identify, name, or characterize a mouse model for human cancer studies.
@@ -851,7 +877,6 @@ relationship	The subgroup that describes the state of connectedness between memb
 release_status	The production state of the study given a repository.
 repetition_time	A measurement of the amount of time in milliseconds between successive pulse sequences applied to the same slice.
 reported_significance	The treatment or management implications for a patient's condition caused by a gain, loss or alteration of the sequences comprising a gene, as defined by the American College of Medical Genetics and Genomics (ACMG) .
-reported_significance_system	The source of the reported significance.
 reporter_label	The text term to describe the labeled methyl group used as a molecular tag.
 repository_name	A textual description of a storage location for digital data.
 repository_of_synonym_id	A textual description of a storage location for digital data.
@@ -861,7 +886,6 @@ respirable_crystalline_silica_exposure	The category related to contact with chem
 response	The result of an evaluation to determine whether pathologic and/or clinical changes resulted from treatment.
 response_category	A text term based on categorization of the pathologic and/or clinical changes that result from treatment, including eradication of detectable disease, stabilization of disease, or disease progression.
 response_system	The type of standard from which a judgment concerning tumor response to therapy can be established.
-result	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
 reverse_transcription_primer	An oligo to which new deoxyribonucleotides can be added by DNA polymerase [SO_0000112]. The type of primer used for reverse transcription, e.g. oligo-dT or random primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA
 sample_description	Text description of a sample or specimen.
 sample_id	A unique sequence of alphanumeric characters used to identify the specimen at it's point of origin.
@@ -906,7 +930,6 @@ submitted_diagnosis	The term which identifies normal and abnormal cells and tiss
 surgery_type	Text term that describes the kind of treatment administered.
 survival_id	A unique sequence of characters used to identify an attribute shared by all members of a class.
 synonym_id	A sequence of characters used to identify, name, or characterize a backup sequence of characters used to identify an entity.
-test	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
 test_result_modifier	Text term that helps define the outcome of a laboratory test.
 test_result_numeric	The numeric value of the blood, urine, or other body substance laboratory test being recorded.
 test_result_text	A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
@@ -922,8 +945,6 @@ total_radiation_dose	The amount of exposure that a subject actually receives.
 total_radiation_dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 total_size_of_data_files	The measure (in bytes) of how much space all data files, for a given study, takes up on a storage medium.
 transcript	Alphanumeric value used to describe the transcript of a specific genetic variant.
-translocation_partner_chromosome	Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
-translocation_partner_cytoband	Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
 treatment_chemotherapy_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
 treatment_other_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
 treatment_radiation_id	A unique sequence of characters used to identify, name, or characterize the kind of treatment administered.
@@ -945,3 +966,4 @@ validation_technique	Any technique used to validate PDX against their original p
 version	The version identifier assigned to the data submission.
 year_of_diagnosis	The year in which a subject was diagnosed.
 years_smoked	The number of years spent puffing and/or inhaling smoke from a lit cigarette, cigar, or pipe.
+zygosity	The text term used to describe the zygosity of a specific genetic variant.
