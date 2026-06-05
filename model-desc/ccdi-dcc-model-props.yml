@@ -95,7 +95,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '17267800'
         Value: Genomic Alteration Activity Experimental Method Type
-        Version: ""
+        Version: "1.00"
     Enum:
       - "Somatic Mutation Analysis"
       - "Germline Mutation Analysis"
@@ -114,7 +114,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '17268674'
         Value: Genomic Alteration Activity Experimental Method Name
-        Version: ""
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -175,7 +175,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '14787331'
         Value: Alteration Region Occurence Type
-        Version: ""
+        Version: "1.00"
     Enum:
       - "5' UTR"
       - "3' UTR"
@@ -198,7 +198,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '17270235'
         Value: Alteration Region Occurence Number
-        Version: ""
+        Version: "1.00"
     Type: string
     Req: false
     Private: false
@@ -209,7 +209,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '17308860'
         Value: Alteration Location Role
-        Version: ""
+        Version: "1.00"
     Enum:
       - "Primary Alteration Location"
       - "Secondary Alteration Location"
@@ -392,7 +392,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '17273324'
         Value: Genetic Alteration External Reference
-        Version: ""
+        Version: "1.00"
     Type:
       value_type: list
       item_type: string
@@ -405,7 +405,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '17273314'
         Value: Gene Mutation Description Text
-        Version: ""
+        Version: "1.00"
     Type: string
     Req: false
     Private: false
