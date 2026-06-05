@@ -15,3 +15,5 @@ PropDefinitions:
     - "Translocation"
     - "Insertion"
     - "Unknown"
+    - "Not Applicable"
+    - "Not Reported"
