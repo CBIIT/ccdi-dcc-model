@@ -36,6 +36,7 @@ Nodes:
       - dcf_indexd_guid
       - checksum_algorithm
       - checksum_value
+      - participant_list
       - guid
       - crdc_id
   consent_group:

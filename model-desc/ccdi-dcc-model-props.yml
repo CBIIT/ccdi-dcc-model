@@ -90,23 +90,23 @@ PropDefinitions:
     Private: false
   #genetic_analysis
   analysis_type:
-      Desc: The type of analysis performed to identify a genetic alteration, such as a mutation, fusion, or copy number variation.
-      Term:
-        - Origin: caDSR
-          Code: '17267800'
-          Value: Genomic Alteration Activity Experimental Method Type
-          Version: "1.00"
-      Enum:
-        - "Somatic Mutation Analysis"
-        - "Germline Mutation Analysis"
-        - "Structural Variant Analysis"
-        - "Gene Fusion Analysis"
-        - "Gene Expression Analysis"
-        - "Methylation Analysis"
-        - "Other"
-        - "Not Reported"
-      Req: true
-      Private: false
+    Desc: The type of analysis performed to identify a genetic alteration, such as a mutation, fusion, or copy number variation.
+    Term:
+      - Origin: caDSR
+        Code: '17267800'
+        Value: Genomic Alteration Activity Experimental Method Type
+        Version: "1.00"
+    Enum:
+      - "Somatic Mutation Analysis"
+      - "Germline Mutation Analysis"
+      - "Structural Variant Analysis"
+      - "Gene Fusion Analysis"
+      - "Gene Expression Analysis"
+      - "Methylation Analysis"
+      - "Other"
+      - "Not Reported"
+    Req: true
+    Private: false
   # genetic_analysis
   analysis_method:
     Desc: The specific technique, process, panel or software used to perform a genetic analysis.
@@ -2195,6 +2195,17 @@ PropDefinitions:
     Req: true
     Private: false
   # clinical_measure_file
+  participant_list:
+    Desc: A series of characters, one after the other, used to uniquely identify the subjects who have taken part in the investigation or research study.
+    Term:
+      - Origin: caDSR
+        Code: '14608610'
+        Value: Study Subject Identifier List Text
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  # clinical_measure_file
   clinical_measure_file_id: 
     Desc: A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
     Term:
@@ -2378,8 +2389,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11284037'
-        Value: Data File Name Text
-        Version: "3.0"
+        Value: Electronic Data File Name
+        Version: "2.0"
     Type: string
     Req: true
     Private: false
@@ -2389,8 +2400,8 @@ PropDefinitions:
     Term: 
       - Origin: caDSR
         Code: '14824731'
-        Value: Data File Content Category
-        Version: "2.00"
+        Value: Electronic Data File Content Category
+        Version: "1.00"
     Type:
       value_type: list
       item_type:
@@ -2404,8 +2415,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11416926'
-        Value: Data File Format Type
-        Version: "2.00"
+        Value: Electronic Data File Format Type
+        Version: "1.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/file_type.yml
     Req: true
@@ -2417,8 +2428,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11280338'
-        Value: Data File Description Text   
-        Version: "2.00"
+        Value: Electronic Data File Description Text   
+        Version: "1.00"
     Type: string
     Req: false 
     Private: false
@@ -2428,8 +2439,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11479876'
-        Value: Data File Size Integer
-        Version: "2.00"
+        Value: Electronic Data File Size Integer
+        Version: "1.00"
     Type: integer
     Req: true
     Private: false
@@ -2439,7 +2450,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11556150'
-        Value: Data File MD5 Checksum Text
+        Value: Electronic Data File MD5 Checksum Text
         Version: "2.00"
     Type: string
     Req: true
@@ -2483,7 +2494,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Data File Access Level Text 
+        Value: Electronic Data File Access Level Text 
         Version: "2.00"
     Type: string
     Req: true
@@ -2494,7 +2505,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Data File Access Level Text 
+        Value: Electronic Data File Access Level Text 
         Version: "2.00"
     Type: string
     Req: true
@@ -2505,7 +2516,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Data File Access Level Text 
+        Value: Electronic Data File Access Level Text 
         Version: "2.00"
     Enum:
       - "Controlled"
@@ -2581,8 +2592,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '12137353'
-        Value: Imaging DICOM Modality Type
-        Version: "2.00"
+        Value: Imaging Technology DICOM Modality Type
+        Version: "1.00"
     Enum:
       - "Computed Tomography"
       - "Magnetic Resonance"
@@ -2779,14 +2790,13 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '14688604'
-        Value: Specimen Source Location Category
-        Version: "2.00"
+        Value: Specimen Neoplasm Category
+        Version: "1.00"
     Enum:
       - 'Normal'
       - 'Peritumoral'
       - 'Tumor'
       - 'Not Reported'
-      - 'Unknown'
     Req: true
     Strict: false
     Private: false
@@ -2823,7 +2833,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '6273393'
-        Value: Molecular Analysis Library Sequencing Technique Type
+        Value: Sequencing Library Technique Type
         Version: "2.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/library_strategy.yml
@@ -3052,8 +3062,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11459812'
-        Value: Study Administration Study Short Name Text
-        Version: "4.00"
+        Value: Study Short Name Text
+        Version: "2.00"
     Type: string
     Req: true
     Private: false
@@ -3196,8 +3206,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11416926'
-        Value: Data File Format Type 
-        Version: "2.00"
+        Value: Electronic Data File Format Type 
+        Version: "1.00"
     Type: string
     Req: false
     Private: false
@@ -3852,7 +3862,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12033935'
         Value: Methylation Analysis Instrumentation Text
-        Version: "2.00"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
