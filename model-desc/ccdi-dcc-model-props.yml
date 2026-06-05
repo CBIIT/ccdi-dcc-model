@@ -60,7 +60,7 @@ PropDefinitions:
     Req: true
     Private: false 
   #genetic_analysis
-  genomic_source_category:
+  alteration_category:
     Desc: The text term that describes the origin of a variation in the nucleic acid sequence of a specific gene.
     Term:
       - Origin: caDSR
@@ -68,6 +68,7 @@ PropDefinitions:
         Value: Molecular Analysis Gene Variant Genomic Source Category
         Version: "1.00"
     Enum:
+      - "Epigenetic"
       - "Germline"
       - "Not Reported"
       - "Somatic"
@@ -82,61 +83,37 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '13347079'
-        Value: Gene Mutation ACMG Clinical Significance Category
+        Value: Gene Mutation ACMG Clinical Significance Source and Category
         Version: "1.00"
     Type: string
     Req: true
     Private: false
   #genetic_analysis
-  reported_significance_system:
-    Desc: The source of the reported significance.
+  analysis_type:
+    Desc: The type of analysis performed to identify a genetic alteration, such as a mutation, fusion, or copy number variation.
     Term:
       - Origin: caDSR
-        Code: ''
-        Value: tbd
-        Version: "tbd"
-    Type: string
-    Req: true
-    Private: false
-  #genetic_analysis
-  test:
-    Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
-    Term:
-      - Origin: caDSR
-        Code: '13362271'
-        Value: Laboratory Procedure Test Result Text
+        Code: '17267800'
+        Value: Genomic Alteration Activity Experimental Method Type
         Version: "1.00"
-    Type: string
-    Req: true
-    Private: false
-  #genetic_analysis
-  method:
-    Desc: The type of systematic investigation using controlled observations and measurements to test hypotheses or develop a plan of action based on the facts discovered.
-    Term:
-      - Origin: caDSR
-        Code: '12373576'
-        Value: Research Activity Experimental Method Type
-        Version: "3.00"
     Enum:
-      - "Archer Fusion"
-      - "DNA Sequencing"
-      - "Immunofluorescence"
+      - "Somatic Mutation Analysis"
+      - "Germline Mutation Analysis"
+      - "Structural Variant Analysis"
+      - "Gene Fusion Analysis"
+      - "Gene Expression Analysis"
       - "Methylation Analysis"
-      - "Multigene Expression Assay"
-      - "Pathology"
-      - "Quantitative Immunofluorescence"
-      - "Radiology"
-      - "RNA Sequencing"
+      - "Other"
       - "Not Reported"
     Req: true
     Private: false
-  #genetic_analysis
-  result:
-    Desc: A textual description of the outcome of any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting.
+  # genetic_analysis
+  analysis_method:
+    Desc: The specific technique, process, panel or software used to perform a genetic analysis.
     Term:
       - Origin: caDSR
-        Code: '13362271'
-        Value: test_result_text
+        Code: '17268674'
+        Value: Genomic Alteration Activity Experimental Method Name
         Version: "1.00"
     Type: string
     Req: true
@@ -168,19 +145,6 @@ PropDefinitions:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chromosome.yml
     Req: false
     Private: false
-  #genetic_analysis
-  translocation_partner_chromosome:
-    Desc: Threadlike structures made of protein and a single molecule of DNA in a human that serve to carry the genomic information from cell to cell.
-    Term:
-      - Origin: caDSR
-        Code: '11379445'
-        Value: Gene Human Chromosome Name
-        Version: "1.00"
-    Enum:
-      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chromosome.yml
-    Req: false
-    Strict: true
-    Private: false
   #genetic_alteration
   cytoband:
     Desc: Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
@@ -193,17 +157,6 @@ PropDefinitions:
     Req: false
     Private: false
   #genetic_analysis
-  translocation_partner_cytoband:
-    Desc: Alphanumeric value used to describe the cytoband or chromosomal location targeted or included in molecular analysis.
-    Term:
-      - Origin: caDSR
-        Code: '6142405'
-        Value: Molecular Analysis Cytoband Text
-        Version: "2.00"
-    Type: string
-    Req: true
-    Private: false
-  #genetic_analysis
   gene_symbol:
     Desc: A short-form abbreviation for a particular gene assigned by the HGNC (HUGO Gene Nomenclature Committee - an organism specific nomenclature committee).    
     Term:
@@ -211,18 +164,63 @@ PropDefinitions:
         Code: '11280318'
         Value: Gene Occurrence HGNC Symbol Name
         Version: "1.00"
-    Type: string
+    Type: 
+      value_type: list
+      item_type: string
     Req: true
     Private: false
-  #genetic_analysis
-  fusion_partner_gene:
-    Desc: A short-form abbreviation for a particular gene assigned by the HGNC (HUGO Gene Nomenclature Committee - an organism specific nomenclature committee).    
+  alteration_region:
+    Desc: "The text term used to describe the region of a gene where a genetic alteration occurs."
     Term:
       - Origin: caDSR
-        Code: '11280318'
-        Value: Gene Occurrence HGNC Symbol Name
+        Code: '14787331'
+        Value: Alteration Region Occurence Type
+        Version: "1.00"
+    Enum:
+      - "5' UTR"
+      - "3' UTR"
+      - "Exon"
+      - "Intronic Region"
+      - "Intergenic Region"
+      - "Promoter Region"
+      - "Splice Site"
+      - "Enhancer Region"
+      - "CpG Island"
+      - "Unknown"
+      - "Not Applicable"
+      - "Not Reported"
+    Req: true
+    Private: false
+  # genetic_analysis
+  alteration_region_number:
+    Desc: The number of the region of a gene where a genetic alteration occurs.
+    Term:
+      - Origin: caDSR
+        Code: '17270235'
+        Value: Alteration Region Occurence Number
         Version: "1.00"
     Type: string
+    Req: false
+    Private: false
+  # genetic_analysis
+  alteration_location_role:
+    Desc: The role of the location of a genetic alteration.
+    Term:
+      - Origin: caDSR
+        Code: '17308860'
+        Value: Alteration Location Role
+        Version: "1.00"
+    Enum:
+      - "Primary Alteration Location"
+      - "Secondary Alteration Location"
+      - "Tertiary Alteration Location"
+      - "Five Prime Partner"
+      - "Three Prime Partner"
+      - "Breakend 1"
+      - "Breakend 2"
+      - "Not Applicable"
+      - "Not Reported"
+      - "Unknown"
     Req: false
     Private: false
   #genetic_analysis
@@ -235,39 +233,6 @@ PropDefinitions:
         Version: "1.00"
     Type: string
     Req: true
-    Private: false
-  #genetic_analysis
-  fusion_partner_transcript:
-    Desc: Alphanumeric value used to describe the transcript of a specific genetic variant.
-    Term:
-      - Origin: caDSR
-        Code: '6142465'
-        Value: Molecular Analysis Transcript Location Text
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false
-  #genetic_alteration
-  exon:
-    Desc: The text term used to describe a specific exon targeted or included in molecular analysis.
-    Term:
-      - Origin: caDSR
-        Code: '6142411'
-        Value: Molecular Analysis Exon Identification Number
-        Version: "1.00"
-    Type: string
-    Req: false
-    Private: false
-  #genetic_alteration
-  fusion_partner_exon:
-    Desc: The text term used to describe a specific exon targeted or included in molecular analysis.
-    Term:
-      - Origin: caDSR
-        Code: '6142411'
-        Value: Molecular Analysis Exon Identification Number
-        Version: "1.00"
-    Type: string
-    Req: false
     Private: false
   #genetic_analysis
   hgvs_coding:
@@ -398,10 +363,52 @@ PropDefinitions:
       - "Present"
       - "Absent"
       - "Unknown"
+      - "Indeterminate"
       - "Not Done"
     Req: false
     Private: false 
     Strict: true 
+  # genetic_analysis
+  zygosity:
+    Desc: The text term used to describe the zygosity of a specific genetic variant.
+    Term:
+      - Origin: caDSR
+        Code: '6142510'
+        Value: Molecular Analysis Genetic Zygosity Type
+        Version: "2.00"
+    Enum:
+      - "Compound Heterozygous"
+      - "Hemizygous"
+      - "Heterozygous"
+      - "Homozygous"
+      - "Mosaic"
+      - "Not Reported"
+      - "Nullizygous"
+      - "Unknown"
+  # genetic_analysis
+  external_references:
+    Desc: A list of external reference identifiers associated with a genetic alteration.
+    Term:
+      - Origin: caDSR
+        Code: '17273324'
+        Value: Genetic Alteration External Reference
+        Version: "1.00"
+    Type:
+      value_type: list
+      item_type: string
+    Req: false
+    Private: false
+  # genetic_analysis
+  alteration_description:
+    Desc: A textual description of a genetic alteration.
+    Term:
+      - Origin: caDSR
+        Code: '17273314'
+        Value: Gene Mutation Description Text
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
   #synonym
   associated_id:
     Desc: Text to identify the other name or alias of a person.
@@ -2188,6 +2195,17 @@ PropDefinitions:
     Req: true
     Private: false
   # clinical_measure_file
+  participant_list:
+    Desc: A series of characters, one after the other, used to uniquely identify the subjects who have taken part in the investigation or research study.
+    Term:
+      - Origin: caDSR
+        Code: '14608610'
+        Value: Study Subject Identifier List Text
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  # clinical_measure_file
   clinical_measure_file_id: 
     Desc: A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
     Term:
@@ -2371,8 +2389,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11284037'
-        Value: Data File Name Text
-        Version: "3.0"
+        Value: Electronic Data File Name
+        Version: "2.0"
     Type: string
     Req: true
     Private: false
@@ -2382,8 +2400,8 @@ PropDefinitions:
     Term: 
       - Origin: caDSR
         Code: '14824731'
-        Value: Data File Content Category
-        Version: "2.00"
+        Value: Electronic Data File Content Category
+        Version: "1.00"
     Type:
       value_type: list
       item_type:
@@ -2397,8 +2415,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11416926'
-        Value: Data File Format Type
-        Version: "2.00"
+        Value: Electronic Data File Format Type
+        Version: "1.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/file_type.yml
     Req: true
@@ -2410,8 +2428,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11280338'
-        Value: Data File Description Text   
-        Version: "2.00"
+        Value: Electronic Data File Description Text   
+        Version: "1.00"
     Type: string
     Req: false 
     Private: false
@@ -2421,8 +2439,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11479876'
-        Value: Data File Size Integer
-        Version: "2.00"
+        Value: Electronic Data File Size Integer
+        Version: "1.00"
     Type: integer
     Req: true
     Private: false
@@ -2432,7 +2450,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11556150'
-        Value: Data File MD5 Checksum Text
+        Value: Electronic Data File MD5 Checksum Text
         Version: "2.00"
     Type: string
     Req: true
@@ -2476,7 +2494,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Data File Access Level Text 
+        Value: Electronic Data File Access Level Text 
         Version: "2.00"
     Type: string
     Req: true
@@ -2487,7 +2505,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Data File Access Level Text 
+        Value: Electronic Data File Access Level Text 
         Version: "2.00"
     Type: string
     Req: true
@@ -2498,7 +2516,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11555664'
-        Value: Data File Access Level Text 
+        Value: Electronic Data File Access Level Text 
         Version: "2.00"
     Enum:
       - "Controlled"
@@ -2574,8 +2592,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '12137353'
-        Value: Imaging DICOM Modality Type
-        Version: "2.00"
+        Value: Imaging Technology DICOM Modality Type
+        Version: "1.00"
     Enum:
       - "Computed Tomography"
       - "Magnetic Resonance"
@@ -2772,14 +2790,13 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '14688604'
-        Value: Specimen Source Location Category
-        Version: "2.00"
+        Value: Specimen Neoplasm Category
+        Version: "1.00"
     Enum:
       - 'Normal'
       - 'Peritumoral'
       - 'Tumor'
       - 'Not Reported'
-      - 'Unknown'
     Req: true
     Strict: false
     Private: false
@@ -2816,7 +2833,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '6273393'
-        Value: Molecular Analysis Library Sequencing Technique Type
+        Value: Sequencing Library Technique Type
         Version: "2.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/library_strategy.yml
@@ -3045,8 +3062,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11459812'
-        Value: Study Administration Study Short Name Text
-        Version: "4.00"
+        Value: Study Short Name Text
+        Version: "2.00"
     Type: string
     Req: true
     Private: false
@@ -3189,8 +3206,8 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: '11416926'
-        Value: Data File Format Type 
-        Version: "2.00"
+        Value: Electronic Data File Format Type 
+        Version: "1.00"
     Type: string
     Req: false
     Private: false
@@ -3845,7 +3862,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '12033935'
         Value: Methylation Analysis Instrumentation Text
-        Version: "2.00"
+        Version: "1.00"
     Type: string
     Req: true
     Private: false
@@ -4031,4 +4048,3 @@ PropDefinitions:
     Req: false
     Strict: false
     Private: false
-
