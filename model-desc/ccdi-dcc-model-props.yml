@@ -3509,7 +3509,8 @@ PropDefinitions:
         Code: '6824805'
         Value: Dose Units
         Version: "5.00"
-    Type: string
+    Enum:
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/dose_unit.yml
     Req: false
     Private: false
   #treatment
@@ -3520,7 +3521,22 @@ PropDefinitions:
         Code: '2179582'
         Value: Dose Route Text
         Version: "1.00"
-    Type: string
+    Enum:
+      - "Infusion"
+      - "Inhaled"
+      - "Intradermal"
+      - "Intramuscular"
+      - "Intrathecal"
+      - "Intravenous"
+      - "Irrigation"
+      - "Ophthalmic"
+      - "Oral"
+      - "Other"
+      - "Rectal"
+      - "Subcutaneous"
+      - "Topical"
+      - "Transdermal"
+      - "Not Reported"
     Req: false
     Private: false 
   #treatment
@@ -3531,7 +3547,8 @@ PropDefinitions:
         Code: '2179580'
         Value: Dose Frequency Text
         Version: "1.00"
-    Type: string
+    Enum:
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/dose_frequency.yml
     Req: false
     Private: false 
   #treatment
