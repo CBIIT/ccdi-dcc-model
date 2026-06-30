@@ -618,6 +618,7 @@ Nodes:
       - chemotherapy_agent
       - chemotherapy_class
       - chemotherapy_subclass
+      - dose_type
       - dose
       - dose_unit
       - dose_route

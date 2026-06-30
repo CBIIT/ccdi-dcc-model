@@ -3491,6 +3491,23 @@ PropDefinitions:
     Req: false
     Private: false
   #treatment
+  dose_type:
+    Desc: The text that describe the dosage type.
+    Term:
+      - Origin: caDSR
+        Code: '2867528'
+        Value: Dose Type Text
+        Version: "1.00"
+    Enum:
+      - "Planned"
+      - "Prescription"
+      - "Total"
+      - "Other"
+      - "Not Reported"
+    Req: false
+    Strict: false
+    Private: false 
+  #treatment
   dose:
     Desc: The amount of exposure that a subject actually receives.
     Term:
@@ -3509,8 +3526,10 @@ PropDefinitions:
         Code: '6824805'
         Value: Dose Units
         Version: "5.00"
-    Type: string
+    Enum:
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/dose_unit.yml
     Req: false
+    Strict: false
     Private: false
   #treatment
   dose_route:
@@ -3520,8 +3539,24 @@ PropDefinitions:
         Code: '2179582'
         Value: Dose Route Text
         Version: "1.00"
-    Type: string
+    Enum:
+      - "Infusion"
+      - "Inhaled"
+      - "Intradermal"
+      - "Intramuscular"
+      - "Intrathecal"
+      - "Intravenous"
+      - "Irrigation"
+      - "Ophthalmic"
+      - "Oral"
+      - "Other"
+      - "Rectal"
+      - "Subcutaneous"
+      - "Topical"
+      - "Transdermal"
+      - "Not Reported"
     Req: false
+    Strict: false
     Private: false 
   #treatment
   dose_frequency:
@@ -3531,8 +3566,10 @@ PropDefinitions:
         Code: '2179580'
         Value: Dose Frequency Text
         Version: "1.00"
-    Type: string
+    Enum:
+      - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/dose_frequency.yml
     Req: false
+    Strict: false
     Private: false 
   #treatment
   protocol:
