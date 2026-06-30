@@ -3491,6 +3491,23 @@ PropDefinitions:
     Req: false
     Private: false
   #treatment
+  dose_type:
+    Desc: The text that describe the dosage type.
+    Term:
+      - Origin: caDSR
+        Code: '2867528'
+        Value: Dose Type Text
+        Version: "1.00"
+    Enum:
+      - "Planned"
+      - "Prescription"
+      - "Total"
+      - "Other"
+      - "Not Reported"
+    Req: false
+    Strict: false
+    Private: false 
+  #treatment
   dose:
     Desc: The amount of exposure that a subject actually receives.
     Term:
