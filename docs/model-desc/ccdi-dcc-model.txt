@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit 017bd94
+commit ee0d5b9
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -593,9 +593,28 @@ synonym	synonym_id	STRING
 treatment_chemotherapy	age_at_treatment_end	NUMBER
 treatment_chemotherapy	age_at_treatment_start	NUMBER
 treatment_chemotherapy	dose	STRING
-treatment_chemotherapy	dose_frequency	STRING
-treatment_chemotherapy	dose_route	STRING
-treatment_chemotherapy	dose_unit	STRING
+treatment_chemotherapy	dose_frequency	EXTERNAL
+treatment_chemotherapy	dose_route	Infusion
+treatment_chemotherapy	dose_route	Inhaled
+treatment_chemotherapy	dose_route	Intradermal
+treatment_chemotherapy	dose_route	Intramuscular
+treatment_chemotherapy	dose_route	Intrathecal
+treatment_chemotherapy	dose_route	Intravenous
+treatment_chemotherapy	dose_route	Irrigation
+treatment_chemotherapy	dose_route	Not Reported
+treatment_chemotherapy	dose_route	Ophthalmic
+treatment_chemotherapy	dose_route	Oral
+treatment_chemotherapy	dose_route	Other
+treatment_chemotherapy	dose_route	Rectal
+treatment_chemotherapy	dose_route	Subcutaneous
+treatment_chemotherapy	dose_route	Topical
+treatment_chemotherapy	dose_route	Transdermal
+treatment_chemotherapy	dose_type	Not Reported
+treatment_chemotherapy	dose_type	Other
+treatment_chemotherapy	dose_type	Planned
+treatment_chemotherapy	dose_type	Prescription
+treatment_chemotherapy	dose_type	Total
+treatment_chemotherapy	dose_unit	EXTERNAL
 treatment_chemotherapy	guid	STRING
 treatment_chemotherapy	protocol	STRING
 treatment_chemotherapy	treatment_chemotherapy_id	STRING
@@ -629,8 +648,8 @@ relationship	source_node	destination_node	property	value_or_TYPE
 of_cell_line	cell_line	participant	NA	NA
 of_cell_line	cell_line	study	NA	NA
 of_clinical_measure_file	clinical_measure_file	participant	NA	NA
-of_clinical_measure_file	clinical_measure_file	study	NA	NA
 of_clinical_measure_file	clinical_measure_file	sample	NA	NA
+of_clinical_measure_file	clinical_measure_file	study	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
@@ -638,8 +657,8 @@ of_diagnosis	diagnosis	sample	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
 of_generic_file	generic_file	participant	NA	NA
-of_generic_file	generic_file	study	NA	NA
 of_generic_file	generic_file	sample	NA	NA
+of_generic_file	generic_file	study	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
@@ -648,13 +667,13 @@ of_medical_history	medical_history	participant	NA	NA
 of_methylation_array_file	methylation_array_file	sample	NA	NA
 of_participant	participant	consent_group	NA	NA
 of_pathology_file	pathology_file	sample	NA	NA
-of_pdx	pdx	participant	NA	NA
 of_pdx	pdx	study	NA	NA
+of_pdx	pdx	participant	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
+of_sample	sample	cell_line	NA	NA
 of_sample	sample	participant	NA	NA
 of_sample	sample	pdx	NA	NA
-of_sample	sample	cell_line	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
@@ -663,8 +682,8 @@ of_study_personnel	study_personnel	study	NA	NA
 of_study_status	study_status	study	NA	NA
 of_survival	survival	participant	NA	NA
 of_synonym	synonym	participant	NA	NA
-of_synonym	synonym	study	NA	NA
 of_synonym	synonym	sample	NA	NA
+of_synonym	synonym	study	NA	NA
 of_treatment_chemotherapy	treatment_chemotherapy	participant	NA	NA
 of_treatment_other	treatment_other	participant	NA	NA
 of_treatment_radiation	treatment_radiation	participant	NA	NA
@@ -762,6 +781,7 @@ domain_description	A textual description of a storage location for digital data.
 dose	The amount of exposure that a subject actually receives.
 dose_frequency	The text that represents the planned dosage frequency for an agent.
 dose_route	The text that describe the dosage route.
+dose_type	The text that describe the dosage type.
 dose_unit	The unit of measure for the dosage form related to agents used as part of a procedure.
 echoPlanarPulseSequenceIndicator	The process by which an image is acquired or obtained.:An indication as to whether multiple echos of different phase steps are acquired using rephasing gradients instead of repeated 180-degree pulses. (BRIDG):The preferred Value Domain to indicate a question with permissible values of yes/no.
 echoPulseSequenceCategoryCode	A term specifying the echo category of pulse sequences.
