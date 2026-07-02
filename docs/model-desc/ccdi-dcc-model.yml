@@ -697,9 +697,7 @@ Relationships:
   of_cell_line:
     Props: null
     Mul: many_to_one
-    Ends: 
-      - Src: cell_line
-        Dst: study  
+    Ends:  
       - Src: cell_line
         Dst: participant 
   of_clinical_measure_file:
@@ -798,8 +796,6 @@ Relationships:
     Props: null
     Mul: many_to_one
     Ends:
-      - Src: pdx
-        Dst: study
       - Src: pdx
         Dst: participant
   of_publication: 
