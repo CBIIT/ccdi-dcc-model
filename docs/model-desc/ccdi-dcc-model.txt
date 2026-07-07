@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/ccdi-dcc-model
-commit 7fd9721
+commit 7768def
 node	property	value_or_TYPE
 cell_line	cell_line_id	STRING
 cell_line	cell_line_passage_number	NUMBER
@@ -646,18 +646,18 @@ treatment_surgery	treatment_surgery_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
 of_cell_line	cell_line	participant	NA	NA
-of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_clinical_measure_file	clinical_measure_file	participant	NA	NA
 of_clinical_measure_file	clinical_measure_file	study	NA	NA
+of_clinical_measure_file	clinical_measure_file	sample	NA	NA
 of_consent_group	consent_group	study	NA	NA
 of_cytogenomic_file	cytogenomic_file	sample	NA	NA
 of_diagnosis	diagnosis	participant	NA	NA
 of_diagnosis	diagnosis	sample	NA	NA
 of_exposure	exposure	participant	NA	NA
 of_family_relationship	family_relationship	participant	NA	NA
-of_generic_file	generic_file	study	NA	NA
 of_generic_file	generic_file	sample	NA	NA
 of_generic_file	generic_file	participant	NA	NA
+of_generic_file	generic_file	study	NA	NA
 of_genetic_analysis	genetic_analysis	sample	NA	NA
 of_genetic_analysis	genetic_analysis	participant	NA	NA
 of_laboratory_test	laboratory_test	participant	NA	NA
@@ -669,9 +669,9 @@ of_pathology_file	pathology_file	sample	NA	NA
 of_pdx	pdx	participant	NA	NA
 of_publication	publication	study	NA	NA
 of_radiology_file	radiology_file	participant	NA	NA
-of_sample	sample	pdx	NA	NA
-of_sample	sample	cell_line	NA	NA
 of_sample	sample	participant	NA	NA
+of_sample	sample	cell_line	NA	NA
+of_sample	sample	pdx	NA	NA
 of_sequencing_file	sequencing_file	sample	NA	NA
 of_study_admin	study_admin	study	NA	NA
 of_study_arm	study_arm	study	NA	NA
@@ -680,8 +680,8 @@ of_study_personnel	study_personnel	study	NA	NA
 of_study_status	study_status	study	NA	NA
 of_survival	survival	participant	NA	NA
 of_synonym	synonym	study	NA	NA
-of_synonym	synonym	sample	NA	NA
 of_synonym	synonym	participant	NA	NA
+of_synonym	synonym	sample	NA	NA
 of_treatment_chemotherapy	treatment_chemotherapy	participant	NA	NA
 of_treatment_other	treatment_other	participant	NA	NA
 of_treatment_radiation	treatment_radiation	participant	NA	NA
@@ -737,7 +737,7 @@ cell_line_id	A sequence of characters used to identify, name, or characterize a 
 cell_line_passage_number	Removal of a cell culture from the culture vessel with a subculture (passage) process, in order to keep the cells at a sufficiently low density to stimulate further growth.:A numeral or string of numerals expressing value, quantity, or identification
 checksum_algorithm	The method by which the file checksum was calculated.
 checksum_value	A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity.
-chemotherapy_agent	The name of the individual therapeutic agent(s) used as part of a treatment regimen.
+chemotherapy_agent	The name of the therapeutic agent(s) as captured in the Pharmacological Substance (C1909) or Drug or Chemical by Structure (C1913) branch of the National Cancer Institute Thesaurus (NCIt) hierarchy tree.
 chemotherapy_class	The type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
 chemotherapy_subclass	The sub-type of chemotherapy agent used in the treatment of diseases as classified by the American Cancer Society (ACS).
 chemotherapy_type	Text term that describes the kind of treatment administered.

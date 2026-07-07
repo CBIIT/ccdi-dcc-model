@@ -3449,18 +3449,17 @@ PropDefinitions:
     Private: false    
   #treatment
   chemotherapy_agent:
-    Desc: The name of the individual therapeutic agent(s) used as part of a treatment regimen.
+    Desc: The name of the therapeutic agent(s) as captured in the Pharmacological Substance (C1909) or Drug or Chemical by Structure (C1913) branch of the National Cancer Institute Thesaurus (NCIt) hierarchy tree.
     Term:
       - Origin: caDSR
-        Code: '13579886'
-        Value: Therapeutic Procedure Agent Name
+        Code: '14913015'
+        Value: Therapeutic Procedure Pharmacologic Substance or Chemical NCI Thesaurus Name
         Version: "1.00"
     Type:
       value_type: list
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_agent.yml
     Req: false
-    Strict: false
     Private: false
   #treatment
   chemotherapy_class:
