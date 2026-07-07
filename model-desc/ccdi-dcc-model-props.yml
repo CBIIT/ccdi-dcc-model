@@ -3455,7 +3455,10 @@ PropDefinitions:
         Code: '14913015'
         Value: Therapeutic Procedure Pharmacologic Substance or Chemical NCI Thesaurus Name
         Version: "1.00"
-    Type: string
+    Type:
+      value_type: list
+      item_type:
+        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_agent.yml
     Req: false
     Private: false
   #treatment
