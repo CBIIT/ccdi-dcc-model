@@ -1068,7 +1068,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '8028962'
         Value: Biospecimen Preservation Procedure Type
-        Version: "2.00"
+        Version: "3.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/fixation_embedding_method.yml
     Req: true
