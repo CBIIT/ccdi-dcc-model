@@ -1068,7 +1068,7 @@ PropDefinitions:
       - Origin: caDSR
         Code: '8028962'
         Value: Biospecimen Preservation Procedure Type
-        Version: "2.00"
+        Version: "3.00"
     Enum:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/fixation_embedding_method.yml
     Req: true
@@ -3460,6 +3460,7 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_agent.yml
     Req: false
+    Strict: false
     Private: false
   #treatment
   chemotherapy_class:
@@ -3474,6 +3475,7 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_class.yml
     Req: false
+    Strict: false
     Private: false
   #treatment
   chemotherapy_subclass:
@@ -3488,6 +3490,7 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/chemotherapy_subclass.yml
     Req: false
+    Strict: false
     Private: false
   #treatment
   dose_type:
@@ -3505,7 +3508,7 @@ PropDefinitions:
       - "Not Reported"
     Req: false
     Strict: false
-    Private: false 
+    Private: false
   #treatment
   dose:
     Desc: The amount of exposure that a subject actually receives.
@@ -3516,7 +3519,7 @@ PropDefinitions:
         Version: "1.00"
     Type: string
     Req: false
-    Private: false 
+    Private: false
   #treatment
   dose_unit:
     Desc: The unit of measure for the dosage form related to agents used as part of a procedure.
@@ -3556,7 +3559,7 @@ PropDefinitions:
       - "Not Reported"
     Req: false
     Strict: false
-    Private: false 
+    Private: false
   #treatment
   dose_frequency:
     Desc: The text that represents the planned dosage frequency for an agent.
@@ -3569,7 +3572,7 @@ PropDefinitions:
       - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/dose_frequency.yml
     Req: false
     Strict: false
-    Private: false 
+    Private: false
   #treatment
   protocol:
     Desc: The name of the formal plan for an experiment or research activity.
