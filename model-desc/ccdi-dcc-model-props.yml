@@ -1214,17 +1214,6 @@ PropDefinitions:
     Req: true
     Private: false
   #exposure
-  pack_years_smoked:
-    Desc: Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years smoked divided by 20.
-    Term:
-      - Origin: caDSR
-        Code: '2955385'
-        Value: Person Cigarette Smoking History Pack Year Value
-        Version: "1.00"
-    Type: number
-    Req: false
-    Private: false
-  #exposure
   years_smoked:
     Desc: The number of years spent puffing and/or inhaling smoke from a lit cigarette, cigar, or pipe.
     Term:
@@ -1293,18 +1282,24 @@ PropDefinitions:
     Strict: true
     Private: false
   #exposure
-  asbestos_exposure:
-    Desc: The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
+  exposure_type:
+    Desc: The type of potentially harmful environmental agents to which an individual was exposed.
     Term:
       - Origin: caDSR
-        Code: '11256813'
-        Value: Environmental Exposure Type
-        Version: "1.00"
+        Code: '15753203'
+        Value: 'Subject Environmental Exposure Type'
+        Version: '1.00'
     Enum:
-      - "Yes"
-      - "No"
-      - "Unknown"
-      - "Not Reported"
+      - "Asbestos Exposure"
+      - "Chemical Exposure"
+      - "Marijuana Smoke Exposure"
+      - "Radiation Exposure"
+      - "Radon Exposure"
+      - "Respirable Crystalline Silica Exposure"
+      - "Smoke Exposure"
+      - "Smokeless Tobacco Exposure"
+      - "Tobacco Related Exposure"
+      - "Wood Dust Exposure"
     Req: false
     Strict: true
     Private: false
@@ -1318,70 +1313,6 @@ PropDefinitions:
         Version: "4.00"
     Type: integer
     Req: false
-    Private: false
-  #exposure
-  coal_dust_exposure:
-    Desc: The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
-    Term:
-      - Origin: caDSR
-        Code: '11256813'
-        Value: Environmental Exposure Type
-        Version: "1.00"
-    Enum:
-      - "Yes"
-      - "No"
-      - "Unknown"
-      - "Not Reported"
-    Req: false
-    Strict: true
-    Private: false
-  #exposure
-  environmental_tobacco_smoke_exposure:
-    Desc: The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.    
-    Term:
-      - Origin: caDSR
-        Code: '11256813'
-        Value: Environmental Exposure Type
-        Version: "1.00"
-    Enum:
-      - "Yes"
-      - "No"
-      - "Unknown"
-      - "Not Reported"
-    Req: false
-    Strict: true
-    Private: false
-  #exposure
-  radon_exposure:
-    Desc: The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
-    Term:
-      - Origin: caDSR
-        Code: '11256813'
-        Value: Environmental Exposure Type
-        Version: "1.00"
-    Enum:
-      - "Yes"
-      - "No"
-      - "Unknown"
-      - "Not Reported"
-    Req: false
-    Strict: true
-    Private: false
-  #exposure
-  respirable_crystalline_silica_exposure:
-    Desc: The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
-    Term:
-      - Origin: caDSR
-        Code: '11256813'
-        Value: Environmental Exposure Type
-        Version: "1.00"
-    Enum:
-      - "Yes"
-      - "No"
-      - "Unknown"
-      - "Not Reported"
-    Req: false
-    Strict: true
     Private: false
   #exposure
   smoking_frequency:
@@ -1456,21 +1387,6 @@ PropDefinitions:
       - "7 (Smoking history not documented)"
       - "Unknown"
       - "Not Reported"
-    Req: false
-    Strict: true
-    Private: false
-  #exposure
-  type_of_smoke_exposure:
-    Desc: The type of environmental, occupational or consumer-based exposure to airborne gases and particulates produced when materials undergo combustion or thermal decomposition.
-    Term:
-      - Origin: caDSR
-        Code: '14572339'
-        Value: Environmental Smoke Exposure Type
-        Version: "1.00"
-    Type:
-      value_type: list
-      item_type:
-        - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/type_of_smoke_exposure.yml
     Req: false
     Strict: true
     Private: false
