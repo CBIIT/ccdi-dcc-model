@@ -43,6 +43,7 @@ jobs:
               except yaml.YAMLError as e:
                   failed = True
                   print(f"FAIL {path}\n{e}\n")
+                  
 
           if failed:
               sys.exit(1)
