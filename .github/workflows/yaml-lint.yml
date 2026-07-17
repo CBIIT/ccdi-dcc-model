@@ -2,13 +2,11 @@ name: YAML Syntax Check
 
 on:
   push:
-    paths:
-      - 'model-desc/property_yamls/**.yml'
-      - 'model-desc/property_yamls/**.yaml'
+    branches:
+      - main
   pull_request:
-    paths:
-      - 'model-desc/property_yamls/**.yml'
-      - 'model-desc/property_yamls/**.yaml'
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -28,7 +26,7 @@ jobs:
       - name: Install yamllint
         run: pip install yamllint
 
-      - name: Lint YAML files (syntax only)
+      - name: Lint all YAML files (syntax only)
         run: |
-         yamllint -d "{rules: {}}" model-desc/property_yamls/
-         
+          yamllint -d "{rules: {}}" model-desc/property_yamls/
+          
