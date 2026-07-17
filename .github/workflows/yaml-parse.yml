@@ -2,13 +2,11 @@ name: YAML Parse Check
 
 on:
   push:
-    paths:
-      - 'model-desc/property_yamls/**.yml'
-      - 'model-desc/property_yamls/**.yaml'
+    branches:
+      - main
   pull_request:
-    paths:
-      - 'model-desc/property_yamls/**.yml'
-      - 'model-desc/property_yamls/**.yaml'
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -46,9 +44,9 @@ jobs:
               except yaml.YAMLError as e:
                   failed = True
                   print(f"FAIL {path}\n{e}\n")
-                  
 
           if failed:
               sys.exit(1)
           print(f"\nChecked {len(files)} file(s).")
           EOF
+          
