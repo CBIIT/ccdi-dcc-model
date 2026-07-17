@@ -10,6 +10,9 @@ on:
       - 'model-desc/property_yamls/**.yml'
       - 'model-desc/property_yamls/**.yaml'
 
+permissions:
+  contents: read
+
 jobs:
   yaml-parse:
     runs-on: ubuntu-latest
