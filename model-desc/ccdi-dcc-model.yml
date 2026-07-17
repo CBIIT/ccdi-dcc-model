@@ -751,9 +751,9 @@ Relationships:
     Mul: many_to_one
     Ends: 
       - Src: genetic_analysis
-        Dst: sample
-      - Src: genetic_analysis
         Dst: participant
+      - Src: genetic_analysis
+        Dst: sample
   of_laboratory_test:
     Props: null
     Mul: many_to_one
