@@ -28,3 +28,4 @@ jobs:
       - name: Lint YAML files (syntax only)
         run: |
          yamllint -d "{rules: {}}" model-desc/property_yamls/
+         
