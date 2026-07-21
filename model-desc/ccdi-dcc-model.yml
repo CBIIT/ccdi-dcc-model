@@ -148,6 +148,7 @@ Nodes:
     Props:
       - genetic_analysis_id
       - age_at_genetic_analysis
+      - status
       - alteration_category
       - reported_significance
       - platform
@@ -171,7 +172,6 @@ Nodes:
       - alteration_effect
       - dna_index_numeric
       - iscn
-      - status
       - zygosity
       - external_references
       - alteration_description
