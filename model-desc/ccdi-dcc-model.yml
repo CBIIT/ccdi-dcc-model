@@ -37,7 +37,6 @@ Nodes:
       - checksum_algorithm
       - checksum_value
       - guid
-      - crdc_id
   consent_group:
     Desc: "A set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository."
     Tags:
@@ -73,7 +72,6 @@ Nodes:
       - dcf_indexd_guid
       - cytogenomic_platform
       - guid
-      - crdc_id
   diagnosis:
     Desc: "The diagnosis node is comprised of properties which describe the participant's disease(s)."
     Tags:
@@ -235,7 +233,6 @@ Nodes:
       - methylation_platform
       - reporter_label
       - guid
-      - crdc_id
   participant:
     Desc: "The participant node is comprised of properties which describe the participant attributes."
     Tags:
@@ -249,7 +246,6 @@ Nodes:
       - sex_at_birth
       - occupation
       - guid
-      - crdc_id
   pathology_file: 
     Desc: "The pathology file node is comprised of properties which describe file metadata about the pathology image files."
     Tags:
@@ -279,7 +275,6 @@ Nodes:
       - deidentification_method
       - slim_url
       - guid
-      - crdc_id
   pdx:
     Desc: "The pdx node is comprised of properties which describe the patient derived xenografts models either from samples or commercially obtained."
     Tags:
@@ -365,7 +360,6 @@ Nodes:
       - mrImageReconstructionProtocolElement
       - complexImageComponentCode
       - guid
-      - crdc_id
   generic_file: # 09.20.22 pdunn
     Desc: "The generic file node is comprised of properties which describe file metadata for generic files that do not fall under any other node."
     Tags:
@@ -388,7 +382,6 @@ Nodes:
       - file_url
       - dcf_indexd_guid
       - guid
-      - crdc_id
   sample:
     Desc: "The sample node is comprised of properties which describe the sample attributes as collected from participant, cell line, or pdx model."
     Tags:
@@ -408,7 +401,6 @@ Nodes:
       - percent_necrosis
       - laterality
       - guid
-      - crdc_id
   sequencing_file: 
     Desc: "The sequencing file node is comprised of properties which describe file metadata for the sequencing file."
     Tags:
@@ -467,7 +459,6 @@ Nodes:
       - UMI_barcode_read
       - UMI_barcode_size
       - guid
-      - crdc_id
   study:
     Desc: "The study node is comprised of properties which describe high level metadata that applies to all facets of the study."
     Tags:
@@ -489,7 +480,6 @@ Nodes:
       - study_data_types
       - promotion_status
       - guid
-      - crdc_id
   study_admin:
     Desc: "The study admin node is comprised of properties which describe the general structure of the study."
     Tags:
@@ -544,7 +534,6 @@ Nodes:
       - institution
       - orcid
       - guid
-      - crdc_id
   study_status:
     Desc: "The study status node is comprised of properties which describe the current status of the study across multiple repositories."
     Tags:
