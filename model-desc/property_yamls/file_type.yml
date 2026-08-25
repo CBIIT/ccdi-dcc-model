@@ -51,6 +51,7 @@ PropDefinitions:
     - "tif"
     - "tiff"
     - "txt"
+    - "ubam"
     - "vcf"
     - "vms"
     - "vmu"
