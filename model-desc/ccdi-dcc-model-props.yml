@@ -2181,6 +2181,18 @@ PropDefinitions:
     Strict: false
     Private: false 
   #diagnosis, sample
+  submitted_diagnosis_classification_system:
+    Desc: 'The standard or agency upon which the specific term used as the diagnosis value was obtained.'
+    Term:
+      - Origin: caDSR
+        Code: '16964044'
+        Value: Diagnosis Disease WHO Classification of Pediatric Tumors Text
+        Version: "1.00"
+    Type: string
+    Req: false
+    Strict: false
+    Private: false 
+  #diagnosis, sample
   diagnosis_basis: 
     Desc: The underlying scientific foundation used to determine the diagnosis.
     Term:
@@ -3915,6 +3927,18 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis_category.yml
     Req: true
+    Strict: false
+    Private: false
+  #diagnosis
+  submitted_diagnosis_category:
+    Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
+    Term:
+      - Origin: caDSR
+        Code: '6161017'
+        Value: ICD-O Disease Diagnosis Category
+        Version: "1.00"
+    Type: string
+    Req: false
     Strict: false
     Private: false
   #treatment_response
