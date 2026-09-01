@@ -2149,10 +2149,6 @@ PropDefinitions:
         Value: Diagnosis Disease WHO Classification of Pediatric Tumors Text
         Version: "1.00"
       - Origin: caDSR
-        Code: '16963161'
-        Value: Diagnosis Disease CC4K Text
-        Version: "1.00"
-      - Origin: caDSR
         Code: '13606067'
         Value: Diagnosis Disease ICD-O-3 Morphology Label Text
         Version: "2.00"
@@ -2160,24 +2156,27 @@ PropDefinitions:
         Code: '14741263'
         Value: Diagnosis Disease WHO CNS5 Type
         Version: "1.00"
-      - Origin: caDSR
-        Code: '15026558'
-        Value: French-American-British Classification
-        Version: "1.00"
-      - Origin: NCIt
-        Code: 'C159157'
-        Value: WHO AML Classification of Tumors
     Type:
       value_type: list
       item_type:
         - 'ICD-O-3.2'
-        - 'WHO CNS5'
-        - 'WHO5 Pediatric Tumor'
-        - 'Indication for Study'
-        - 'French-American-British Classification'
-        - 'WHO AML Classification of Tumors'
+        - 'WHO 5th ed. CNS Tumor'
+        - 'WHO 5th ed. Pediatric Tumor'
+        - 'WHO 5th ed. STS Tumor'
         - 'Other'
     Req: true
+    Strict: false
+    Private: false 
+  #diagnosis, sample
+  submitted_diagnosis_classification_system:
+    Desc: 'The standard or agency upon which the specific term used as the diagnosis value was obtained.'
+    Term:
+      - Origin: caDSR
+        Code: '16964044'
+        Value: Diagnosis Disease WHO Classification of Pediatric Tumors Text
+        Version: "1.00"
+    Type: string
+    Req: false
     Strict: false
     Private: false 
   #diagnosis, sample
@@ -3915,6 +3914,18 @@ PropDefinitions:
       item_type:
         - https://raw.githubusercontent.com/CBIIT/ccdi-dcc-model/refs/heads/main/model-desc/property_yamls/diagnosis_category.yml
     Req: true
+    Strict: false
+    Private: false
+  #diagnosis
+  submitted_diagnosis_category:
+    Desc: The term which identifies normal and abnormal cells and tissues used to define the presence and nature of disease, as categorized by diagnosis_classification_system property.
+    Term:
+      - Origin: caDSR
+        Code: '6161017'
+        Value: ICD-O Disease Diagnosis Category
+        Version: "1.00"
+    Type: string
+    Req: false
     Strict: false
     Private: false
   #treatment_response

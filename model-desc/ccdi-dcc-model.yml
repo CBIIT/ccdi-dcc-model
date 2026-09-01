@@ -30,12 +30,12 @@ Nodes:
       - md5sum
       - file_mapping_level
       - file_access
-      - acl
-      - authz
       - file_url
-      - dcf_indexd_guid
       - checksum_algorithm
       - checksum_value
+      - acl
+      - authz
+      - dcf_indexd_guid
       - guid
   consent_group:
     Desc: "A set of study participants who have signed the same consent agreement and that will be included in the dbGaP repository."
@@ -66,11 +66,11 @@ Nodes:
       - md5sum
       - file_mapping_level
       - file_access
+      - file_url
+      - cytogenomic_platform
       - acl
       - authz
-      - file_url
       - dcf_indexd_guid
-      - cytogenomic_platform
       - guid
   diagnosis:
     Desc: "The diagnosis node is comprised of properties which describe the participant's disease(s)."
@@ -82,16 +82,14 @@ Nodes:
     Props:
       - diagnosis_id
       - submitted_diagnosis
-      - diagnosis
-      - diagnosis_category
-      - diagnosis_classification_system
+      - submitted_diagnosis_category
+      - submitted_diagnosis_classification_system
       - diagnosis_basis
-      - diagnosis_comment
       - disease_phase
       - tumor_spatial_extent
       - submitted_anatomic_site
-      - anatomic_site
       - age_at_diagnosis
+      - diagnosis_comment
       - toronto_childhood_cancer_staging
       - tumor_stage_clinical_t
       - tumor_stage_clinical_n
@@ -101,6 +99,10 @@ Nodes:
       - tumor_grade_source
       - year_of_diagnosis
       - laterality
+      - diagnosis
+      - diagnosis_category
+      - diagnosis_classification_system
+      - anatomic_site
       - guid
   exposure:
     Desc: "The exposure node is comprised of properties which describe the participant's habits and environmental factors."
@@ -226,12 +228,12 @@ Nodes:
       - md5sum
       - file_mapping_level
       - file_access
-      - acl
-      - authz
       - file_url
-      - dcf_indexd_guid
       - methylation_platform
       - reporter_label
+      - acl
+      - authz
+      - dcf_indexd_guid
       - guid
   participant:
     Desc: "The participant node is comprised of properties which describe the participant attributes."
@@ -263,10 +265,7 @@ Nodes:
       - md5sum
       - file_mapping_level
       - file_access
-      - acl
-      - authz
       - file_url
-      - dcf_indexd_guid
       - image_modality
       - license
       - magnification
@@ -274,6 +273,9 @@ Nodes:
       - staining_method
       - deidentification_method
       - slim_url
+      - acl
+      - authz
+      - dcf_indexd_guid
       - guid
   pdx:
     Desc: "The pdx node is comprised of properties which describe the patient derived xenografts models either from samples or commercially obtained."
@@ -323,12 +325,8 @@ Nodes:
       - md5sum
       - file_mapping_level
       - file_access
-      - acl
-      - authz
       - file_url
-      - dcf_indexd_guid
       - submitted_anatomic_site
-      - anatomic_site
       - participant_age_at_imaging
       - image_modality
       - deidentification_method
@@ -359,8 +357,12 @@ Nodes:
       - spectrallySelectedSuppressionCode 
       - mrImageReconstructionProtocolElement
       - complexImageComponentCode
+      - anatomic_site
+      - acl
+      - authz
+      - dcf_indexd_guid
       - guid
-  generic_file: # 09.20.22 pdunn
+  generic_file:
     Desc: "The generic file node is comprised of properties which describe file metadata for generic files that do not fall under any other node."
     Tags:
       Category: data_file
@@ -377,9 +379,9 @@ Nodes:
       - md5sum
       - file_mapping_level
       - file_access
+      - file_url
       - acl
       - authz
-      - file_url
       - dcf_indexd_guid
       - guid
   sample:
@@ -392,7 +394,6 @@ Nodes:
     Props:
       - sample_id
       - submitted_anatomic_site
-      - anatomic_site
       - participant_age_at_collection
       - sample_tumor_status
       - tumor_spatial_extent
@@ -400,6 +401,7 @@ Nodes:
       - percent_tumor
       - percent_necrosis
       - laterality
+      - anatomic_site
       - guid
   sequencing_file: 
     Desc: "The sequencing file node is comprised of properties which describe file metadata for the sequencing file."
@@ -418,10 +420,7 @@ Nodes:
       - md5sum
       - file_mapping_level
       - file_access
-      - acl
-      - authz
       - file_url
-      - dcf_indexd_guid
       - library_id # sra req'd
       - library_selection # sra req'd
       - library_strategy  # sra req'd
@@ -458,6 +457,9 @@ Nodes:
       - UMI_barcode_offset
       - UMI_barcode_read
       - UMI_barcode_size
+      - acl
+      - authz
+      - dcf_indexd_guid
       - guid
   study:
     Desc: "The study node is comprised of properties which describe high level metadata that applies to all facets of the study."
@@ -625,11 +627,11 @@ Nodes:
       - total_radiation_dose
       - total_radiation_dose_unit
       - submitted_anatomic_site
-      - anatomic_site
       - laterality_of_radiation_field
       - radiation_therapy_fraction
       - fraction_radiation_dose
       - fraction_radiation_dose_unit
+      - anatomic_site
       - guid
   treatment_surgery:
     Desc: "Text term that describes the kind of treatment administered."
@@ -645,8 +647,8 @@ Nodes:
       - age_at_treatment_start
       - age_at_treatment_end
       - submitted_anatomic_site
-      - anatomic_site
       - resection_margin_status
+      - anatomic_site
       - guid
   treatment_other:
     Desc: "Text term that describes the kind of treatment administered."
