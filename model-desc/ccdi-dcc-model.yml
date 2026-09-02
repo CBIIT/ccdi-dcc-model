@@ -429,12 +429,12 @@ Nodes:
       - library_source_molecule
       - number_of_bp  # sra req'd
       - number_of_reads  # sra req'd
-      - design_description
-      - platform
-      - instrument_model
       - avg_read_length # sra req'd
       - coverage  # sra req'd
       - reference_genome_assembly  # sra req'd
+      - design_description
+      - platform
+      - instrument_model
       - checksum_algorithm
       - checksum_value
       - custom_assembly_fasta_file_for_alignment
