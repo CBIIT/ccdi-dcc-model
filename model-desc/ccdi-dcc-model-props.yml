@@ -3541,6 +3541,7 @@ PropDefinitions:
         - "Molecular Targeted Therapy"
         - "Pharmacotherapy"
         - "Radiopharmaceutical"
+        - "Supportive Care"
         - "Not Reported"
     Req: true
     Strict: false
