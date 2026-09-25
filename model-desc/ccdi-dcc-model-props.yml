@@ -2554,6 +2554,21 @@ PropDefinitions:
     Strict: false
     Private: false
   #participant
+  species:
+    Desc: The organism from which the sample is derived or originated.
+    Term:
+      - Origin: caDSR
+        Code: '6118266'
+        Value: Sample Organism Type
+        Version: "1.00"
+    Enum:
+      - 'Canine'
+      - 'Human'
+      - 'Mouse'
+    Req: false
+    Strict: true
+    Private: false
+  #participant
   occupation:
     Desc: "The text term that describes a person's occupation."
     Term:
