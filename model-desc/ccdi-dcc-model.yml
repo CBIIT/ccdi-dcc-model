@@ -402,6 +402,7 @@ Nodes:
       - percent_necrosis
       - laterality
       - anatomic_site
+      - sample_parent_type
       - guid
   sequencing_file: 
     Desc: "The sequencing file node is comprised of properties which describe file metadata for the sequencing file."
