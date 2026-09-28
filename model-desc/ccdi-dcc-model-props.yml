@@ -2715,7 +2715,7 @@ PropDefinitions:
   sample_parent_type:
     Desc: Text term that that describes if a sample came from a participant, cell line, pdx, organoid, etc.
     Term:
-      - Origin: 
+      - Origin: caDSR
         Code: ''
         Value: Sample Parent Source Type
         Version: ""
