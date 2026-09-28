@@ -15,8 +15,6 @@ PropDefinitions:
     - "Methylation Clinical Report"
     - "Not Reported"
     - "Pathology Imaging"
-    - "Protein Expression"
-    - "Proteomic Profile"
     - "Proteomics"
     - "Radiology Imaging"
     - "Sequencing"
