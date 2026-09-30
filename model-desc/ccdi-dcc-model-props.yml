@@ -1257,8 +1257,8 @@ PropDefinitions:
     Desc: Has the participant consumed at least 12 drinks of any kind of alcoholic beverage in their lifetime?
     Term:
       - Origin: caDSR
-        Code: '7537144'
-        Value: Alcohol History Indicator
+        Code: '17677540'
+        Value: Subject Alcohol Use History Indicator 
         Version: "1.00"
     Enum:
       - "Yes"
