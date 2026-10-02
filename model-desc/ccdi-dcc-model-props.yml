@@ -2726,7 +2726,7 @@ PropDefinitions:
       - 'organoid'
       - 'Not Reported'
       - 'Unknown'
-    Req: false
+    Req: true
     Strict: false
     Private: false
   # sequencing_file props
