@@ -2711,6 +2711,24 @@ PropDefinitions:
     Req: true
     Strict: false
     Private: false
+  #sample
+  sample_parent_type:
+    Desc: Text term that that describes if a sample came from a participant, cell line, pdx, organoid, etc.
+    Term:
+      - Origin: caDSR
+        Code: ''
+        Value: Sample Parent Source Type
+        Version: ""
+    Enum:
+      - 'participant'
+      - 'cell line'
+      - 'pdx'
+      - 'organoid'
+      - 'Not Reported'
+      - 'Unknown'
+    Req: true
+    Strict: false
+    Private: false
   # sequencing_file props
   sequencing_file_id: 
     Desc: A sequence of characters used to uniquely identify, name, or characterize a data file stored as an electronic record.
