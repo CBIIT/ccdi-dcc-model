@@ -1254,11 +1254,11 @@ PropDefinitions:
     Private: false
   #exposure
   alcohol_history:
-    Desc: Has the participant consumed at least 12 drinks of any kind of alcoholic beverage in their lifetime?
+    Desc: A response that indicates whether a person has current and past experience with alcohol consumption.
     Term:
       - Origin: caDSR
-        Code: '17677540'
-        Value: Subject Alcohol Use History Indicator 
+        Code: '16065316'
+        Value: Person Alcohol Use History Indicator 
         Version: "1.00"
     Enum:
       - "Yes"
