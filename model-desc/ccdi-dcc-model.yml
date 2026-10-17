@@ -246,6 +246,7 @@ Nodes:
       - participant_id
       - race       
       - sex_at_birth
+      - species
       - occupation
       - guid
   pathology_file: 
