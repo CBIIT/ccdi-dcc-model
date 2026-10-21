@@ -2991,7 +2991,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR
         Code: ''
-        Value: 
+        Value: Study Source
         Version: ""
     Type: string
     Req: true
