@@ -1121,7 +1121,7 @@ PropDefinitions:
       - "manual"
       - "semiautomatic"
       - "automatic"
-      - "Not applicable"
+      - "Not Applicable"
     Req: true
     Strict: false
     Private: false      
@@ -1414,7 +1414,7 @@ PropDefinitions:
         - "Pipe"
         - "Smokeless Tobacco"
         - "Not Reported"
-        - "Unkown"
+        - "Unknown"
     Req: false
     Strict: true
     Private: false
