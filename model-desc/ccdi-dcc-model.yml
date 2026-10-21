@@ -472,6 +472,8 @@ Nodes:
     Props:
       - study_id
       - dbgap_accession
+      - study_accession
+      - study_source
       - study_name
       - study_acronym
       - study_description
