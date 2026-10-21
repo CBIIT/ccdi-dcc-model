@@ -1414,7 +1414,7 @@ PropDefinitions:
         - "Pipe"
         - "Smokeless Tobacco"
         - "Not Reported"
-        - "Unkown"
+        - "Unknown"
     Req: false
     Strict: true
     Private: false
