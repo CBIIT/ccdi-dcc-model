@@ -1121,7 +1121,7 @@ PropDefinitions:
       - "manual"
       - "semiautomatic"
       - "automatic"
-      - "Not applicable"
+      - "Not Applicable"
     Req: true
     Strict: false
     Private: false      
