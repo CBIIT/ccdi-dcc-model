@@ -31,6 +31,7 @@ Nodes:
       - file_mapping_level
       - file_access
       - file_url
+      - study_source_file_url
       - checksum_algorithm
       - checksum_value
       - acl
@@ -67,6 +68,7 @@ Nodes:
       - file_mapping_level
       - file_access
       - file_url
+      - study_source_file_url
       - cytogenomic_platform
       - acl
       - authz
@@ -229,6 +231,7 @@ Nodes:
       - file_mapping_level
       - file_access
       - file_url
+      - study_source_file_url
       - methylation_platform
       - reporter_label
       - acl
@@ -267,6 +270,7 @@ Nodes:
       - file_mapping_level
       - file_access
       - file_url
+      - study_source_file_url
       - image_modality
       - license
       - magnification
@@ -327,6 +331,7 @@ Nodes:
       - file_mapping_level
       - file_access
       - file_url
+      - study_source_file_url
       - submitted_anatomic_site
       - participant_age_at_imaging
       - image_modality
@@ -381,6 +386,7 @@ Nodes:
       - file_mapping_level
       - file_access
       - file_url
+      - study_source_file_url
       - acl
       - authz
       - dcf_indexd_guid
@@ -423,6 +429,7 @@ Nodes:
       - file_mapping_level
       - file_access
       - file_url
+      - study_source_file_url
       - library_id # sra req'd
       - library_selection # sra req'd
       - library_strategy  # sra req'd
