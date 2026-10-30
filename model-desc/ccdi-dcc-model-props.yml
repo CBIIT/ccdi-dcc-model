@@ -3019,7 +3019,11 @@ PropDefinitions:
         Code: ''
         Value: Study Source
         Version: ""
-    Type: string
+    Enum: 
+      - "dbGaP"
+      - "TCIA"
+      - "SRA"
+    strict: false
     Req: true
     Private: false
   # study
