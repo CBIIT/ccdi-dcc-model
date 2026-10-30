@@ -509,15 +509,13 @@ PropDefinitions:
         Code: ''
         Value: Promotion Status
         Version: "1.00"
-    Type:
-      value_type: list
-      item_type:
+    Enum:
         - "Promote"
         - "Redact"
     Req: true
     Strict: true
     Private: false
-  #study
+  #study_status
   release_status:
     Desc: "The production state of the study given a repository."
     Term:
@@ -525,9 +523,7 @@ PropDefinitions:
         Code: ''
         Value: Release Status
         Version: "1.00"
-    Type:
-      value_type: list
-      item_type:
+    Enum:
         - "Yes"
         - "No"
     Req: true
