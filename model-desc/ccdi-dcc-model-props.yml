@@ -2565,8 +2565,8 @@ PropDefinitions:
       - 'Canine'
       - 'Human'
       - 'Mouse'
-    Req: false
-    Strict: true
+    Req: true
+    Strict: false
     Private: false
   #participant
   occupation:
