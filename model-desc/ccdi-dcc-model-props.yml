@@ -2398,6 +2398,17 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+    #file
+  study_source_file_url:
+    Desc: The specification of a node (file or directory) in a hierarchical file system where an electronic file is located. This is specifically for files that are located outside of our current file system.
+    Term:
+      - Origin: caDSR
+        Code: '11556141'
+        Value: Electronic File Pathname Text
+        Version: "2.00"
+    Type: string
+    Req: false
+    Private: false  
   #file
   acl:
     Desc: A free text field used to document whether the data in a repository is open access or controlled access. If access to the data are unrestricted, the acl field should be listed [“*]. Controlled access should be denoted as a comma delimited list of phs accession numbers, for example, [“phs000123] or [“phs000123,phs000124].
