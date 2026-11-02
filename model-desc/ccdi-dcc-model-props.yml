@@ -2172,9 +2172,9 @@ PropDefinitions:
         Value: Diagnosis Disease WHO Classification of Pediatric Tumors Text
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Strict: false
-    Private: false 
+    Private: false
   #diagnosis, sample
   diagnosis_basis: 
     Desc: The underlying scientific foundation used to determine the diagnosis.
@@ -3992,7 +3992,7 @@ PropDefinitions:
         Value: ICD-O Disease Diagnosis Category
         Version: "1.00"
     Type: string
-    Req: false
+    Req: true
     Strict: false
     Private: false
   #treatment_response
