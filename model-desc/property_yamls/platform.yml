@@ -2,6 +2,7 @@ PropDefinitions:
   platform:
     - "AB Capillary"
     - "ABI Solid"
+    - "Archer Fusion"
     - "BGISEQ"
     - "Complete Genomics"
     - "Helicos"
